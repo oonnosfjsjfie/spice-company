@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Spice company · Spices, masalas & bulk supply</title><meta name="description" content="Spice powders, blends and masalas, whole spices, and bulk and export supply from Kerala."><meta name="theme-color" content="#8a4b0f"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><style>:root{padding-top:env(safe-area-inset-top,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style><style>/* Layout: Neutrix-style site. Sticky top bar, then one of three pages (Home landing with alternating light and dark bands, Spices library + sheet, Explore charts), a big dark footer, and a floating chat panel on every page. */
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Spice Guide · How to manufacture spices</title><meta name="description" content="A practical guide to spice manufacturing in India: what to make, how to make it, machines, licences, quality, market prices and costing, with an AI advisor."><meta name="theme-color" content="#8a4b0f"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><style>:root{padding-top:env(safe-area-inset-top,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style><style>/* Layout: Neutrix-style site. Sticky top bar, then one of three pages (Home landing with alternating light and dark bands, Spices library + sheet, Explore charts), a big dark footer, and a floating chat panel on every page. */
 :root {
   --bg: #f9f8f6;
   --surface: #ffffff;
@@ -681,6 +681,56 @@ a.ccard2:hover { border-color: var(--fg); }
   .stepm { padding: 10px; gap: 8px; font-size: .88rem; }
 }
 #catCards { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+/* ---------- Manufacturing guide ---------- */
+.gcard { text-align: left; cursor: pointer; font: inherit; color: inherit; display: flex; flex-direction: column; gap: 4px; }
+.gcard:hover { border-color: var(--fg); }
+.gcard .si { font-size: 1.6rem; }
+#v-guide .pblk + .pblk { border-top: 1px solid var(--line); padding-top: 18px; }
+.idea-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-top: 8px; }
+.idea { border: 1px solid var(--line); border-radius: var(--r); padding: 14px; display: flex; flex-direction: column; gap: 6px; background: var(--surface); }
+.idea p { margin: 0; font-size: .88rem; }
+.idea .ikv span { color: var(--muted); font-weight: 600; }
+.idea .btn-lg { align-self: flex-start; margin-top: auto; }
+.itop { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+.itop b { font-size: 1.05rem; }
+.lvl { font-size: .72rem; border-radius: 999px; padding: 2px 8px; white-space: nowrap; border: 1px solid var(--line); }
+.lvl.l1 { color: #0a7d0a; border-color: currentColor; } .lvl.l2 { color: var(--spice); border-color: currentColor; } .lvl.l3 { color: #c2362f; border-color: currentColor; }
+.glist { margin: 6px 0 0; padding-left: 20px; } .glist li { margin: 4px 0; }
+.qchip.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.step .si { width: 30px; height: 30px; border-radius: 50%; background: var(--spice-soft); color: var(--spice); display: grid; place-items: center; font-size: .9rem; font-weight: 700; }
+.steps.one { grid-template-columns: 1fr; }
+.mrow { border-top: 1px solid var(--line); padding: 10px 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; }
+.mrow p { grid-column: 1 / -1; margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
+.mrow .srclink { grid-column: 1 / -1; margin-top: 2px; }
+.need { font-size: .74rem; border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; align-self: start; white-space: nowrap; }
+.need.n-essential { border-color: var(--spice); color: var(--spice); }
+.rtable { display: grid; gap: 6px; margin: 8px 0; }
+.rrow { display: grid; grid-template-columns: minmax(0, 1fr) 90px 36px; gap: 6px; }
+.rrow input, .inl input, .cform input, .cform select { border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; background: var(--bg); color: var(--fg); font: inherit; width: 100%; min-width: 0; }
+.inl { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; } .inl input { width: 100px; }
+.rout table, .cres table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.rout th, .rout td, .cres th, .cres td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.cform { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; margin: 10px 0 16px; }
+.cform label { display: grid; gap: 4px; font-size: .86rem; font-weight: 600; }
+.cform label em { font-style: normal; font-weight: 400; color: var(--muted); font-size: .78rem; }
+.cform .wide { grid-column: 1 / -1; }
+.uin { display: flex; align-items: center; gap: 6px; } .uin small { color: var(--muted); white-space: nowrap; }
+.lblx { font-size: .86rem; font-weight: 600; display: block; margin-bottom: 6px; }
+.packcost { display: flex; gap: 10px; flex-wrap: wrap; }
+.packcost label { display: flex; align-items: center; gap: 4px; font-weight: 400; } .packcost input { width: 74px; }
+.cbig { font-size: 1.2rem; font-weight: 700; margin: 0 0 4px; }
+@media (max-width: 600px) { .rrow input, .inl input, .cform input, .cform select { font-size: 16px; } .rrow { grid-template-columns: minmax(0, 1fr) 76px 36px; } }
+.nav-brand span:last-child { white-space: nowrap; }
+.cform label { align-content: start; }
+@media (max-width: 1420px) { #netStatus { display: none; } }
+.stepm.light { background: var(--surface); color: var(--fg); border-color: var(--line); cursor: default; }
+.pbody > *, .pblk > * { min-width: 0; }
+#gBody .qchip { white-space: normal; text-align: left; }
+.cform { grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr)); }
+.idea-grid { grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
+.packcost input { width: 64px; }
+.cres .tw, .rout .tw, .qtable { overflow-x: auto; max-width: 100%; }
+@media (max-width: 600px) { .cres th, .cres td, .rout th, .rout td { padding: 6px 5px; font-size: .8rem; } }
 </style><script>/**
  * marked v18.0.10 - a markdown parser
  * Copyright (c) 2018-2026, MarkedJS. (MIT License)
@@ -766,17 +816,18 @@ if(__exports != exports)module.exports = exports;return module.exports}));
 !function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(t="undefined"!=typeof globalThis?globalThis:t||self).DOMPurify=e()}(this,function(){"use strict";function t(t,e){(null==e||e>t.length)&&(e=t.length);for(var n=0,o=Array(e);n<e;n++)o[n]=t[n];return o}function e(e,n){return function(t){if(Array.isArray(t))return t}(e)||function(t,e){var n=null==t?null:"undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(null!=n){var o,r,i,a,l=[],c=!0,s=!1;try{if(i=(n=n.call(t)).next,0===e);else for(;!(c=(o=i.call(n)).done)&&(l.push(o.value),l.length!==e);c=!0);}catch(t){s=!0,r=t}finally{try{if(!c&&null!=n.return&&(a=n.return(),Object(a)!==a))return}finally{if(s)throw r}}return l}}(e,n)||function(e,n){if(e){if("string"==typeof e)return t(e,n);var o={}.toString.call(e).slice(8,-1);return"Object"===o&&e.constructor&&(o=e.constructor.name),"Map"===o||"Set"===o?Array.from(e):"Arguments"===o||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(o)?t(e,n):void 0}}(e,n)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}const n=Object.entries,o=Object.setPrototypeOf,r=Object.isFrozen,i=Object.getPrototypeOf,a=Object.getOwnPropertyDescriptor;let l=Object.freeze,c=Object.seal,s=Object.create,u="undefined"!=typeof Reflect&&Reflect,f=u.apply,p=u.construct;l||(l=function(t){return t}),c||(c=function(t){return t}),f||(f=function(t,e){for(var n=arguments.length,o=new Array(n>2?n-2:0),r=2;r<n;r++)o[r-2]=arguments[r];return t.apply(e,o)}),p||(p=function(t){for(var e=arguments.length,n=new Array(e>1?e-1:0),o=1;o<e;o++)n[o-1]=arguments[o];return new t(...n)});const m=L(Array.prototype.forEach),d=L(Array.prototype.lastIndexOf),h=L(Array.prototype.pop),y=L(Array.prototype.push),g=L(Array.prototype.splice),b=Array.isArray,S=L(String.prototype.toLowerCase),T=L(String.prototype.toString),A=L(String.prototype.match),E=L(String.prototype.replace),w=L(String.prototype.indexOf),v=L(String.prototype.trim),O=L(Number.prototype.toString),x=L(Boolean.prototype.toString),N="undefined"==typeof BigInt?null:L(BigInt.prototype.toString),_="undefined"==typeof Symbol?null:L(Symbol.prototype.toString),D=L(Object.prototype.hasOwnProperty),R=L(Object.prototype.toString),k=L(RegExp.prototype.test),C=(I=TypeError,function(){for(var t=arguments.length,e=new Array(t),n=0;n<t;n++)e[n]=arguments[n];return p(I,e)});var I;function L(t){return function(e){e instanceof RegExp&&(e.lastIndex=0);for(var n=arguments.length,o=new Array(n>1?n-1:0),r=1;r<n;r++)o[r-1]=arguments[r];return f(t,e,o)}}function z(t,e){let n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:S;if(o&&o(t,null),!b(e))return t;let i=e.length;for(;i--;){let o=e[i];if("string"==typeof o){const t=n(o);t!==o&&(r(e)||(e[i]=t),o=t)}t[o]=!0}return t}function M(t){for(let e=0;e<t.length;e++){D(t,e)||(t[e]=null)}return t}function P(t){const o=s(null);for(const i of n(t)){var r=e(i,2);const n=r[0],a=r[1];D(t,n)&&(b(a)?o[n]=M(a):a&&"object"==typeof a&&a.constructor===Object?o[n]=P(a):o[n]=a)}return o}function U(t,e){for(;null!==t;){const n=a(t,e);if(n){if(n.get)return L(n.get);if("function"==typeof n.value)return L(n.value)}t=i(t)}return function(){return null}}const F=l(["a","abbr","acronym","address","area","article","aside","audio","b","bdi","bdo","big","blink","blockquote","body","br","button","canvas","caption","center","cite","code","col","colgroup","content","data","datalist","dd","decorator","del","details","dfn","dialog","dir","div","dl","dt","element","em","fieldset","figcaption","figure","font","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","img","input","ins","kbd","label","legend","li","main","map","mark","marquee","menu","menuitem","meter","nav","nobr","ol","optgroup","option","output","p","picture","pre","progress","q","rp","rt","ruby","s","samp","search","section","select","shadow","slot","small","source","spacer","span","strike","strong","style","sub","summary","sup","table","tbody","td","template","textarea","tfoot","th","thead","time","tr","track","tt","u","ul","var","video","wbr"]),H=l(["svg","a","altglyph","altglyphdef","altglyphitem","animatecolor","animatemotion","animatetransform","circle","clippath","defs","desc","ellipse","enterkeyhint","exportparts","filter","font","g","glyph","glyphref","hkern","image","inputmode","line","lineargradient","marker","mask","metadata","mpath","part","path","pattern","polygon","polyline","radialgradient","rect","stop","style","switch","symbol","text","textpath","title","tref","tspan","view","vkern"]),j=l(["feBlend","feColorMatrix","feComponentTransfer","feComposite","feConvolveMatrix","feDiffuseLighting","feDisplacementMap","feDistantLight","feDropShadow","feFlood","feFuncA","feFuncB","feFuncG","feFuncR","feGaussianBlur","feImage","feMerge","feMergeNode","feMorphology","feOffset","fePointLight","feSpecularLighting","feSpotLight","feTile","feTurbulence"]),B=l(["animate","color-profile","cursor","discard","font-face","font-face-format","font-face-name","font-face-src","font-face-uri","foreignobject","hatch","hatchpath","mesh","meshgradient","meshpatch","meshrow","missing-glyph","script","set","solidcolor","unknown","use"]),W=l(["math","menclose","merror","mfenced","mfrac","mglyph","mi","mlabeledtr","mmultiscripts","mn","mo","mover","mpadded","mphantom","mroot","mrow","ms","mspace","msqrt","mstyle","msub","msup","msubsup","mtable","mtd","mtext","mtr","munder","munderover","mprescripts"]),Y=l(["maction","maligngroup","malignmark","mlongdiv","mscarries","mscarry","msgroup","mstack","msline","msrow","semantics","annotation","annotation-xml","mprescripts","none"]),G=l(["#text"]),q=l(["accept","action","align","alt","autocapitalize","autocomplete","autopictureinpicture","autoplay","background","bgcolor","border","capture","cellpadding","cellspacing","checked","cite","class","clear","color","cols","colspan","command","commandfor","controls","controlslist","coords","crossorigin","datetime","decoding","default","dir","disabled","disablepictureinpicture","disableremoteplayback","download","draggable","enctype","enterkeyhint","exportparts","face","for","headers","height","hidden","high","href","hreflang","id","inert","inputmode","integrity","ismap","kind","label","lang","list","loading","loop","low","max","maxlength","media","method","min","minlength","multiple","muted","name","nonce","noshade","novalidate","nowrap","open","optimum","part","pattern","placeholder","playsinline","popover","popovertarget","popovertargetaction","poster","preload","pubdate","radiogroup","readonly","rel","required","rev","reversed","role","rows","rowspan","spellcheck","scope","selected","shape","size","sizes","slot","span","srclang","start","src","srcset","step","style","summary","tabindex","title","translate","type","usemap","valign","value","width","wrap","xmlns"]),$=l(["accent-height","accumulate","additive","alignment-baseline","amplitude","ascent","attributename","attributetype","azimuth","basefrequency","baseline-shift","begin","bias","by","class","clip","clippathunits","clip-path","clip-rule","color","color-interpolation","color-interpolation-filters","color-profile","color-rendering","cx","cy","d","dx","dy","diffuseconstant","direction","display","divisor","dominant-baseline","dur","edgemode","elevation","end","exponent","fill","fill-opacity","fill-rule","filter","filterunits","flood-color","flood-opacity","font-family","font-size","font-size-adjust","font-stretch","font-style","font-variant","font-weight","fx","fy","g1","g2","glyph-name","glyphref","gradientunits","gradienttransform","height","href","id","image-rendering","in","in2","intercept","k","k1","k2","k3","k4","kerning","keypoints","keysplines","keytimes","lang","lengthadjust","letter-spacing","kernelmatrix","kernelunitlength","lighting-color","local","marker-end","marker-mid","marker-start","markerheight","markerunits","markerwidth","maskcontentunits","maskunits","max","mask","mask-type","media","method","mode","min","name","numoctaves","offset","operator","opacity","order","orient","orientation","origin","overflow","paint-order","path","pathlength","patterncontentunits","patterntransform","patternunits","pointer-events","points","preservealpha","preserveaspectratio","primitiveunits","r","rx","ry","radius","refx","refy","repeatcount","repeatdur","restart","result","rotate","scale","seed","shape-rendering","slope","specularconstant","specularexponent","spreadmethod","startoffset","stddeviation","stitchtiles","stop-color","stop-opacity","stroke-dasharray","stroke-dashoffset","stroke-linecap","stroke-linejoin","stroke-miterlimit","stroke-opacity","stroke","stroke-width","style","surfacescale","systemlanguage","tabindex","tablevalues","targetx","targety","transform","transform-origin","text-anchor","text-decoration","text-orientation","text-rendering","textlength","type","u1","u2","unicode","values","vector-effect","viewbox","visibility","version","vert-adv-y","vert-origin-x","vert-origin-y","width","word-spacing","wrap","writing-mode","xchannelselector","ychannelselector","x","x1","x2","xmlns","y","y1","y2","z","zoomandpan"]),X=l(["accent","accentunder","align","bevelled","close","columnalign","columnlines","columnspacing","columnspan","denomalign","depth","dir","display","displaystyle","encoding","fence","frame","height","href","id","largeop","length","linethickness","lquote","lspace","mathbackground","mathcolor","mathsize","mathvariant","maxsize","minsize","movablelimits","notation","numalign","open","rowalign","rowlines","rowspacing","rowspan","rspace","rquote","scriptlevel","scriptminsize","scriptsizemultiplier","selection","separator","separators","stretchy","subscriptshift","supscriptshift","symmetric","voffset","width","xmlns"]),K=l(["xlink:href","xml:id","xlink:title","xml:space","xmlns:xlink"]),V=c(/{{[\w\W]*|^[\w\W]*}}/g),Z=c(/<%[\w\W]*|^[\w\W]*%>/g),J=c(/\${[\w\W]*/g),Q=c(/^data-[\-\w.\u00B7-\uFFFF]+$/),tt=c(/^aria-[\-\w]+$/),et=c(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|matrix):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i),nt=c(/^(?:\w+script|data):/i),ot=c(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g),rt=c(/^html$/i),it=c(/^[a-z][.\w]*(-[.\w]+)+$/i),at=c(/<[/\w!]/g),lt=c(/<[/\w]/g),ct=c(/<\/no(script|embed|frames)/i),st=c(/\/>/i),ut=1,ft=3,pt=7,mt=8,dt=9,ht=11,yt=["style","script","xmp","iframe","noembed","noframes","plaintext","noscript"],gt=l(z({},yt)),bt=function(){const t={};return m(yt,e=>{t[e]=c(new RegExp("</"+e+"(?=[\\t\\n\\f\\r />])","i"))}),l(t)}(),St=function(){return"undefined"==typeof window?null:window},Tt=function(t,e,n,o){return D(t,e)&&b(t[e])?z(o.base?P(o.base):{},t[e],o.transform):n},At=function(t,e,n){const o=D(t,e)?t[e]:void 0;return o&&"object"==typeof o?P(o):n()};var Et=function t(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:St();const o=e=>t(e);if(o.version="3.4.14",o.removed=[],!e||!e.document||e.document.nodeType!==dt||!e.Element)return o.isSupported=!1,o;let r=e.document;const i=r,a=i.currentScript;e.DocumentFragment;const u=e.HTMLTemplateElement,f=e.Node,p=e.Element,I=e.NodeFilter,L=e.NamedNodeMap;void 0===L&&(e.NamedNodeMap||e.MozNamedAttrMap),e.HTMLFormElement;const M=e.DOMParser,yt=e.trustedTypes,Et=p.prototype,wt=U(Et,"cloneNode"),vt=U(Et,"remove"),Ot=U(Et,"nextSibling"),xt=U(Et,"childNodes"),Nt=U(Et,"parentNode"),_t=U(Et,"shadowRoot"),Dt=U(Et,"attributes"),Rt=f&&f.prototype?U(f.prototype,"nodeType"):null,kt=f&&f.prototype?U(f.prototype,"nodeName"):null,Ct=f&&f.prototype?U(f.prototype,"ownerDocument"):null,It=function(t){return Rt?Rt(t):t.nodeType},Lt=function(t){return kt?kt(t):t.nodeName};if("function"==typeof u){const t=r.createElement("template");t.content&&t.content.ownerDocument&&(r=t.content.ownerDocument)}let zt,Mt,Pt="",Ut=!1,Ft=0;const Ht=function(){if(Ft>0)throw C('A configured TRUSTED_TYPES_POLICY callback (createHTML or createScriptURL) must not call DOMPurify.sanitize, as that causes infinite recursion. Do not pass a policy whose callbacks wrap DOMPurify as TRUSTED_TYPES_POLICY; see the "DOMPurify and Trusted Types" section of the README.')},jt=function(t){Ht(),Ft++;try{return zt.createHTML(t)}finally{Ft--}},Bt=function(){return Ut||(Mt=function(t,e){if("object"!=typeof t||"function"!=typeof t.createPolicy)return null;let n=null;const o="data-tt-policy-suffix";e&&e.hasAttribute(o)&&(n=e.getAttribute(o));const r="dompurify"+(n?"#"+n:"");try{return t.createPolicy(r,{createHTML:t=>t,createScriptURL:t=>t})}catch(t){return console.warn("TrustedTypes policy "+r+" could not be created."),null}}(yt,a),Ut=!0),Mt},Wt=r,Yt=Wt.implementation,Gt=Wt.createNodeIterator,qt=Wt.createDocumentFragment,$t=Wt.getElementsByTagName,Xt=i.importNode;let Kt={afterSanitizeAttributes:[],afterSanitizeElements:[],afterSanitizeShadowDOM:[],beforeSanitizeAttributes:[],beforeSanitizeElements:[],beforeSanitizeShadowDOM:[],uponSanitizeAttribute:[],uponSanitizeElement:[],uponSanitizeShadowNode:[]};o.isSupported="function"==typeof n&&"function"==typeof Nt&&Yt&&void 0!==Yt.createHTMLDocument;const Vt=V,Zt=Z,Jt=J,Qt=Q,te=tt,ee=nt,ne=ot,oe=it;let re=et,ie=null;const ae=z({},[...F,...H,...j,...W,...G]);let le=null;const ce=z({},[...q,...$,...X,...K]);let se=Object.seal(s(null,{tagNameCheck:{writable:!0,configurable:!1,enumerable:!0,value:null},attributeNameCheck:{writable:!0,configurable:!1,enumerable:!0,value:null},allowCustomizedBuiltInElements:{writable:!0,configurable:!1,enumerable:!0,value:!1}})),ue=null,fe=null;const pe=Object.seal(s(null,{tagCheck:{writable:!0,configurable:!1,enumerable:!0,value:null},attributeCheck:{writable:!0,configurable:!1,enumerable:!0,value:null}}));let me=!0,de=!0,he=!1,ye=!0,ge=!1,be=!0,Se=!1,Te=!1,Ae=null,Ee=null,we=!1,ve=!1,Oe=!1,xe=!1,Ne=!0,_e=!1;const De="user-content-";let Re=!0,ke=!1,Ce={},Ie=null;const Le=z({},["annotation-xml","audio","colgroup","desc","foreignobject","head","iframe","math","mi","mn","mo","ms","mtext","noembed","noframes","noscript","plaintext","script","selectedcontent","style","svg","template","thead","title","video","xmp"]);let ze=null;const Me=z({},["audio","video","img","source","image","track"]);let Pe=null;const Ue=z({},["alt","class","for","id","label","name","pattern","placeholder","role","summary","title","value","style","xmlns"]),Fe="http://www.w3.org/1998/Math/MathML",He="http://www.w3.org/2000/svg",je="http://www.w3.org/1999/xhtml";let Be=je,We=!1,Ye=null;const Ge=z({},[Fe,He,je],T),qe=l(["mi","mo","mn","ms","mtext"]);let $e=z({},qe);const Xe=l(["annotation-xml"]);let Ke=z({},Xe);const Ve=z({},["title","style","font","a","script"]);let Ze=null;const Je=["application/xhtml+xml","text/html"];let Qe=null,tn=null;const en=r.createElement("form"),nn=function(t){return t instanceof RegExp||t instanceof Function},on=function(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(tn&&tn===t)return;t&&"object"==typeof t||(t={}),t=P(t),Ze=-1===Je.indexOf(t.PARSER_MEDIA_TYPE)?"text/html":t.PARSER_MEDIA_TYPE,Qe="application/xhtml+xml"===Ze?T:S,ie=Tt(t,"ALLOWED_TAGS",ae,{transform:Qe}),le=Tt(t,"ALLOWED_ATTR",ce,{transform:Qe}),Ye=Tt(t,"ALLOWED_NAMESPACES",Ge,{transform:T}),Pe=Tt(t,"ADD_URI_SAFE_ATTR",Ue,{transform:Qe,base:Ue}),ze=Tt(t,"ADD_DATA_URI_TAGS",Me,{transform:Qe,base:Me}),Ie=Tt(t,"FORBID_CONTENTS",Le,{transform:Qe}),ue=Tt(t,"FORBID_TAGS",P({}),{transform:Qe}),fe=Tt(t,"FORBID_ATTR",P({}),{transform:Qe}),Ce=!!D(t,"USE_PROFILES")&&(t.USE_PROFILES&&"object"==typeof t.USE_PROFILES?P(t.USE_PROFILES):t.USE_PROFILES),me=!1!==t.ALLOW_ARIA_ATTR,de=!1!==t.ALLOW_DATA_ATTR,he=t.ALLOW_UNKNOWN_PROTOCOLS||!1,ye=!1!==t.ALLOW_SELF_CLOSE_IN_ATTR,ge=t.SAFE_FOR_TEMPLATES||!1,be=!1!==t.SAFE_FOR_XML,Se=t.WHOLE_DOCUMENT||!1,ve=t.RETURN_DOM||!1,Oe=t.RETURN_DOM_FRAGMENT||!1,xe=t.RETURN_TRUSTED_TYPE||!1,we=t.FORCE_BODY||!1,Ne=!1!==t.SANITIZE_DOM,_e=t.SANITIZE_NAMED_PROPS||!1,Re=!1!==t.KEEP_CONTENT,ke=t.IN_PLACE||!1,re=function(t){try{return k(t,""),!0}catch(t){return!1}}(t.ALLOWED_URI_REGEXP)?t.ALLOWED_URI_REGEXP:et,Be="string"==typeof t.NAMESPACE?t.NAMESPACE:je,$e=At(t,"MATHML_TEXT_INTEGRATION_POINTS",()=>z({},qe)),Ke=At(t,"HTML_INTEGRATION_POINTS",()=>z({},Xe));const e=At(t,"CUSTOM_ELEMENT_HANDLING",()=>s(null));if(se=s(null),D(e,"tagNameCheck")&&nn(e.tagNameCheck)&&(se.tagNameCheck=e.tagNameCheck),D(e,"attributeNameCheck")&&nn(e.attributeNameCheck)&&(se.attributeNameCheck=e.attributeNameCheck),D(e,"allowCustomizedBuiltInElements")&&"boolean"==typeof e.allowCustomizedBuiltInElements&&(se.allowCustomizedBuiltInElements=e.allowCustomizedBuiltInElements),c(se),ge&&(de=!1),Oe&&(ve=!0),Ce&&(ie=z({},G),le=s(null),!0===Ce.html&&(z(ie,F),z(le,q)),!0===Ce.svg&&(z(ie,H),z(le,$),z(le,K)),!0===Ce.svgFilters&&(z(ie,j),z(le,$),z(le,K)),!0===Ce.mathMl&&(z(ie,W),z(le,X),z(le,K))),pe.tagCheck=null,pe.attributeCheck=null,D(t,"ADD_TAGS")&&("function"==typeof t.ADD_TAGS?pe.tagCheck=t.ADD_TAGS:b(t.ADD_TAGS)&&(ie===ae&&(ie=P(ie)),z(ie,t.ADD_TAGS,Qe))),D(t,"ADD_ATTR")&&("function"==typeof t.ADD_ATTR?pe.attributeCheck=t.ADD_ATTR:b(t.ADD_ATTR)&&(le===ce&&(le=P(le)),z(le,t.ADD_ATTR,Qe))),D(t,"ADD_FORBID_CONTENTS")&&b(t.ADD_FORBID_CONTENTS)&&(Ie===Le&&(Ie=P(Ie)),z(Ie,t.ADD_FORBID_CONTENTS,Qe)),Re&&(ie["#text"]=!0),Se&&z(ie,["html","head","body"]),ie.table&&(z(ie,["tbody"]),delete ue.tbody),t.TRUSTED_TYPES_POLICY){if("function"!=typeof t.TRUSTED_TYPES_POLICY.createHTML)throw C('TRUSTED_TYPES_POLICY configuration option must provide a "createHTML" hook.');if("function"!=typeof t.TRUSTED_TYPES_POLICY.createScriptURL)throw C('TRUSTED_TYPES_POLICY configuration option must provide a "createScriptURL" hook.');const e=zt;zt=t.TRUSTED_TYPES_POLICY;try{Pt=jt("")}catch(t){throw zt=e,t}}else null===t.TRUSTED_TYPES_POLICY?(zt=void 0,Pt=""):(void 0===zt&&(zt=Bt()),zt&&"string"==typeof Pt&&(Pt=jt("")));l&&l(t),tn=t},rn=z({},[...H,...j,...B]),an=z({},[...W,...Y]),ln=function(t){let e=Nt(t);e&&e.tagName||(e={namespaceURI:Be,tagName:"template"});const n=S(t.tagName),o=S(e.tagName);return!!Ye[t.namespaceURI]&&(t.namespaceURI===He?function(t,e,n){return e.namespaceURI===je?"svg"===t:e.namespaceURI===Fe?"svg"===t&&("annotation-xml"===n||$e[n]):Boolean(rn[t])}(n,e,o):t.namespaceURI===Fe?function(t,e,n){return e.namespaceURI===je?"math"===t:e.namespaceURI===He?"math"===t&&Ke[n]:Boolean(an[t])}(n,e,o):t.namespaceURI===je?function(t,e,n){return!(e.namespaceURI===He&&!Ke[n])&&!(e.namespaceURI===Fe&&!$e[n])&&!an[t]&&(Ve[t]||!rn[t])}(n,e,o):!("application/xhtml+xml"!==Ze||!Ye[t.namespaceURI]))},cn=function(t){y(o.removed,{element:t});try{Nt(t).removeChild(t)}catch(e){if(vt(t),!Nt(t))throw C("a node selected for removal could not be detached from its tree and cannot be safely returned; refusing to sanitize in place")}},sn=function(t,e,n){try{t.removeAttributeNode(e)}catch(e){try{t.removeAttribute(n)}catch(t){}}},un=function(t){mn(t);const e=xt(t);if(e){const t=[];m(e,e=>{y(t,e)}),m(t,t=>{try{vt(t)}catch(t){}})}const n=Dt(t);if(n)for(let e=n.length-1;e>=0;--e){const o=n[e],r=o&&o.name;"string"==typeof r&&sn(t,o,r)}},fn=function(t,e,n){if(!n)try{n=e.getAttributeNode(t)}catch(t){n=null}y(o.removed,{attribute:n||null,from:e});try{n?e.removeAttributeNode(n):e.removeAttribute(t)}catch(n){try{e.removeAttribute(t)}catch(t){}}if("is"===t)if(ve||Oe)try{cn(e)}catch(t){}else try{e.setAttribute(t,"")}catch(t){}},pn=function(t){const e=Dt(t);if(e)for(let n=e.length-1;n>=0;--n){const o=e[n],r=o&&o.name;"string"!=typeof r||le[Qe(r)]||sn(t,o,r)}},mn=function(t){const e=[t];for(;e.length>0;){const t=e.pop();It(t)===ut&&pn(t);const n=xt(t);if(n)for(let t=n.length-1;t>=0;--t)e.push(n[t])}},dn=function(t,e){return!!be&&("patchsrc"===t||"for"===t&&"label"!==e&&"output"!==e)},hn=function(t){let e=null,n=null;if(we)t="<remove></remove>"+t;else{const e=A(t,/^[\r\n\t ]+/);n=e&&e[0]}"application/xhtml+xml"===Ze&&Be===je&&(t='<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>'+t+"</body></html>");const o=zt?jt(t):t;if(Be===je)try{e=(new M).parseFromString(o,Ze)}catch(t){}if(!e||!e.documentElement){e=Yt.createDocument(Be,"template",null);try{e.documentElement.innerHTML=We?Pt:o}catch(t){}}const i=e.body||e.documentElement;return t&&n&&i.insertBefore(r.createTextNode(n),i.childNodes[0]||null),Be===je?$t.call(e,Se?"html":"body")[0]:Se?e.documentElement:i},yn=function(t){const e=Ct?Ct(t):t.ownerDocument;return Gt.call(e||t,t,I.SHOW_ELEMENT|I.SHOW_COMMENT|I.SHOW_TEXT|I.SHOW_PROCESSING_INSTRUCTION|I.SHOW_CDATA_SECTION,null)},gn=function(t){return t=E(t,Vt," "),t=E(t,Zt," "),t=E(t,Jt," ")},bn=function(t){var e;t.normalize();const n=Ct?Ct(t):t.ownerDocument,o=Gt.call(n||t,t,I.SHOW_TEXT|I.SHOW_COMMENT|I.SHOW_CDATA_SECTION|I.SHOW_PROCESSING_INSTRUCTION,null);let r=o.nextNode();for(;r;)r.data=gn(r.data),r=o.nextNode();const i=null===(e=t.querySelectorAll)||void 0===e?void 0:e.call(t,"template");i&&m(i,t=>{Tn(t.content)&&bn(t.content)})},Sn=function(t){const e=kt?kt(t):null;return"string"==typeof e&&("form"===Qe(e)&&("string"!=typeof t.nodeName||"string"!=typeof t.textContent||"function"!=typeof t.removeChild||t.attributes!==Dt(t)||"function"!=typeof t.removeAttribute||"function"!=typeof t.setAttribute||"string"!=typeof t.namespaceURI||"function"!=typeof t.insertBefore||"function"!=typeof t.hasChildNodes||t.nodeType!==Rt(t)||t.childNodes!==xt(t)))},Tn=function(t){if(!Rt||"object"!=typeof t||null===t)return!1;try{return Rt(t)===ht}catch(t){return!1}},An=function(t){if(!Rt||"object"!=typeof t||null===t)return!1;try{return"number"==typeof Rt(t)}catch(t){return!1}};function En(t,e,n){0!==t.length&&m(t,t=>{t.call(o,e,n,tn)})}const wn=function(t,e){if(t instanceof RegExp)return k(t,e);if(t instanceof Function){for(var n=arguments.length,o=new Array(n>2?n-2:0),r=2;r<n;r++)o[r-2]=arguments[r];return Boolean(t(e,...o))}return!1},vn=function(t,e,n,o){return 0===t.length?e:e===n||e===o?P(e):e},On=function(t,e){return t!==e&&null===Nt(t)&&(ke&&mn(t),!0)},xn=function(t,e){if(En(Kt.beforeSanitizeElements,t,null),On(t,e))return!0;if(Sn(t))return cn(t),!0;const n=Qe(Lt(t));if(ie=vn(Kt.uponSanitizeElement,ie,ae,Ae),En(Kt.uponSanitizeElement,t,{tagName:n,allowedTags:ie}),On(t,e))return!0;if(function(t,e){return!!(be&&t.hasChildNodes()&&!An(t.firstElementChild)&&k(at,t.textContent)&&k(at,t.innerHTML))||!!(be&&t.namespaceURI===je&&gt[e]&&(An(t.firstElementChild)||"string"==typeof t.textContent&&k(bt[e],t.textContent)))||t.nodeType===pt||!(!be||t.nodeType!==mt||!k(lt,t.data))}(t,n))return cn(t),!0;if(ue[n]||!(pe.tagCheck instanceof Function&&pe.tagCheck(n))&&!ie[n]){const o=function(t,e,n){if(!ue[e]&&Dn(e)&&wn(se.tagNameCheck,e))return!1;if(Re&&!Ie[e]){const e=Nt(t),o=xt(t);if(o&&e)for(let r=o.length-1;r>=0;--r){const i=t===n?wt(o[r],!0):o[r];e.insertBefore(i,Ot(t))}}return cn(t),!0}(t,n,e);return!1===o&&En(Kt.afterSanitizeElements,t,null),o}if(It(t)===ut&&!ln(t))return cn(t),!0;if(("noscript"===n||"noembed"===n||"noframes"===n)&&k(ct,t.innerHTML))return cn(t),!0;if(ge&&t.nodeType===ft){const e=gn(t.textContent);t.textContent!==e&&(y(o.removed,{element:t.cloneNode()}),t.textContent=e)}return En(Kt.afterSanitizeElements,t,null),!1},Nn=function(t,e,n){if(fe[e])return!1;if(dn(e,t))return!1;if(Ne&&("id"===e||"name"===e)&&(n in r||n in en))return!1;const o=le[e]||pe.attributeCheck instanceof Function&&pe.attributeCheck(e,t);return!(!de||!k(Qt,e))||(!(!me||!k(te,e))||(o?!!Pe[e]||(!!k(re,E(n,ne,""))||(!("src"!==e&&"xlink:href"!==e&&"href"!==e||"script"===t||0!==w(n,"data:")||!ze[t])||(!(!he||k(ee,E(n,ne,"")))||!n))):Dn(t)&&wn(se.tagNameCheck,t)&&wn(se.attributeNameCheck,e,t)||"is"===e&&se.allowCustomizedBuiltInElements&&wn(se.tagNameCheck,n)))},_n=z({},["annotation-xml","color-profile","font-face","font-face-format","font-face-name","font-face-src","font-face-uri","missing-glyph"]),Dn=function(t){return!_n[S(t)]&&k(oe,t)},Rn=function(t,e,n,o){if(zt&&"object"==typeof yt&&"function"==typeof yt.getAttributeType&&!n)switch(yt.getAttributeType(t,e)){case"TrustedHTML":return jt(o);case"TrustedScriptURL":return function(t){Ht(),Ft++;try{return zt.createScriptURL(t)}finally{Ft--}}(o)}return o},kn=function(t,e,n,r){try{n?t.setAttributeNS(n,e,r):t.setAttribute(e,r),Sn(t)?cn(t):h(o.removed)}catch(n){fn(e,t)}},Cn=function(t){En(Kt.beforeSanitizeAttributes,t,null);const e=t.attributes;if(!e||Sn(t))return;le=vn(Kt.uponSanitizeAttribute,le,ce,Ee);const n={attrName:"",attrValue:"",keepAttr:!0,allowedAttributes:le,forceKeepAttr:void 0};let o=e.length;const r=Qe(t.nodeName);for(;o--;){const i=e[o],a=i.name,l=i.namespaceURI,c=i.value,s=Qe(a),u=c;let f="value"===a?u:v(u);n.attrName=s,n.attrValue=f,n.keepAttr=!0,n.forceKeepAttr=void 0,En(Kt.uponSanitizeAttribute,t,n),f=n.attrValue,!_e||"id"!==s&&"name"!==s||0===w(f,De)||(fn(a,t,i),f=De+f),be&&k(/((--!?|])>)|<\/(style|script|title|xmp|textarea|noscript|iframe|noembed|noframes)/i,f)?fn(a,t,i):"attributename"===s&&A(f,"href")?fn(a,t,i):n.forceKeepAttr||(n.keepAttr&&(ye||!k(st,f))?(ge&&(f=gn(f)),Nn(r,s,f)?(f=Rn(r,s,l,f),f!==u&&kn(t,a,l,f)):fn(a,t,i)):fn(a,t,i))}En(Kt.afterSanitizeAttributes,t,null)},In=function(t){let e=null;const n=yn(t);for(En(Kt.beforeSanitizeShadowDOM,t,null);e=n.nextNode();)if(En(Kt.uponSanitizeShadowNode,e,null),xn(e,t),Cn(e),Tn(e.content)&&In(e.content),It(e)===ut){const t=_t(e);Tn(t)&&(Ln(t),In(t))}En(Kt.afterSanitizeShadowDOM,t,null)},Ln=function(t){const e=[{node:t,shadow:null}];for(;e.length>0;){const t=e.pop();if(t.shadow){In(t.shadow);continue}const n=t.node,o=It(n)===ut,r=xt(n);if(r)for(let t=r.length-1;t>=0;--t)e.push({node:r[t],shadow:null});if(o){const t=kt?kt(n):null;if("string"==typeof t&&"template"===Qe(t)){const t=n.content;Tn(t)&&e.push({node:t,shadow:null})}}if(o){const t=_t(n);Tn(t)&&e.push({node:null,shadow:t},{node:t,shadow:null})}}};return o.sanitize=function(t){let e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=null,r=null,a=null,l=null;if(We=!t,We&&(t="\x3c!--\x3e"),"string"!=typeof t&&!An(t)&&"string"!=typeof(t=function(t){switch(typeof t){case"string":return t;case"number":return O(t);case"boolean":return x(t);case"bigint":return N?N(t):"0";case"symbol":return _?_(t):"Symbol()";case"undefined":default:return R(t);case"function":case"object":{if(null===t)return R(t);const e=t,n=U(e,"toString");if("function"==typeof n){const t=n(e);return"string"==typeof t?t:R(t)}return R(t)}}}(t)))throw C("dirty is not a string, aborting");if(!o.isSupported)return t;Te?(ie=Ae,le=Ee):on(e),(Kt.uponSanitizeElement.length>0||Kt.uponSanitizeAttribute.length>0)&&(ie=P(ie)),Kt.uponSanitizeAttribute.length>0&&(le=P(le)),o.removed=[];const c=ke&&"string"!=typeof t&&An(t);if(c){!function(t){if(!be)return;const e=[t];for(;e.length>0;){const t=e.pop(),n=It(t);if(n===pt||n===mt&&k(lt,t.data)){try{vt(t)}catch(t){}continue}if(n===ut){const e=t,n=Qe(Lt(t));try{e.hasAttribute&&e.hasAttribute("patchsrc")&&e.removeAttribute("patchsrc"),e.hasAttribute&&e.hasAttribute("for")&&dn("for",n)&&e.removeAttribute("for")}catch(t){}}const o=xt(t);if(o)for(let t=o.length-1;t>=0;--t)e.push(o[t])}}(t);const e=Lt(t);if("string"==typeof e){const n=Qe(e);if(!ie[n]||ue[n])throw un(t),C("root node is forbidden and cannot be sanitized in-place")}if(Sn(t))throw un(t),C("root node is clobbered and cannot be sanitized in-place");try{Ln(t)}catch(e){throw un(t),e}}else if(An(t))n=hn("\x3c!----\x3e"),r=n.ownerDocument.importNode(t,!0),r.nodeType===ut&&"BODY"===r.nodeName||"HTML"===r.nodeName?n=r:n.appendChild(r),Ln(r);else{if(!ve&&!ge&&!Se&&-1===t.indexOf("<"))return zt&&xe?jt(t):t;if(n=hn(t),!n)return ve?null:xe?Pt:""}n&&we&&cn(n.firstChild);const s=c?t:n;try{const t=yn(s);for(;a=t.nextNode();)xn(a,s),Cn(a),Tn(a.content)&&In(a.content)}catch(e){throw c&&(un(t),m(o.removed,t=>{t.element&&mn(t.element)})),e}if(c)return m(o.removed,t=>{t.element&&mn(t.element)}),ge&&bn(t),t;if(ve){if(ge&&bn(n),Oe)for(l=qt.call(n.ownerDocument);n.firstChild;)l.appendChild(n.firstChild);else l=n;return(le.shadowroot||le.shadowrootmode)&&(l=Xt.call(i,l,!0)),l}let u=Se?n.outerHTML:n.innerHTML;return Se&&ie["!doctype"]&&n.ownerDocument&&n.ownerDocument.doctype&&n.ownerDocument.doctype.name&&k(rt,n.ownerDocument.doctype.name)&&(u="<!DOCTYPE "+n.ownerDocument.doctype.name+">\n"+u),ge&&(u=gn(u)),zt&&xe?jt(u):u},o.setConfig=function(){on(arguments.length>0&&void 0!==arguments[0]?arguments[0]:{}),Te=!0,Ae=ie,Ee=le},o.clearConfig=function(){tn=null,Te=!1,Ae=null,Ee=null,zt=Mt,Pt=""},o.isValidAttribute=function(t,e,n){tn||on({});const o=Qe(t),r=Qe(e);return Nn(o,r,n)},o.addHook=function(t,e){"function"==typeof e&&D(Kt,t)&&y(Kt[t],e)},o.removeHook=function(t,e){if(D(Kt,t)){if(void 0!==e){const n=d(Kt[t],e);return-1===n?void 0:g(Kt[t],n,1)[0]}return h(Kt[t])}},o.removeHooks=function(t){D(Kt,t)&&(Kt[t]=[])},o.removeAllHooks=function(){Kt={afterSanitizeAttributes:[],afterSanitizeElements:[],afterSanitizeShadowDOM:[],beforeSanitizeAttributes:[],beforeSanitizeElements:[],beforeSanitizeShadowDOM:[],uponSanitizeAttribute:[],uponSanitizeElement:[],uponSanitizeShadowNode:[]}},o}();return Et});
 //# sourceMappingURL=purify.min.js.map
 </script></head><body><div class="progress" id="scrollProgress" aria-hidden="true"></div>
-<div class="samplebar" id="sampleBar" hidden>Sample details shown. Parts marked <span class="ph">like this</span> are blanks to be replaced with your company's real name, contact details, pack sizes and certifications.</div>
 <header class="nav gut">
   <div class="nav-in">
-    <button class="nav-brand" type="button" id="brandBtn" aria-label="Home"><span class="mark co" aria-hidden="true"></span><span data-co="short">Your Company</span></button>
+    <button class="nav-brand" type="button" id="brandBtn" aria-label="Home"><span class="mark co" aria-hidden="true"></span><span>Spice Guide</span></button>
     <nav class="nav-links" aria-label="Pages">
       <button type="button" class="nav-item" id="t-home" aria-current="page">Home</button>
-      <button type="button" class="nav-item" id="t-products" aria-current="false">Products</button>
-      <button type="button" class="nav-item" id="t-process" aria-current="false">Process &amp; quality</button>
-      <button type="button" class="nav-item" id="t-prices" aria-current="false">Market prices</button>
-      <button type="button" class="nav-item" id="t-bulk" aria-current="false">Bulk &amp; export</button>
-      <button type="button" class="nav-item" id="t-contact" aria-current="false">Contact</button>
+      <button type="button" class="nav-item" data-seg="what" aria-current="false">What to make</button>
+      <button type="button" class="nav-item" data-seg="how" aria-current="false">How to make</button>
+      <button type="button" class="nav-item" data-seg="setup" aria-current="false">Setup</button>
+      <button type="button" class="nav-item" data-seg="licences" aria-current="false">Licences</button>
+      <button type="button" class="nav-item" data-seg="quality" aria-current="false">Quality</button>
+      <button type="button" class="nav-item" id="t-prices" aria-current="false">Prices</button>
+      <button type="button" class="nav-item" data-seg="cost" aria-current="false">Calculators</button>
     </nav>
     <div class="nav-right">
       <span class="net" id="netStatus">Works offline</span>
@@ -791,37 +842,36 @@ if(__exports != exports)module.exports = exports;return module.exports}));
   <div class="view" id="v-home">
     <section class="hero gut">
       <div class="band-in">
-        <span class="eyebrow">Spice manufacturer · <span data-co="place">Your town, Kerala</span></span>
-        <h1 data-co="name">Your Company Name</h1>
-        <p class="lead tagline" data-co="tagline">Your tagline</p>
-        <p class="lead" data-co="about">About your company</p>
+        <span class="eyebrow">Spice manufacturing guide · India &amp; Kerala</span>
+        <h1>Make spices the right way.</h1>
+        <p class="lead">A practical guide for spice companies and anyone starting one: what to make, how to make it, which machines and licences you need, how to keep quality high, what raw spices cost today, and how to price your packs. With an AI advisor for your own questions.</p>
         <div class="cta-row">
-          <button type="button" class="btn-lg primary glow" data-go="products">See our products</button>
-          <button type="button" class="btn-lg" data-go="bulk">Bulk &amp; export enquiry</button>
-          <button type="button" class="btn-lg" id="heroAsk">💬 Ask us anything</button>
+          <button type="button" class="btn-lg primary glow" data-seg-go="what">Start here: what to make</button>
+          <button type="button" class="btn-lg" id="heroAsk">💬 Ask the AI advisor</button>
         </div>
-        <div class="hero-cards" id="catCards"></div>
+        <div class="hero-cards" id="guideCards"></div>
       </div>
     </section>
 
     <section class="band dark gut">
       <div class="band-in">
-        <div class="sec-head"><span class="eyebrow">From farm to pack</span><h2>How our spices are made</h2><p>Every batch goes through cleaning, drying, grinding, testing and packing. Tap a step to read more.</p></div>
-        <div class="steps mini" id="stepsMini"></div>
-        <button type="button" class="btn-lg on-dark" data-go="process">Our process &amp; quality checks</button>
+        <div class="sec-head"><span class="eyebrow">Roadmap</span><h2>From idea to first sale</h2><p>The usual order of things when you set up a spice unit. Tap a step to read more.</p></div>
+        <div class="steps mini" id="roadMini"></div>
+        <button type="button" class="btn-lg on-dark" data-seg-go="setup">Machines &amp; setup in detail</button>
       </div>
     </section>
 
     <section class="band gut">
       <div class="band-in">
-        <div class="sec-head"><span class="eyebrow">Why choose us</span><h2>What makes us different</h2></div>
-        <div class="hl-grid" id="highlights"></div>
+        <div class="sec-head"><span class="eyebrow">The process</span><h2>How every spice is made</h2><p>Whatever the spice, it goes through the same core steps. The details change by product.</p></div>
+        <div class="steps mini" id="stepsMini"></div>
+        <button type="button" class="btn-lg" data-seg-go="how">Step-by-step for each product</button>
       </div>
     </section>
 
     <section class="band soft gut">
       <div class="band-in">
-        <div class="sec-head"><span class="eyebrow">Live · Spices Board of India</span><h2>Spice market today</h2><p>Latest official prices from Kerala and India's spice markets. Updates by itself.</p></div>
+        <div class="sec-head"><span class="eyebrow">Live · Spices Board of India</span><h2>Raw spice prices today</h2><p>What raw spices cost in India's markets right now. Updates by itself.</p></div>
         <div class="ticker" id="homeTicker"><p class="note">Loading today's prices…</p></div>
         <button type="button" class="btn-lg" data-go="prices">All market prices &amp; tracker</button>
       </div>
@@ -829,111 +879,51 @@ if(__exports != exports)module.exports = exports;return module.exports}));
 
     <section class="band dark gut">
       <div class="band-in contact-band">
-        <div><span class="eyebrow">Talk to us</span><h2>Retail, wholesale or export?</h2><p>Tell us what you need and we'll get back to you with prices and availability.</p></div>
+        <div><span class="eyebrow">AI advisor</span><h2>Have a question about your unit?</h2><p>Ask about products, machines, licences, quality problems, costing or selling. It knows this guide and today's market prices.</p></div>
         <div class="cta-row">
-          <a class="btn-lg primary" data-co-link="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp us</a>
-          <a class="btn-lg on-dark" data-co-link="phone" href="#">Call</a>
-          <button type="button" class="btn-lg on-dark" data-go="bulk">Send an enquiry</button>
+          <button type="button" class="btn-lg primary" data-q="I want to start a small spice powder unit in Kerala. Where do I begin?">Where do I begin?</button>
+          <button type="button" class="btn-lg on-dark" data-q="Which licences do I need for a spice unit?">Licences I need</button>
+          <button type="button" class="btn-lg on-dark" data-q="My chilli powder is losing colour. What could be wrong?">Fix a quality problem</button>
         </div>
       </div>
     </section>
   </div>
 
-  <!-- PRODUCTS -->
-  <div class="view" id="v-products" hidden>
+  <!-- GUIDE (one page per section) -->
+  <div class="view" id="v-guide" hidden>
     <div class="page gut">
-      <div class="page-head"><h1>Our products</h1><p>Spice powders, blends and masalas, and whole spices. Tap <b>Enquire</b> for prices, pack sizes or bulk orders.</p></div>
-      <div class="pfilters">
-        <div class="seg" id="catSeg" role="tablist" aria-label="Product categories"></div>
-        <input type="search" id="pSearch" placeholder="Search products, e.g. turmeric" aria-label="Search products">
-      </div>
-      <div class="prod-grid" id="prodGrid"></div>
-    </div>
-  </div>
-
-  <!-- PROCESS -->
-  <div class="view" id="v-process" hidden>
-    <div class="page gut">
-      <div class="page-head"><h1>Process &amp; quality</h1><p>How spices are cleaned, dried, ground, tested and packed in a modern spice unit, and the checks that keep them pure and safe.</p></div>
-      <section class="panel blk"><h3>From raw spice to sealed pack</h3><p class="sub" id="procNote"></p><div class="steps" id="steps"></div></section>
-      <div class="two">
-        <section class="panel blk"><h3>Quality checks</h3><p class="sub">What a well-run spice unit tests for, batch by batch.</p><div id="tests"></div></section>
-        <section class="panel blk"><h3>Licences &amp; certifications</h3><div id="certs"></div></section>
-      </div>
-      <section class="panel blk"><h3>Storing spices at home</h3><div class="tips" id="storeTips"></div></section>
+      <div class="page-head"><h1 id="gTitle">Guide</h1><p id="gLead"></p></div>
+      <section class="panel pbody" id="gBody"></section>
     </div>
   </div>
 
   <!-- PRICES -->
   <div class="view" id="v-prices" hidden>
     <div class="page gut">
-      <div class="page-head"><h1>Market prices</h1><p>Live spice prices from the Spices Board of India, world commodity prices, and a tracker for the ones you follow. Everything updates by itself while this page is open.</p></div>
+      <div class="page-head"><h1>Market prices</h1><p>Live raw spice prices from the Spices Board of India, world commodity prices, and a tracker for the ones you buy. Everything updates by itself while this page is open.</p></div>
       <div class="livebar" id="pLive" aria-live="polite"></div>
       <div class="segrow"><div class="seg" id="pSeg" role="tablist" aria-label="Price lists"></div><span id="pDl"></span></div>
       <section class="panel pbody" id="pBody"></section>
-    </div>
-  </div>
-
-  <!-- BULK -->
-  <div class="view" id="v-bulk" hidden>
-    <div class="page gut">
-      <div class="page-head"><h1>Bulk &amp; export</h1><p>For shops, restaurants, distributors and importers. Send an enquiry and we'll reply with prices, samples and availability.</p></div>
-      <div class="two">
-        <section class="panel blk"><h3>What we offer</h3><div class="kvs" id="bulkInfo"></div></section>
-        <section class="panel blk">
-          <h3>Send an enquiry</h3>
-          <form class="enq" id="enqForm" novalidate>
-            <label>Your name<input name="name" autocomplete="name" required></label>
-            <label>Company or shop<input name="org" autocomplete="organization"></label>
-            <label>Phone or WhatsApp<input name="phone" type="tel" autocomplete="tel"></label>
-            <label>Email<input name="email" type="email" autocomplete="email"></label>
-            <label>City and country<input name="place" autocomplete="address-level2"></label>
-            <fieldset><legend>Products</legend><div class="pickgrid" id="enqProducts"></div></fieldset>
-            <div class="row2">
-              <label>Quantity<input name="qty" inputmode="decimal" placeholder="e.g. 500"></label>
-              <label>Unit<select name="unit"><option>kg</option><option>tonnes</option><option>packs</option><option>cartons</option></select></label>
-            </div>
-            <label>Packing<select name="pack"><option value="">No preference</option><option>Retail packs (your brand)</option><option>Private label (my brand)</option><option>Bulk bags (25 kg)</option><option>Bulk cartons</option></select></label>
-            <label>Message<textarea name="msg" rows="3" placeholder="Grade, mesh size, delivery date, samples…"></textarea></label>
-            <p class="formerr" id="enqErr" role="alert"></p>
-            <div class="cta-row">
-              <button type="button" class="btn-lg primary" id="enqWa">Send on WhatsApp</button>
-              <button type="button" class="btn-lg" id="enqMail">Send by email</button>
-              <span id="enqPdf"></span>
-            </div>
-            <p class="note" id="enqNote"></p>
-          </form>
-        </section>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="view" id="v-contact" hidden>
-    <div class="page gut">
-      <div class="page-head"><h1>Contact us</h1><p>Call, WhatsApp, email or visit. We're happy to help with orders and spice questions.</p></div>
-      <div class="ccards" id="contactCards"></div>
-      <section class="panel blk"><h3>Company details</h3><div class="kvs" id="coDetails"></div></section>
     </div>
   </div>
 </main>
 
 <footer class="foot-band gut">
   <div class="foot-grid">
-    <div><div class="foot-brand"><span class="mark co" aria-hidden="true"></span><span data-co="short">Your Company</span></div><p data-co="tagline">Your tagline</p><p class="fnote" data-co="place">Your town, Kerala</p></div>
-    <div><h4>Pages</h4><button class="fl" type="button" data-go="home">Home</button><button class="fl" type="button" data-go="products">Products</button><button class="fl" type="button" data-go="process">Process &amp; quality</button><button class="fl" type="button" data-go="prices">Market prices</button><button class="fl" type="button" data-go="bulk">Bulk &amp; export</button><button class="fl" type="button" data-go="contact">Contact</button></div>
-    <div><h4>Contact</h4><a data-co-link="phone" href="#">Phone</a><a data-co-link="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a><a data-co-link="email" href="#">Email</a><span class="fnote" id="footFssai"></span></div>
+    <div><div class="foot-brand"><span class="mark co" aria-hidden="true"></span>Spice Guide</div><p>A practical guide to manufacturing spices in India, made in Kerala.</p></div>
+    <div><h4>Guide</h4><button class="fl" type="button" data-seg-go="what">What to make</button><button class="fl" type="button" data-seg-go="how">How to make</button><button class="fl" type="button" data-seg-go="setup">Machines &amp; setup</button><button class="fl" type="button" data-seg-go="licences">Licences &amp; schemes</button><button class="fl" type="button" data-seg-go="quality">Quality</button><button class="fl" type="button" data-go="prices">Market prices</button><button class="fl" type="button" data-seg-go="cost">Calculators</button></div>
+    <div><h4>Sources</h4><a href="https://www.fssai.gov.in" target="_blank" rel="noopener">FSSAI</a><a href="https://www.indianspices.com" target="_blank" rel="noopener">Spices Board of India</a><a href="https://niftem.ac.in/newsite/pmfme/" target="_blank" rel="noopener">NIFTEM (PMFME)</a><a href="https://www.celkau.in" target="_blank" rel="noopener">Kerala Agricultural University</a><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED (IMF prices)</a></div>
     <div><h4>Get the app</h4><a href="SpiceCo.apk" download id="footApp" hidden>Android app</a><span class="fnote">Works offline</span><span class="fnote">Light &amp; dark theme</span></div>
   </div>
-  <div class="watermark" aria-hidden="true" data-co="short">Spices</div>
-  <p class="foot-note">© <span id="year"></span> <span data-co="name">Your Company Name</span>. Market prices are indicative, from the Spices Board of India and the IMF.</p>
+  <div class="watermark" aria-hidden="true">Spice Guide</div>
+  <p class="foot-note">General guidance, not legal or financial advice. Check rules with the authorities before you invest. Market prices are indicative.</p>
 </footer>
 
 <button class="totop" id="toTop" type="button" hidden>↑ Back to top</button>
-<button class="chat-fab" id="chatFab" type="button" aria-expanded="false" aria-controls="v-chat"><span aria-hidden="true">💬</span><span class="fab-text">Ask us</span></button>
-<section class="chat-panel" id="v-chat" role="dialog" aria-label="Chat" hidden>
+<button class="chat-fab" id="chatFab" type="button" aria-expanded="false" aria-controls="v-chat"><span aria-hidden="true">💬</span><span class="fab-text">Ask the advisor</span></button>
+<section class="chat-panel" id="v-chat" role="dialog" aria-label="AI advisor" hidden>
   <div class="chat-top">
-    <div class="who"><span class="av big co" aria-hidden="true"></span><span><b id="chatName">Ask us</b><small>Products, orders &amp; spice questions</small></span></div>
+    <div class="who"><span class="av big co" aria-hidden="true"></span><span><b>AI advisor</b><small>Spice manufacturing questions</small></span></div>
     <div class="chat-acts">
       <button class="icon-btn" type="button" id="newchat" title="Clear chat" aria-label="Clear chat">🗑</button>
       <button class="icon-btn" type="button" id="chatClose" title="Close chat" aria-label="Close chat">✕</button>
@@ -942,11 +932,11 @@ if(__exports != exports)module.exports = exports;return module.exports}));
   <div class="msgs" id="msgs" aria-live="polite"></div>
   <form class="ask" id="form">
     <button class="mic" type="button" id="micBtn" title="Speak your question" aria-label="Speak your question" hidden>🎤</button>
-    <textarea id="q" rows="1" placeholder="Ask about our spices, orders, recipes…" aria-label="Your message"></textarea>
+    <textarea id="q" rows="1" placeholder="Ask about making, machines, licences, costs…" aria-label="Your message"></textarea>
     <button class="send" id="send" type="submit" aria-label="Send">Send</button>
   </form>
   <p class="micstatus" id="micStatus" role="status"></p>
-  <p class="foot">AI answers can be wrong. For orders and prices, contact us directly.</p>
+  <p class="foot">AI answers can be wrong. Check rules and figures before you invest.</p>
 </section>
 <div class="tt" id="tt" hidden></div>
 <script>
@@ -963,115 +953,31 @@ if(__exports != exports)module.exports = exports;return module.exports}));
   const tt = $("tt");
   addEventListener("scroll", () => { tt.hidden = true; }, { passive: true });
   let tab = "home", busy = false;
-
-  /* ---------- Company details (one file: data/company.json). Blanks show as marked placeholders. ---------- */
   const LIVE = "https://spice-company.onrender.com";
   const API_BASE = (/\.onrender\.com$/.test(location.hostname) || /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) ? "" : LIVE;
-  let CO = store.get("sc.company", null) || {"_note": "Fill in your real company details. Leave a field empty (\"\") and the website shows a clearly marked blank instead.", "name": "", "short_name": "", "tagline": "", "about": "", "founded": "", "city": "", "state": "Kerala", "country": "India", "address": "", "phone": "", "whatsapp": "", "email": "", "hours": "", "website": "", "social": {"instagram": "", "facebook": "", "youtube": "", "linkedin": ""}, "fssai_licence": "", "gstin": "", "certifications": [], "highlights": [], "bulk": {"moq": "", "packaging": [], "export_markets": [], "private_label": "", "lead_time": ""}, "products": [{"name": "Turmeric powder", "category": "powder", "about": "Ground from dried, polished turmeric rhizomes. Bright golden yellow with a warm, earthy, slightly bitter taste.", "uses": "Curries, dals, rice, pickles and marinades.", "color": "#d99a00", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Kashmiri chilli powder", "category": "powder", "about": "Ground from mild Kashmiri-type red chillies. Gives a deep red colour with gentle heat.", "uses": "Tandoori marinades, gravies and anything that needs colour without too much heat.", "color": "#b8321f", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Red chilli powder", "category": "powder", "about": "Ground from dried red chillies. Hot and sharp, the everyday heat in Indian cooking.", "uses": "Curries, chutneys, fries and spice rubs.", "color": "#a3261a", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Coriander powder", "category": "powder", "about": "Ground from roasted or sun-dried coriander seeds. Mild, citrusy and slightly sweet; it thickens gravies.", "uses": "Curries, sambar, rasam and vegetable dishes.", "color": "#a8834a", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Cumin powder", "category": "powder", "about": "Ground from cumin (jeera) seeds. Warm, nutty and earthy.", "uses": "Raita, chaat, dals, rice and buttermilk.", "color": "#8a6236", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Black pepper powder", "category": "powder", "about": "Ground from dried black peppercorns. Sharp, woody heat from piperine.", "uses": "Soups, eggs, stir-fries, rasam and pepper chicken.", "color": "#3d3229", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Garam masala", "category": "blend", "about": "A warming blend of whole spices such as cardamom, cinnamon, cloves, pepper and cumin, roasted and ground.", "uses": "Added at the end of cooking for aroma: curries, biryani and kebabs.", "color": "#6b4423", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Sambar powder", "category": "blend", "about": "A South Indian blend built on coriander, red chillies, fenugreek and dals, roasted for depth.", "uses": "Sambar, kootu and vegetable stews.", "color": "#a8541c", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Rasam powder", "category": "blend", "about": "A peppery, cumin-forward blend for thin, tangy South Indian soups.", "uses": "Rasam and pepper soups.", "color": "#8c4a1f", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Chicken masala", "category": "blend", "about": "A rich blend for chicken curries, usually with coriander, chilli, pepper, fennel and warm spices.", "uses": "Chicken curry, roast and fry.", "color": "#953a1c", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Meat masala", "category": "blend", "about": "A robust, spicier blend for red meat curries and roasts.", "uses": "Mutton, beef and other meat curries.", "color": "#7a2d18", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Fish curry masala", "category": "blend", "about": "A blend tuned for coastal fish curries, often with chilli, coriander, turmeric and fenugreek.", "uses": "Kerala-style fish curry, fish fry and moilee.", "color": "#b04a1e", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Biryani masala", "category": "blend", "about": "An aromatic blend with whole-spice notes such as cardamom, cinnamon, cloves, mace and star anise.", "uses": "Biryani, pulao and ghee rice.", "color": "#7d5a2c", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Chaat masala", "category": "blend", "about": "A tangy, salty blend with dry mango (amchur), cumin and black salt.", "uses": "Fruit, salads, snacks and street-food chaat.", "color": "#8f7a3a", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Black pepper", "category": "whole", "about": "Dried berries of the pepper vine, the 'king of spices' grown across Kerala.", "uses": "Grind fresh over food; whole in rice, curries and pickles.", "color": "#2b2520", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Green cardamom", "category": "whole", "about": "Dried pods of small cardamom. Sweet, floral and cooling.", "uses": "Tea, sweets, biryani and garam masala.", "color": "#6f8f3c", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Cloves", "category": "whole", "about": "Dried flower buds of the clove tree. Strong, warm and numbing.", "uses": "Biryani, rice, chai and spice blends.", "color": "#5a3524", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Cinnamon", "category": "whole", "about": "Dried inner bark quills. Sweet and woody.", "uses": "Biryani, desserts, tea and garam masala.", "color": "#9a5b33", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Nutmeg", "category": "whole", "about": "The dried seed of the nutmeg fruit. Warm and sweet; grate fresh.", "uses": "Desserts, white sauces and meat masalas.", "color": "#7a5236", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Mace", "category": "whole", "about": "The red, lacy covering of the nutmeg seed. More delicate than nutmeg.", "uses": "Biryani, kormas and baking.", "color": "#c0552a", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Cumin seeds", "category": "whole", "about": "Whole jeera seeds. Nutty and earthy; release flavour when tempered in oil.", "uses": "Tempering for dals, rice and vegetables.", "color": "#8a6a3e", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Coriander seeds", "category": "whole", "about": "Whole dried coriander fruits. Citrusy and mild.", "uses": "Roast and grind fresh, or use in pickles.", "color": "#b39a5c", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Mustard seeds", "category": "whole", "about": "Small brown or black seeds that pop in hot oil.", "uses": "South Indian tempering, pickles and curries.", "color": "#4d3a26", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Fenugreek seeds", "category": "whole", "about": "Hard, bitter-sweet seeds with a maple-like aroma when roasted.", "uses": "Sambar, pickles, fish curry and dosa batter.", "color": "#b08a3e", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}, {"name": "Dry red chillies", "category": "whole", "about": "Sun-dried whole red chillies.", "uses": "Tempering, chutneys and grinding your own chilli powder.", "color": "#a52a1f", "packs": [], "price": "", "storage": "Keep in an airtight container away from light, heat and moisture."}]};
   const has = v => Array.isArray(v) ? v.length > 0 : v != null && String(v).trim() !== "";
-  const PH = {
-    name: "Your Company Name", short: "Your Company", tagline: "Your tagline, e.g. what your spices are known for",
-    about: "A few lines about your company: when it started, who runs it, where your spices come from and what makes them different.",
-    place: "Your town, Kerala", address: "Your factory address", phone: "Your phone number", whatsapp: "Your WhatsApp number",
-    email: "Your email address", hours: "Your opening hours", founded: "Year founded", fssai: "Your FSSAI licence number",
-  };
-  const val = k => {
-    if (k === "short") return has(CO.short_name) ? CO.short_name : has(CO.name) ? CO.name : "";
-    if (k === "place") return [CO.city, CO.state].filter(has).join(", ") && has(CO.city) ? [CO.city, CO.state].filter(has).join(", ") : "";
-    if (k === "fssai") return CO.fssai_licence || "";
-    return CO[k] || "";
-  };
-  const coName = () => has(CO.name) ? CO.name : "us";
-  const digits = s => String(s || "").replace(/[^\d+]/g, "");
-  const waNumber = () => digits(CO.whatsapp || CO.phone).replace(/^\+/, "").replace(/^0/, "91");
-  const isSample = () => !has(CO.name) || (!has(CO.phone) && !has(CO.email) && !has(CO.whatsapp));
-  function applyCompany() {
-    document.querySelectorAll("[data-co]").forEach(n => {
-      const k = n.dataset.co, v = val(k);
-      n.textContent = v || PH[k] || "";
-      n.classList.toggle("ph", !v);
-      if (!v) n.title = "Sample text: replace with your company's details"; else n.removeAttribute("title");
-    });
-    document.querySelectorAll("[data-co-link]").forEach(a => {
-      const k = a.dataset.coLink;
-      const href = k === "phone" && has(CO.phone) ? "tel:" + digits(CO.phone)
-        : k === "whatsapp" && (has(CO.whatsapp) || has(CO.phone)) ? "https://wa.me/" + waNumber()
-        : k === "email" && has(CO.email) ? "mailto:" + CO.email : "";
-      if (href) { a.href = href; a.classList.remove("ph", "disabled"); a.removeAttribute("aria-disabled"); a.removeAttribute("title"); }
-      else { a.href = "#"; a.classList.add("disabled"); a.setAttribute("aria-disabled", "true"); a.title = "Add your " + k + " to company.json"; a.onclick = e => { if (a.classList.contains("disabled")) { e.preventDefault(); showTab("contact"); } }; }
-    });
-    document.title = (has(CO.name) ? CO.name : "Spice company") + (has(CO.tagline) ? " · " + CO.tagline : " · Spices, masalas & bulk supply");
-    $("chatName").textContent = "Ask " + (has(CO.short_name) ? CO.short_name : has(CO.name) ? CO.name : "us");
-    $("sampleBar").hidden = !isSample();
-    $("footFssai").textContent = has(CO.fssai_licence) ? "FSSAI Lic. No. " + CO.fssai_licence : "";
-    $("year").textContent = new Date().getFullYear();
-  }
-  async function refreshCompany() {
-    try {
-      const r = await fetch(API_BASE + "/data/company.json", { cache: "no-store" });
-      if (!r.ok) return;
-      const j = await r.json();
-      if (j && Array.isArray(j.products)) { CO = j; store.set("sc.company", j); applyCompany(); renderCurrent(); }
-    } catch {}
-  }
 
-  /* ---------- Content that applies to any spice unit (edit to match your factory) ---------- */
-  const CATS = { powder: "Spice powders", blend: "Blends & masalas", whole: "Whole spices" };
-  const CAT_ICON = { powder: "🫙", blend: "🥘", whole: "🌿" };
-  const STEPS = [
-    ["🌾", "Sourcing", "Raw spices are bought from farmers, traders and auctions. Each lot is checked for variety, colour, aroma, moisture and damage before it's accepted."],
-    ["🧹", "Cleaning", "Sieving, de-stoning, air separation and magnets remove dust, stones, stalks, iron bits and other foreign matter."],
-    ["☀️", "Drying", "Spices are dried to a safe moisture level so they don't grow mould. FSSAI limits for most ground spices are in the 9 to 12% range."],
-    ["⚙️", "Grinding", "Pulverisers or hammer mills grind the spice. Keeping the grinder cool helps hold on to the volatile oils that carry aroma."],
-    ["🔄", "Sieving & blending", "Powders are sieved to an even mesh size. Masalas are weighed to a fixed recipe and mixed until uniform."],
-    ["♨️", "Sterilising", "For export and sensitive buyers, steam sterilisation cuts down microbes while keeping most of the flavour."],
-    ["🔬", "Testing", "Every batch is checked in the lab before release: moisture, aroma, colour, purity and microbes."],
-    ["📦", "Packing", "Food-grade, moisture-proof packs with batch number, packing and best-before dates, and the FSSAI licence number on the label."],
-  ];
-  const TESTS = [
-    ["Moisture", "Too much moisture lets mould grow; legal limits are set per spice."],
-    ["Volatile oil", "Measures aroma strength, especially for pepper, cardamom, cumin and coriander."],
-    ["Colour value", "Chilli powder colour is measured in ASTA units; turmeric is checked for curcumin."],
-    ["Purity & adulterants", "Checks for starch, sawdust, brick powder, artificial colours (such as Sudan dyes) and lead chromate in turmeric."],
-    ["Extraneous matter", "Stones, stalks, insect damage and other foreign material within legal limits."],
-    ["Microbes", "Total plate count, yeast and mould, E. coli and Salmonella."],
-    ["Aflatoxin & mycotoxins", "Toxins from moulds, which chillies, nutmeg and some seeds are prone to."],
-    ["Pesticide residues", "Tested against FSSAI limits, and stricter importing-country limits for export."],
-  ];
-  const STORE_TIPS = [
-    ["Airtight", "Keep spices in airtight jars or zip pouches; air carries away aroma."],
-    ["Cool & dark", "Store away from the stove, sunlight and steam."],
-    ["Dry spoon", "Always use a dry spoon; one drop of water can start mould."],
-    ["Whole lasts longer", "Whole spices keep their flavour much longer than powders. Grind small amounts fresh when you can."],
-    ["Check the date", "Use powders within their best-before date for the best aroma."],
-  ];
-
-  /* ---------- Tooltip (used by charts) ---------- */
-  function tipOn(target, html) {
-    const show = e => { tt.innerHTML = html; tt.hidden = false; const p = e.touches ? e.touches[0] : e; let x = (p && p.clientX != null ? p.clientX : 0) + 14, y = (p && p.clientY != null ? p.clientY : 0) + 14; if (x + tt.offsetWidth > innerWidth - 8) x = Math.max(8, x - tt.offsetWidth - 28); tt.style.left = x + "px"; tt.style.top = y + "px"; };
-    target.addEventListener("pointerenter", show); target.addEventListener("pointermove", show); target.addEventListener("pointerleave", () => { tt.hidden = true; });
+  /* ---------- Pages: home, the guide sections, market prices ---------- */
+  const SEGS = { what: ["What to make", "Product ideas for a spice unit: raw materials, seasons, difficulty and what to watch out for."], how: ["How to make it", "Step by step for each product, with the FSSAI moisture limit you have to meet."], setup: ["Machines & setup", "The order of things from idea to first sale, and the machines a small unit needs."], licences: ["Licences & schemes", "Registrations and licences for a spice unit in India and Kerala, and schemes that can help with money."], quality: ["Quality & hygiene", "The tests buyers and FSSAI expect, a hygienic factory, labels, storage, and fixing common problems."], cost: ["Calculators", "Cost and price per pack, and how much of each spice to weigh out for a masala batch."] };
+  let gSeg = store.get("sc.gseg2", "what"), gHow = store.get("sc.ghow", "Turmeric powder");
+  if (!SEGS[gSeg]) gSeg = "what";
+  function renderCurrent() { if (tab === "home") renderHome(); if (tab === "guide") renderGuide(); if (tab === "prices") renderPrices(); }
+  function navState() {
+    $("t-home").setAttribute("aria-current", tab === "home" ? "page" : "false");
+    $("t-prices").setAttribute("aria-current", tab === "prices" ? "page" : "false");
+    document.querySelectorAll(".nav-item[data-seg]").forEach(b => b.setAttribute("aria-current", tab === "guide" && b.dataset.seg === gSeg ? "page" : "false"));
   }
-
-  /* ---------- Pages + floating chat ---------- */
-  const VIEWS = ["home", "products", "process", "prices", "bulk", "contact"];
-  const HASH = { products: "products", process: "process", prices: "prices", bulk: "bulk", contact: "contact" };
-  function renderCurrent() {
-    if (tab === "home") renderHome();
-    if (tab === "products") renderProducts();
-    if (tab === "process") renderProcess();
-    if (tab === "prices") renderPrices();
-    if (tab === "bulk") renderBulk();
-    if (tab === "contact") renderContact();
-  }
-  function showTab(name) {
+  function showTab(name, seg) {
     if (name === "chat") { setChat(true); return; }
-    if (!VIEWS.includes(name)) name = "home";
-    const changed = tab !== name; tab = name;
-    VIEWS.forEach(n => { $("v-" + n).hidden = n !== name; $("t-" + n).setAttribute("aria-current", n === name ? "page" : "false"); });
-    tt.hidden = true;
+    if (SEGS[name]) { seg = name; name = "guide"; }
+    if (!["home", "guide", "prices"].includes(name)) name = "home";
+    if (seg && SEGS[seg]) { gSeg = seg; store.set("sc.gseg2", seg); }
+    tab = name;
+    ["home", "guide", "prices"].forEach(n => { $("v-" + n).hidden = n !== name; });
+    navState(); tt.hidden = true;
     renderCurrent();
-    if (changed) scrollTo(0, 0);
-    try { history.replaceState(null, "", location.pathname + location.search + (name === "home" ? "" : "#" + name)); } catch {}
+    scrollTo(0, 0);
+    try { history.replaceState(null, "", location.pathname + location.search + (name === "home" ? "" : "#" + (name === "guide" ? gSeg : name))); } catch {}
     onScroll();
   }
   function setChat(open) {
@@ -1079,54 +985,52 @@ if(__exports != exports)module.exports = exports;return module.exports}));
     panel.hidden = !open;
     document.body.classList.toggle("chat-open", open);
     fab.setAttribute("aria-expanded", String(open));
-    fab.innerHTML = open ? '<span aria-hidden="true">✕</span><span class="fab-text">Close chat</span>' : '<span aria-hidden="true">💬</span><span class="fab-text">Ask us</span>';
-    fab.setAttribute("aria-label", open ? "Close chat" : "Ask us");
+    fab.innerHTML = open ? '<span aria-hidden="true">✕</span><span class="fab-text">Close chat</span>' : '<span aria-hidden="true">💬</span><span class="fab-text">Ask the advisor</span>';
+    fab.setAttribute("aria-label", open ? "Close chat" : "Ask the AI advisor");
     store.set("sc.chatOpen", open);
     if (open) { msgs.scrollTop = msgs.scrollHeight; if (innerWidth > 600) $("q").focus(); }
   }
-  VIEWS.forEach(n => $("t-" + n).onclick = () => showTab(n));
+  $("t-home").onclick = () => showTab("home");
+  $("t-prices").onclick = () => showTab("prices");
+  document.querySelectorAll(".nav-item[data-seg]").forEach(b => b.onclick = () => showTab("guide", b.dataset.seg));
+  document.querySelectorAll("[data-seg-go]").forEach(b => b.addEventListener("click", () => showTab("guide", b.dataset.segGo)));
+  document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.go)));
+  document.querySelectorAll("[data-q]").forEach(b => b.addEventListener("click", () => send(b.dataset.q)));
   $("brandBtn").onclick = () => showTab("home");
   $("chatFab").onclick = () => setChat($("v-chat").hidden);
   $("chatClose").onclick = () => setChat(false);
   $("heroAsk").onclick = () => setChat(true);
-  document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.go)));
   addEventListener("keydown", e => { if (e.key === "Escape" && !$("v-chat").hidden) setChat(false); });
-  addEventListener("hashchange", () => { const v = location.hash.slice(1) || "home"; if (v !== tab) showTab(v); });
+  addEventListener("hashchange", () => { const h = location.hash.slice(1) || "home"; if (SEGS[h]) { if (!(tab === "guide" && gSeg === h)) showTab("guide", h); } else if (h !== tab) showTab(h); });
 
-  /* ---------- Theme ---------- */
+  /* ---------- Theme, scroll ---------- */
   const themeBtn = $("themeBtn");
   const curTheme = () => document.documentElement.getAttribute("data-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   function labelTheme() { const d = curTheme() === "dark"; themeBtn.textContent = d ? "🌙 Theme" : "☀️ Theme"; themeBtn.setAttribute("aria-label", "Switch to " + (d ? "light" : "dark") + " theme"); }
   try { const t = store.get("sc.theme", null); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch {}
   themeBtn.onclick = () => { const next = curTheme() === "dark" ? "light" : "dark"; document.documentElement.setAttribute("data-theme", next); store.set("sc.theme", next); labelTheme(); };
   try { matchMedia("(prefers-color-scheme: dark)").addEventListener("change", labelTheme); } catch {}
-
-  /* ---------- Scroll progress, back to top ---------- */
   const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
   function onScroll() { const h = document.documentElement.scrollHeight - innerHeight; $("scrollProgress").style.width = (h > 0 ? Math.min(100, scrollY / h * 100) : 0) + "%"; $("toTop").hidden = scrollY < 600; }
   addEventListener("scroll", onScroll, { passive: true }); addEventListener("resize", onScroll);
   $("toTop").onclick = () => scrollTo({ top: 0, behavior: reduceMotion() ? "auto" : "smooth" });
+  function tipOn(target, html) {
+    const show = e => { tt.innerHTML = html; tt.hidden = false; const p = e.touches ? e.touches[0] : e; let x = (p && p.clientX != null ? p.clientX : 0) + 14, y = (p && p.clientY != null ? p.clientY : 0) + 14; if (x + tt.offsetWidth > innerWidth - 8) x = Math.max(8, x - tt.offsetWidth - 28); tt.style.left = x + "px"; tt.style.top = y + "px"; };
+    target.addEventListener("pointerenter", show); target.addEventListener("pointermove", show); target.addEventListener("pointerleave", () => { tt.hidden = true; });
+  }
 
   /* ---------- Home ---------- */
-  const products = () => (CO.products || []).filter(p => p && p.name);
-  const swatch = p => { const s = el("span", "swatch"); s.style.setProperty("--sw", p.color || "#9a5b00"); s.setAttribute("aria-hidden", "true"); return s; };
+  const CORE = [["🌾", "Buy & inspect"], ["🧹", "Clean"], ["☀️", "Dry"], ["🔥", "Roast (some)"], ["⚙️", "Grind"], ["🔄", "Sieve & blend"], ["🔬", "Test"], ["📦", "Pack & label"]];
   function renderHome() {
-    const cc = $("catCards"); cc.replaceChildren();
-    Object.entries(CATS).forEach(([k, label]) => {
-      const list = products().filter(p => p.category === k);
-      const b = el("button", "hcard catcard"); b.type = "button";
-      b.append(el("span", "card-tag", CAT_ICON[k] + " " + label), el("b", null, `${list.length} products`), el("span", null, list.slice(0, 4).map(p => p.name).join(", ") + (list.length > 4 ? "…" : "")));
-      b.onclick = () => { pCat = k; store.set("sc.pcat", k); showTab("products"); };
-      cc.append(b);
+    const gc = $("guideCards"); gc.replaceChildren();
+    [["🧭", "What to make", "10 product ideas with raw materials, seasons and difficulty.", "what"], ["🛠️", "How to make it", "Step by step for powders, masalas, pepper and whole spices.", "how"], ["⚙️", "Machines & setup", "What to buy, how to lay out a small unit, and the roadmap.", "setup"], ["📋", "Licences & schemes", "FSSAI, Udyam, GST, pollution board, export, PMFME.", "licences"], ["🔬", "Quality & hygiene", "Tests, hygiene, labels, storage and common problems.", "quality"], ["🧮", "Calculators", "Cost, selling price and MRP; masala batch weights.", "cost"]].forEach(([ic, t, d, seg]) => {
+      const b = el("button", "hcard gcard"); b.type = "button"; b.append(el("span", "si", ic), el("b", null, t), el("span", null, d));
+      b.onclick = () => showTab("guide", seg); gc.append(b);
     });
-    const bulk = el("button", "hcard catcard"); bulk.type = "button";
-    bulk.append(el("span", "card-tag", "🚚 Bulk & export"), el("b", null, "Wholesale supply"), el("span", null, "Shops, restaurants, distributors and importers"));
-    bulk.onclick = () => showTab("bulk"); cc.append(bulk);
+    const rm = $("roadMini"); rm.replaceChildren();
+    SETUP.slice(0, 8).forEach(([t], i) => { const s = el("button", "stepm"); s.type = "button"; s.append(el("span", "si", String(i + 1)), el("b", null, t)); s.onclick = () => showTab("guide", "setup"); rm.append(s); });
     const sm = $("stepsMini"); sm.replaceChildren();
-    STEPS.forEach(([ic, t, d], i) => { const s = el("button", "stepm"); s.type = "button"; s.append(el("span", "si", ic), el("b", null, `${i + 1}. ${t}`)); s.title = d; s.onclick = () => { showTab("process"); setTimeout(() => { const n = document.querySelectorAll("#steps .step")[i]; if (n) { n.scrollIntoView({ block: "center" }); n.classList.add("flash"); setTimeout(() => n.classList.remove("flash"), 1500); } }, 50); }; sm.append(s); });
-    const hl = $("highlights"); hl.replaceChildren();
-    if (has(CO.highlights)) CO.highlights.slice(0, 6).forEach(h => { const c = el("div", "hl"); const t = typeof h === "string" ? { title: h } : h; c.append(el("b", null, t.title || ""), el("p", null, t.text || "")); hl.append(c); });
-    else ["Where your spices come from (your own farms, partner farmers, auctions)", "How you process them (cleaning, low-heat grinding, hygiene)", "How you check quality (your lab tests, certifications)"].forEach((h, i) => { const c = el("div", "hl ph-card"); c.append(el("b", "ph", `Your strength ${i + 1}`), el("p", null, h)); c.title = "Sample: add your real highlights to company.json"; hl.append(c); });
+    CORE.forEach(([ic, t], i) => { const s = el("div", "stepm light"); s.append(el("span", "si", ic), el("b", null, `${i + 1}. ${t}`)); sm.append(s); });
     renderTicker();
   }
   function renderTicker() {
@@ -1139,123 +1043,20 @@ if(__exports != exports)module.exports = exports;return module.exports}));
     pick.slice(0, 6).forEach(r => { const c = el("div", "tk"); c.append(el("span", null, r.spice + (r.grade ? " · " + r.grade : "")), el("b", null, "₹" + fmtN(r.price)), el("small", null, `per kg · ${r.market} · ${niceDate(r.date)}`)); box.append(c); });
   }
 
-  /* ---------- Products ---------- */
-  let pCat = store.get("sc.pcat", "all"), pQ = "";
-  function renderProducts() {
-    const seg = $("catSeg"); seg.replaceChildren();
-    [["all", "All"], ...Object.entries(CATS)].forEach(([k, label]) => { const b = el("button", "segb", label); b.type = "button"; b.setAttribute("aria-selected", String(pCat === k)); b.onclick = () => { pCat = k; store.set("sc.pcat", k); renderProducts(); }; seg.append(b); });
-    const grid = $("prodGrid"); grid.replaceChildren();
-    const q = pQ.trim().toLowerCase();
-    const list = products().filter(p => (pCat === "all" || p.category === pCat) && (!q || (p.name + " " + p.about + " " + p.uses).toLowerCase().includes(q)));
-    list.forEach(p => {
-      const c = el("article", "pcard");
-      const top = el("div", "ptop"); top.append(swatch(p)); const nm = el("div"); nm.append(el("span", "card-tag", CATS[p.category] || ""), el("h3", null, p.name)); top.append(nm); c.append(top);
-      c.append(el("p", null, p.about));
-      if (p.uses) { const u = el("p", "uses"); u.append(el("b", null, "Use it in: "), document.createTextNode(p.uses)); c.append(u); }
-      const packs = el("div", "packs");
-      if (has(p.packs)) p.packs.forEach(s => packs.append(el("span", "pack", s))); else { const s = el("span", "pack ph", "Pack sizes: add yours"); s.title = "Sample: add pack sizes to company.json"; packs.append(s); }
-      c.append(packs);
-      const pr = el("p", "pprice", has(p.price) ? p.price : "Price on request"); c.append(pr);
-      const acts = el("div", "acts");
-      const e = el("button", "btn-lg primary sm", "Enquire"); e.type = "button"; e.onclick = () => { enqPick = new Set([p.name]); showTab("bulk"); };
-      const a = el("button", "btn-lg sm", "Ask about it"); a.type = "button"; a.onclick = () => send(`Tell me about your ${p.name}`);
-      acts.append(e, a); c.append(acts);
-      grid.append(c);
-    });
-    if (!list.length) grid.append(el("p", "note", "No products match that. Try another word, or ask us in the chat."));
-  }
-  $("pSearch").addEventListener("input", e => { pQ = e.target.value; renderProducts(); });
-
-  /* ---------- Process & quality ---------- */
-  function renderProcess() {
-    $("procNote").textContent = "A typical modern spice unit, step by step." + (isSample() ? " (Sample: edit the steps to match your own factory.)" : "");
-    const st = $("steps"); st.replaceChildren();
-    STEPS.forEach(([ic, t, d], i) => { const s = el("div", "step"); s.append(el("span", "si", ic)); const tx = el("div"); tx.append(el("b", null, `${i + 1}. ${t}`), el("p", null, d)); s.append(tx); st.append(s); });
-    const ts = $("tests"); ts.replaceChildren();
-    TESTS.forEach(([t, d]) => { const r = el("div", "test"); r.append(el("b", null, t), el("span", null, d)); ts.append(r); });
-    const ce = $("certs"); ce.replaceChildren();
-    const row = (label, v, phText) => { const r = el("div", "kv"); r.append(el("span", null, label)); const b = el("b", v ? null : "ph", v || phText); if (!v) b.title = "Sample: add your real details to company.json"; r.append(b); ce.append(r); };
-    row("FSSAI licence", CO.fssai_licence, PH.fssai);
-    row("GSTIN", CO.gstin, "Your GST number");
-    if (has(CO.certifications)) CO.certifications.forEach(c => row("Certification", typeof c === "string" ? c : c.name + (c.number ? " · " + c.number : ""), ""));
-    else row("Certifications", "", "Add only the ones you hold: ISO 22000, FSSC 22000, HACCP, Spices Board registration, organic, AGMARK…");
-    const tp = $("storeTips"); tp.replaceChildren();
-    STORE_TIPS.forEach(([t, d]) => { const c = el("div", "tip"); c.append(el("b", null, t), el("p", null, d)); tp.append(c); });
-  }
-
-  /* ---------- Bulk & export enquiry (WhatsApp, email or PDF; nothing is stored on a server) ---------- */
-  let enqPick = new Set();
-  function renderBulk() {
-    const bi = $("bulkInfo"); bi.replaceChildren();
-    const B = CO.bulk || {};
-    const row = (label, v, phText) => { const r = el("div", "kv"); r.append(el("span", null, label)); const b = el("b", has(v) ? null : "ph", has(v) ? (Array.isArray(v) ? v.join(", ") : v) : phText); r.append(b); bi.append(r); };
-    row("Minimum order", B.moq, "Your minimum order, e.g. 100 kg");
-    row("Packing", B.packaging, "Your bulk packing, e.g. 25 kg PP bags, cartons");
-    row("Private label", B.private_label, "Do you pack under the buyer's brand?");
-    row("Export markets", B.export_markets, "Countries you ship to");
-    row("Lead time", B.lead_time, "Usual time to dispatch");
-    row("Product range", `${products().length} products: ${Object.entries(CATS).map(([k, l]) => `${products().filter(p => p.category === k).length} ${l.toLowerCase()}`).join(", ")}`, "");
-    const pg = $("enqProducts");
-    if (!pg.dataset.built || pg.dataset.n !== String(products().length)) {
-      pg.replaceChildren(); pg.dataset.built = "1"; pg.dataset.n = String(products().length);
-      products().forEach(p => { const l = el("label", "pick"); const c = el("input"); c.type = "checkbox"; c.value = p.name; l.append(c, document.createTextNode(" " + p.name)); pg.append(l); });
-    }
-    pg.querySelectorAll("input").forEach(c => { if (enqPick.has(c.value)) c.checked = true; });
-    enqPick = new Set();
-    if (!$("enqPdf").firstChild) $("enqPdf").append(dlButton("⬇ Save as PDF", enquiryPdf));
-    const can = has(CO.whatsapp) || has(CO.phone);
-    $("enqWa").disabled = !can; $("enqMail").disabled = !has(CO.email);
-    $("enqNote").textContent = !can || !has(CO.email) ? "Sample site: the company's WhatsApp number and email haven't been added yet, so sending is switched off. You can still save the enquiry as a PDF." : "Your enquiry opens in WhatsApp or your email app, ready to send. Nothing is stored on this website.";
-  }
-  function readEnq() {
-    const f = $("enqForm"), g = n => f.elements[n].value.trim();
-    const items = [...$("enqProducts").querySelectorAll("input:checked")].map(c => c.value);
-    return { name: g("name"), org: g("org"), phone: g("phone"), email: g("email"), place: g("place"), qty: g("qty"), unit: g("unit"), pack: g("pack"), msg: g("msg"), items };
-  }
-  function checkEnq(e) {
-    const err = !e.name ? "Please add your name." : !e.phone && !e.email ? "Please add a phone number or email so we can reply." : !e.items.length && !e.msg ? "Pick at least one product, or write a message." : "";
-    $("enqErr").textContent = err; return !err;
-  }
-  function enqText(e) {
-    return [`Enquiry for ${has(CO.name) ? CO.name : "your company"}`, "",
-      `Name: ${e.name}`, e.org && `Company: ${e.org}`, e.phone && `Phone: ${e.phone}`, e.email && `Email: ${e.email}`, e.place && `Location: ${e.place}`,
-      e.items.length && `Products: ${e.items.join(", ")}`, e.qty && `Quantity: ${e.qty} ${e.unit}`, e.pack && `Packing: ${e.pack}`, e.msg && `Message: ${e.msg}`].filter(Boolean).join("\n");
-  }
-  $("enqWa").onclick = () => { const e = readEnq(); if (!checkEnq(e)) return; window.open("https://wa.me/" + waNumber() + "?text=" + encodeURIComponent(enqText(e)), "_blank", "noopener"); };
-  $("enqMail").onclick = () => { const e = readEnq(); if (!checkEnq(e)) return; location.href = "mailto:" + CO.email + "?subject=" + encodeURIComponent("Spice enquiry from " + e.name) + "&body=" + encodeURIComponent(enqText(e)); };
-
-  /* ---------- Contact ---------- */
-  function renderContact() {
-    const cc = $("contactCards"); cc.replaceChildren();
-    const card = (ic, label, v, href, phText) => {
-      const c = el(href ? "a" : "div", "ccard2"); if (href) { c.href = href; if (/^https/.test(href)) { c.target = "_blank"; c.rel = "noopener"; } }
-      c.append(el("span", "si", ic), el("span", "lbl", label)); const b = el("b", v ? null : "ph", v || phText); if (!v) b.title = "Sample: add this to company.json"; c.append(b); cc.append(c);
-    };
-    card("📞", "Call", CO.phone, has(CO.phone) ? "tel:" + digits(CO.phone) : "", PH.phone);
-    card("💬", "WhatsApp", CO.whatsapp || (has(CO.phone) ? CO.phone : ""), has(CO.whatsapp) || has(CO.phone) ? "https://wa.me/" + waNumber() : "", PH.whatsapp);
-    card("✉️", "Email", CO.email, has(CO.email) ? "mailto:" + CO.email : "", PH.email);
-    card("📍", "Visit", CO.address, has(CO.address) ? "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(CO.address) : "", PH.address);
-    card("🕘", "Hours", CO.hours, "", PH.hours);
-    const S = CO.social || {};
-    Object.entries({ instagram: "📸", facebook: "👍", youtube: "▶️", linkedin: "💼" }).forEach(([k, ic]) => { if (has(S[k])) card(ic, k[0].toUpperCase() + k.slice(1), S[k].replace(/^https?:\/\/(www\.)?/, ""), /^https?:/.test(S[k]) ? S[k] : "https://" + S[k], ""); });
-    const d = $("coDetails"); d.replaceChildren();
-    [["Company", CO.name, PH.name], ["Since", CO.founded, PH.founded], ["Location", val("place"), PH.place], ["FSSAI licence", CO.fssai_licence, PH.fssai], ["GSTIN", CO.gstin, "Your GST number"]].forEach(([k, v, p]) => { const r = el("div", "kv"); r.append(el("span", null, k)); const b = el("b", has(v) ? null : "ph", has(v) ? v : p); r.append(b); d.append(r); });
-  }
-
-  /* ---------- Chat ---------- */
+  /* ---------- Chat: the AI advisor ---------- */
   const msgs = $("msgs");
   function md(target, text) {
     try { if (window.marked && window.DOMPurify) { target.innerHTML = DOMPurify.sanitize(marked.parse(text)); target.querySelectorAll("table").forEach(t => { const w = el("div", "tw"); t.replaceWith(w); w.append(t); }); target.querySelectorAll("a").forEach(a => { a.target = "_blank"; a.rel = "noopener"; }); return; } } catch {}
     target.textContent = text;
   }
-  const HIST_KEY = "sc.chat";
+  const HIST_KEY = "sc.chat2";
   let hist = store.get(HIST_KEY, []), restoring = false; if (!Array.isArray(hist)) hist = [];
   function remember(role, text) { if (restoring) return; hist.push([role, String(text).slice(0, 6000)]); if (hist.length > 60) hist = hist.slice(-60); store.set(HIST_KEY, hist); }
   function userSay(text) { remember("u", text); const m = el("div", "msg user"); m.append(el("div", "bubble", text)); msgs.append(m); msgs.scrollTop = msgs.scrollHeight; }
   function renderChips(box, chips) {
     if (!chips || !chips.length) return;
     const row = el("div", "chips");
-    chips.forEach(c => { const b = el("button", "qchip", c.label); b.type = "button"; b.onclick = () => c.go ? (setChat(innerWidth > 900), showTab(c.go)) : send(c.q); row.append(b); });
+    chips.forEach(c => { const b = el("button", "qchip", c.label); b.type = "button"; b.onclick = () => { if (!c.go) return send(c.q); if (c.how) { gHow = c.how; store.set("sc.ghow", c.how); } setChat(innerWidth > 900); showTab(c.go, c.seg); }; row.append(b); });
     box.append(row);
   }
   function botSay(text, chips) {
@@ -1266,80 +1067,24 @@ if(__exports != exports)module.exports = exports;return module.exports}));
     return { m, b, col };
   }
   function sourceTag(out, label) { const meta = el("div", "meta"); meta.append(el("span", "aitag", label)); out.col.insertBefore(meta, out.b.nextSibling); }
-
-  // built-in answers (offline, and for anything about the company itself)
   const N = s => s.toLowerCase().normalize("NFKC").replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ").trim();
-  const ALIAS = { "manjal": "Turmeric powder", "haldi": "Turmeric powder", "turmeric": "Turmeric powder", "mulaku": "Red chilli powder", "mirchi": "Red chilli powder", "chilli powder": "Red chilli powder", "chili powder": "Red chilli powder", "kashmiri": "Kashmiri chilli powder", "malli": "Coriander powder", "dhania": "Coriander powder", "jeera powder": "Cumin powder", "pepper powder": "Black pepper powder", "kurumulaku": "Black pepper", "pepper": "Black pepper", "elakkai": "Green cardamom", "elaichi": "Green cardamom", "cardamom": "Green cardamom", "grambu": "Cloves", "laung": "Cloves", "clove": "Cloves", "karuvapatta": "Cinnamon", "dalchini": "Cinnamon", "jathikka": "Nutmeg", "jathipathri": "Mace", "jeera": "Cumin seeds", "cumin": "Cumin seeds", "kaduku": "Mustard seeds", "rai": "Mustard seeds", "mustard": "Mustard seeds", "uluva": "Fenugreek seeds", "methi": "Fenugreek seeds", "fenugreek": "Fenugreek seeds", "coriander": "Coriander seeds", "red chilli": "Dry red chillies", "dry chilli": "Dry red chillies", "biryani": "Biryani masala", "sambar": "Sambar powder", "rasam": "Rasam powder", "garam": "Garam masala", "chicken": "Chicken masala", "meat": "Meat masala", "mutton": "Meat masala", "beef": "Meat masala", "fish": "Fish curry masala", "chaat": "Chaat masala" };
-  function findProduct(t) {
-    const n = N(t);
-    let best = products().filter(p => n.includes(N(p.name))).sort((a, b) => b.name.length - a.name.length)[0];
-    if (best) return best;
-    const key = Object.keys(ALIAS).sort((a, b) => b.length - a.length).find(k => new RegExp("\\b" + k + "\\b").test(n));
-    return key ? products().find(p => p.name === ALIAS[key]) : null;
-  }
-  const contactLine = () => {
-    const bits = [];
-    if (has(CO.phone)) bits.push(`📞 ${CO.phone}`);
-    if (has(CO.whatsapp) || has(CO.phone)) bits.push(`💬 [WhatsApp](https://wa.me/${waNumber()})`);
-    if (has(CO.email)) bits.push(`✉️ ${CO.email}`);
-    return bits.length ? bits.join(" · ") : "*(The company's phone, WhatsApp and email haven't been added to this site yet.)*";
-  };
-  const CHIPS = [{ label: "What do you make?", q: "What products do you make?" }, { label: "Bulk orders", q: "Do you supply in bulk?" }, { label: "How are your spices made?", q: "How are your spices made?" }, { label: "Contact", q: "How can I contact you?" }];
+  const CHIPS = [{ label: "Where do I begin?", q: "I want to start a small spice powder unit. Where do I begin?" }, { label: "What should I make?", q: "What should I manufacture first?" }, { label: "Licences needed", q: "Which licences do I need for a spice unit?" }, { label: "Machines needed", q: "What machines do I need?" }, { label: "Price my packs", q: "How do I work out the cost and MRP of my packs?" }];
   function respond(text) {
-    const t = N(text), p = findProduct(text);
-    if (/^(hi+|hello|hey|hai|namaskaram|namaste|good (morning|afternoon|evening))\b/.test(t) && t.split(" ").length <= 4) return { text: `Hello! 👋 Welcome to **${has(CO.name) ? CO.name : "our spice company"}**. I can tell you about our spices and masalas, bulk orders, how our spices are made, or today's market prices.`, chips: CHIPS, local: true };
-    if (/^(thanks|thank you|thx|ok thanks|great|super)\b/.test(t)) return { text: "You're welcome! Anything else I can help with?", chips: CHIPS, local: true };
-    if (/\b(who are you|what are you|are you (a )?(bot|human|ai))\b/.test(t)) return { text: `I'm the website assistant for **${has(CO.name) ? CO.name : "this spice company"}**. I answer questions about our products and spices. For orders and prices, our team replies directly: ${contactLine()}`, chips: CHIPS, local: true };
-    if (/\b(contact|phone|call|number|mobile|whatsapp|email|mail|address|location|where are you|visit|office|factory address|reach you|timing|hours|open)\b/.test(t) && !p)
-      return { text: `**How to reach us**\n\n${contactLine()}${has(CO.address) ? `\n\n📍 ${CO.address}` : ""}${has(CO.hours) ? `\n\n🕘 ${CO.hours}` : ""}`, chips: [{ label: "Open contact page", go: "contact" }, { label: "Send an enquiry", go: "bulk" }], local: true };
-    if (/\b(bulk|wholesale|export|exporter|import|distributor|dealer|dealership|retailer|private label|moq|minimum order|tonne|ton|quintal|hotel|restaurant supply)\b/.test(t)) {
-      const B = CO.bulk || {};
-      const lines = [B.moq && `Minimum order: ${B.moq}`, has(B.packaging) && `Packing: ${[].concat(B.packaging).join(", ")}`, B.private_label && `Private label: ${B.private_label}`, has(B.export_markets) && `We ship to: ${[].concat(B.export_markets).join(", ")}`, B.lead_time && `Lead time: ${B.lead_time}`].filter(Boolean);
-      return { text: `Yes, we take **bulk and export enquiries** for shops, restaurants, distributors and importers.${lines.length ? "\n\n- " + lines.join("\n- ") : ""}\n\nSend us the products, quantity and packing you need and we'll reply with prices and samples.\n\n${contactLine()}`, chips: [{ label: "Send a bulk enquiry", go: "bulk" }, { label: "Product list", q: "What products do you make?" }], local: true };
-    }
-    if (/\b(price|rate|cost|how much|mrp|rs|rupees|₹)\b/.test(t) || /price|rate/.test(t)) {
-      if (p) return { text: `**${p.name}**: ${has(p.price) ? p.price : "please ask us for the current price and pack sizes"}.\n\n${contactLine()}`, chips: [{ label: `Enquire about ${p.name}`, go: "bulk" }, { label: "Market prices today", go: "prices" }], local: false, product: p };
-      return null;
-    }
-    if (p && !/\b(recipe|how to cook|how to use|benefit|health|substitut|difference|vs|versus|why)\b/.test(t)) {
-      const o = `**${p.name}** · ${CATS[p.category]}\n\n${p.about}${p.uses ? `\n\n**Use it in:** ${p.uses}` : ""}\n\n**Pack sizes:** ${has(p.packs) ? p.packs.join(", ") : "please ask us"} · **Price:** ${has(p.price) ? p.price : "on request"}\n\n**Storage:** ${p.storage}`;
-      return { text: o, chips: [{ label: "Enquire", go: "bulk" }, { label: `How to use ${p.name.toLowerCase()}`, q: `How do I cook with ${p.name.toLowerCase()}?` }], local: false, product: p };
-    }
-    if (/\b(products|what do you (make|sell|have)|range|catalog|catalogue|items|masalas|powders|whole spices|list)\b/.test(t)) {
-      const o = Object.entries(CATS).map(([k, l]) => `**${l}:** ${products().filter(x => x.category === k).map(x => x.name).join(", ")}`).join("\n\n");
-      return { text: `Here's our range:\n\n${o}\n\nAsk me about any of them, or send an enquiry for prices and pack sizes.`, chips: [{ label: "See all products", go: "products" }, { label: "Bulk orders", q: "Do you supply in bulk?" }], local: true };
-    }
-    if (/\b(how (are|is|do you) (your )?(spices? )?(made|make|produce|process|manufactur)|process|manufactur|grind|grinding|cleaning|steril|factory|plant)\b/.test(t))
-      return { text: "**How our spices are made**\n\n" + STEPS.map(([ic, s, d], i) => `${i + 1}. **${s}**: ${d}`).join("\n") + (isSample() ? "\n\n*(This is the typical process for a modern spice unit.)*" : ""), chips: [{ label: "Quality checks", q: "How do you check quality?" }, { label: "Process page", go: "process" }], local: true };
-    if (/\b(quality|test|testing|lab|certif|fssai|iso|haccp|organic|pure|purity|adulter|safe|safety|aflatoxin|pesticide)\b/.test(t)) {
-      const certs = [has(CO.fssai_licence) && `FSSAI licence: ${CO.fssai_licence}`, ...(has(CO.certifications) ? CO.certifications.map(c => typeof c === "string" ? c : c.name) : [])].filter(Boolean);
-      return { text: `**Quality checks** on spices cover:\n\n${TESTS.map(([a, b]) => `- **${a}**: ${b}`).join("\n")}\n\n${certs.length ? "**Our licences & certifications:** " + certs.join(", ") : "*(The company's licence and certification details haven't been added to this site yet.)*"}`, chips: [{ label: "Process & quality page", go: "process" }], local: true };
-    }
-    if (/\b(store|storage|shelf life|expiry|expire|keep fresh|how long)\b/.test(t)) return { text: "**Keeping spices fresh**\n\n" + STORE_TIPS.map(([a, b]) => `- **${a}**: ${b}`).join("\n"), chips: CHIPS.slice(0, 2), local: true };
-    if (/\b(deliver|delivery|shipping|ship|courier|cod|cash on delivery|order online|buy online|payment)\b/.test(t)) return { text: `For orders, delivery and payment options, please message us and the team will confirm:\n\n${contactLine()}`, chips: [{ label: "Send an enquiry", go: "bulk" }], local: true };
-    if (/\b(market price|today'?s price|auction|spices board|commodity)\b/.test(t)) return { text: "Today's market prices from the Spices Board of India are on the **Market prices** page, with a tracker and alerts.", chips: [{ label: "Open market prices", go: "prices" }], local: false };
+    const t = N(text);
+    if (/^(hi+|hello|hey|hai|namaskaram|namaste|good (morning|afternoon|evening))\b/.test(t) && t.split(" ").length <= 4) return { text: "Hello! 👋 I'm the **AI advisor** for spice manufacturing. Ask me what to make, how to make it, which machines and licences you need, how to fix quality problems, or how to price your packs.", chips: CHIPS, local: true };
+    if (/^(thanks|thank you|thx|ok thanks|great|super)\b/.test(t)) return { text: "You're welcome! Anything else about your spice unit?", chips: CHIPS, local: true };
+    if (/\b(who are you|what are you|are you (a )?(bot|human|ai))\b/.test(t)) return { text: "I'm an AI advisor for people who make spices, or want to. I use this guide and today's market prices. I can be wrong, so check important rules and numbers before you invest.", chips: CHIPS, local: true };
+    const g = guideAnswer(text); if (g) return { ...g, local: false };
+    if (/\b(store|storage|shelf life|expiry|keep fresh)\b/.test(t)) return { text: "**Keeping spices fresh**\n\n" + STORE_TIPS.map(([a, b]) => `- **${a}**: ${b}`).join("\n"), chips: [{ label: "Quality & hygiene", go: "guide", seg: "quality" }], local: false };
+    if (/\b(test|testing|lab|quality|adulter|aflatoxin|pesticide|microb)\b/.test(t)) return { text: "**Quality tests for spices**\n\n" + TESTS.map(([a, b]) => `- **${a}**: ${b}`).join("\n"), chips: [{ label: "Quality & hygiene", go: "guide", seg: "quality" }], local: false };
+    if (/\b(label|labelling|labeling|packaging|pack design)\b/.test(t)) return { text: "**What an FSSAI label needs**\n\n" + LABEL.map(x => `- ${x}`).join("\n"), chips: [{ label: "Quality & hygiene", go: "guide", seg: "quality" }], local: false };
+    if (/\b(market price|today'?s price|price of|rate of|auction|spices board price|commodity)\b/.test(t)) return { text: "Today's raw spice prices from the Spices Board of India are on the **Market prices** page, with a tracker and alerts.", chips: [{ label: "Open market prices", go: "prices" }], local: false };
     return null;
-  }
-
-  // the AI gets the company file (only what's filled in) + live market data
-  function companyContext() {
-    const lines = [];
-    const f = (k, v) => { if (has(v)) lines.push(`COMPANY ${k}: ${Array.isArray(v) ? v.join(", ") : v}`); };
-    f("name", CO.name); f("tagline", CO.tagline); f("about", CO.about); f("founded", CO.founded); f("location", [CO.city, CO.state, CO.country].filter(has).join(", "));
-    f("address", CO.address); f("phone", CO.phone); f("whatsapp", CO.whatsapp); f("email", CO.email); f("hours", CO.hours);
-    f("FSSAI licence", CO.fssai_licence); f("certifications", (CO.certifications || []).map(c => typeof c === "string" ? c : c.name));
-    f("highlights", (CO.highlights || []).map(h => typeof h === "string" ? h : h.title + (h.text ? ": " + h.text : "")));
-    const B = CO.bulk || {}; f("bulk minimum order", B.moq); f("bulk packing", B.packaging); f("private label", B.private_label); f("export markets", B.export_markets); f("lead time", B.lead_time);
-    const missing = ["name", "phone", "email", "address", "fssai_licence"].filter(k => !has(CO[k]));
-    if (missing.length) lines.push(`COMPANY NOT PROVIDED (never make these up; say the team will confirm): ${missing.join(", ")}, ${has(CO.certifications) ? "" : "certifications, "}${products().some(p => has(p.price)) ? "" : "product prices, "}${products().some(p => has(p.packs)) ? "" : "pack sizes"}`);
-    lines.push("PRODUCTS: " + products().map(p => `${p.name} [${CATS[p.category]}]${has(p.packs) ? " packs " + p.packs.join("/") : ""}${has(p.price) ? " price " + p.price : ""}: ${p.about}`).join(" | "));
-    return lines.join("\n");
   }
   const AI = { state: "unknown", retryAt: 0 };
   const aiUsable = () => navigator.onLine !== false && AI.state !== "nokey" && (AI.state !== "off" || Date.now() > AI.retryAt);
   function renderNet() {
-    const n = $("netStatus");
-    n.textContent = navigator.onLine === false ? "Offline · built-in answers" : AI.state === "on" ? "AI online · Gemini" : AI.state === "nokey" || AI.state === "off" ? "Online · built-in answers" : "Online";
+    $("netStatus").textContent = navigator.onLine === false ? "Offline · built-in answers" : AI.state === "on" ? "AI online · Gemini" : AI.state === "nokey" || AI.state === "off" ? "Online · built-in answers" : "Online";
   }
   async function checkAI() {
     if (navigator.onLine === false) { renderNet(); return; }
@@ -1347,10 +1092,10 @@ if(__exports != exports)module.exports = exports;return module.exports}));
     try { const r = await fetch(API_BASE + "/api/health", { signal: c.signal, cache: "no-store" }); const j = await r.json(); AI.state = j.ai ? "on" : "nokey"; }
     catch { AI.state = "off"; AI.retryAt = Date.now() + 60000; } finally { clearTimeout(tm); renderNet(); }
   }
-  addEventListener("online", () => { checkAI(); refreshCompany(); }); addEventListener("offline", renderNet);
+  addEventListener("online", checkAI); addEventListener("offline", renderNet);
   async function askAI(text) {
     const history = hist.slice(0, -1).slice(-8).map(([role, t]) => ({ role: role === "u" ? "user" : "model", text: String(t).slice(0, 1200) }));
-    const context = [companyContext(), marketContext(text)].filter(Boolean).join("\n").slice(0, 11000);
+    const context = [guideContext(text), marketContext(text)].filter(Boolean).join("\n").slice(0, 11000);
     const c = new AbortController(); const tm = setTimeout(() => c.abort(), 75000);
     try {
       const res = await fetch(API_BASE + "/api/chat", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message: text.slice(0, 1500), history, context }), signal: c.signal });
@@ -1361,6 +1106,7 @@ if(__exports != exports)module.exports = exports;return module.exports}));
     } catch { AI.state = "off"; AI.retryAt = Date.now() + 60000; renderNet(); return { note: "I couldn't reach the AI." }; }
     finally { clearTimeout(tm); }
   }
+  const fallback = () => `I can help with **what to make**, **how to make it**, **machines**, **licences & schemes**, **quality**, **labels** and **costing**. ${navigator.onLine === false ? "When you're online, the AI can answer any other question too." : AI.state === "nokey" ? "The AI isn't switched on yet, so I can only give built-in answers for now." : ""}`;
   function send(raw) {
     const text = String(raw || "").trim();
     if (!text || busy) return;
@@ -1374,7 +1120,7 @@ if(__exports != exports)module.exports = exports;return module.exports}));
           typing.querySelector(".bubble").textContent = "Thinking…";
           const wake = setTimeout(() => { typing.querySelector(".bubble").textContent = "Waking up the AI. The first answer of the day can take up to a minute…"; }, 7000);
           const ai = await askAI(text); clearTimeout(wake); typing.remove();
-          if (ai.answer) { const o = botSay(ai.answer.replace(/```[a-z]*\n[\s\S]*?```/g, ""), r && r.chips ? r.chips : CHIPS.slice(0, 2)); sourceTag(o, "AI answer"); return; }
+          if (ai.answer) { const o = botSay(ai.answer.replace(/```[a-z]*\n[\s\S]*?```/g, ""), r && r.chips ? r.chips : CHIPS.slice(0, 3)); sourceTag(o, "AI answer"); return; }
           const o = botSay(`*${ai.note} Here's my built-in answer.*\n\n` + (r ? r.text : fallback()), r ? r.chips : CHIPS); sourceTag(o, "Built-in answer"); return;
         }
         typing.remove();
@@ -1384,10 +1130,9 @@ if(__exports != exports)module.exports = exports;return module.exports}));
       } finally { busy = false; }
     }, 250);
   }
-  const fallback = () => `I can help with our **products**, **bulk orders**, **how our spices are made**, **quality**, **storage** and **contact details**. ${navigator.onLine === false ? "When you're online, I can answer any other spice question too." : ""}`;
   function welcome() {
     msgs.textContent = ""; hist = []; store.set(HIST_KEY, hist);
-    botSay(`Hi! 👋 I'm the assistant for **${has(CO.name) ? CO.name : "this spice company"}**. Ask me about our spices and masalas, bulk and export orders, how our spices are made, recipes, or today's market prices.`, CHIPS);
+    botSay("Hi! 👋 I'm the **AI advisor** for spice manufacturing. Ask me what to make, how to make it, which machines and licences you need, how to fix quality problems, or how to price your packs.", CHIPS);
   }
   $("form").addEventListener("submit", e => { e.preventDefault(); const q = $("q"); const t = q.value; q.value = ""; q.style.height = ""; send(t); });
   $("q").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("form").requestSubmit(); } });
@@ -1849,7 +1594,7 @@ if(__exports != exports)module.exports = exports;return module.exports}));
         const f2 = add("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>");
         const pagesId = add(""), kids = [];
         pages.forEach((pg, i) => {
-          const foot = [`BT /F1 7.5 Tf ${rgb(C.muted)} rg ${M} 24 Td (${pdfEnc((has(CO.name) ? CO.name : "Spice company") + " · " + title)}) Tj ET`, `BT /F1 7.5 Tf ${rgb(C.muted)} rg ${(PDFW - M - pdfWidth(`Page ${i + 1} of ${pages.length}`, 7.5)).toFixed(2)} 24 Td (${pdfEnc(`Page ${i + 1} of ${pages.length}`)}) Tj ET`];
+          const foot = [`BT /F1 7.5 Tf ${rgb(C.muted)} rg ${M} 24 Td (${pdfEnc("Spice Guide · " + title)}) Tj ET`, `BT /F1 7.5 Tf ${rgb(C.muted)} rg ${(PDFW - M - pdfWidth(`Page ${i + 1} of ${pages.length}`, 7.5)).toFixed(2)} 24 Td (${pdfEnc(`Page ${i + 1} of ${pages.length}`)}) Tj ET`];
           const content = pg.concat(foot).join("\n");
           const cid = add(`<< /Length ${content.length} >>\nstream\n${content}\nendstream`);
           kids.push(add(`<< /Type /Page /Parent ${pagesId} 0 R /MediaBox [0 0 ${PDFW} ${PDFH}] /Contents ${cid} 0 R /Resources << /Font << /F1 ${f1} 0 R /F2 ${f2} 0 R >> >> >>`));
@@ -1857,7 +1602,7 @@ if(__exports != exports)module.exports = exports;return module.exports}));
         objs[pagesId - 1] = `<< /Type /Pages /Kids [${kids.map(k => k + " 0 R").join(" ")}] /Count ${kids.length} >>`;
         const cat = add(`<< /Type /Catalog /Pages ${pagesId} 0 R >>`);
         const t = new Date(), pz = n => String(n).padStart(2, "0");
-        const info = add(`<< /Title (${pdfEnc(title)}) /Producer (Spice company website) /CreationDate (D:${t.getFullYear()}${pz(t.getMonth() + 1)}${pz(t.getDate())}${pz(t.getHours())}${pz(t.getMinutes())}${pz(t.getSeconds())}) >>`);
+        const info = add(`<< /Title (${pdfEnc(title)}) /Producer (Spice Guide) /CreationDate (D:${t.getFullYear()}${pz(t.getMonth() + 1)}${pz(t.getDate())}${pz(t.getHours())}${pz(t.getMinutes())}${pz(t.getSeconds())}) >>`);
         let s = "%PDF-1.4\n%âãÏÓ\n"; const offs = [];
         objs.forEach((o, i) => { offs.push(s.length); s += `${i + 1} 0 obj\n${o}\nendobj\n`; });
         const xref = s.length;
@@ -1872,8 +1617,8 @@ if(__exports != exports)module.exports = exports;return module.exports}));
   function pdfHeader(d, title, sub) {
     d.rect(0, 0, PDFW, 92, { fill: C.band });
     d.rect(d.M, 30, 26, 26, { fill: C.spice });
-    d.text(d.M + 6.5, 49, (has(CO.name) ? CO.name : "S").trim()[0].toUpperCase(), { size: 17, bold: true, color: C.white });
-    d.text(d.M + 36, 43, has(CO.name) ? CO.name : "Spice company", { size: 10, bold: true, color: [0.75, 0.75, 0.75] });
+    d.text(d.M + 6.5, 49, "S", { size: 17, bold: true, color: C.white });
+    d.text(d.M + 36, 43, "Spice Guide", { size: 10, bold: true, color: [0.75, 0.75, 0.75] });
     d.text(d.M + 36, 62, title, { size: 18, bold: true, color: C.white });
     d.textR(PDFW - d.M, 43, sub, { size: 8.5, color: [0.75, 0.75, 0.75] });
     d.y = 112;
@@ -1950,33 +1695,372 @@ if(__exports != exports)module.exports = exports;return module.exports}));
     return { bytes: d.bytes(), name: `Spice price report ${fileStamp()}.pdf` };
   }
 
-  function enquiryPdf() {
-    const e = readEnq();
-    const d = newPdf("Spice enquiry");
-    pdfHeader(d, "Spice enquiry", stamp());
-    d.para(`To: ${has(CO.name) ? CO.name : "(company name not added yet)"}`, { size: 11, bold: true, gap: 2 });
-    d.para([has(CO.phone) && "Phone " + CO.phone, has(CO.email) && "Email " + CO.email, has(CO.address) && CO.address].filter(Boolean).join(" · ") || "Company contact details not added yet.", { size: 9, color: C.muted, gap: 10 });
-    d.h2("From");
-    d.table([{ label: "Detail", w: 120, bold: true }, { label: "", w: d.CW - 120 }], [["Name", e.name || "—"], ["Company", e.org || "—"], ["Phone", e.phone || "—"], ["Email", e.email || "—"], ["Location", e.place || "—"]]);
-    d.h2("Request");
-    d.table([{ label: "Product", w: d.CW - 180, bold: true }, { label: "Quantity", w: 90, align: "r" }, { label: "Packing", w: 90 }], (e.items.length ? e.items : ["(no product picked)"]).map((p, i) => [p, i === 0 && e.qty ? `${e.qty} ${e.unit}` : "", i === 0 ? e.pack || "" : ""]));
-    if (e.msg) { d.h2("Message"); d.para(e.msg, { size: 10 }); }
-    const P = MKT.prices || {}, rows = [...(P.india_official || []), ...(P.india_ai || [])];
-    const ref = rows.filter(r => e.items.some(n => n.toLowerCase().split(" ").some(w => w.length > 3 && r.spice.toLowerCase().includes(w.replace(/s$/, "")))));
-    if (ref.length) { d.h2("Market reference (Spices Board of India)"); d.table([{ label: "Spice", w: 110, bold: true }, { label: "Market · grade", w: d.CW - 110 - 80 - 80 }, { label: "Rs per kg", w: 80, align: "r" }, { label: "Date", w: 80, align: "r" }], ref.slice(0, 12).map(r => [r.spice, [r.market, r.grade].filter(Boolean).join(" · "), fmtN(r.price), niceDate(r.date)])); d.para("Market prices are for reference only, not a quotation.", { size: 8, color: C.muted }); }
-    return { bytes: d.bytes(), name: `Spice enquiry ${fileStamp()}.pdf` };
+  /* ---------- Manufacturing guide: what to make, how to make it, machines, setting up, licences, costing ---------- */
+  const G_SRC = {
+    fssai: ["FSSAI standards for spices (Chapter 2.9)", "https://www.fssai.gov.in/upload/uploadfiles/files/Chapter%202_9_Salt_Spices_Condiments%20and%20related%20products.pdf"],
+    tiers: ["FSSAI turnover limits revised from 1 April 2026", "https://irismsme.com/blog/msme-alert-fssai-turnover-limits-revised-from-1-april-2026"],
+    cres: ["Spices Board FAQ on exporter registration (CRES)", "https://indianspices.com/hin/sites/default/files/faq.pdf"],
+    pmfme: ["PMFME explained (July 2026)", "https://www.onmanorama.com/upsc/current-affairs/2026/07/16/explained-pmfme-scheme.html"],
+    pepper: ["NIFTEM: black pepper processing (PMFME)", "https://niftem.ac.in/newsite/pmfme/wp-content/uploads/2022/08/blackpepperprocessing.pdf"],
+    turmeric: ["Kerala Agricultural University: turmeric harvest & curing", "https://www.celkau.in/Crops/spices/turmeric/harvesting.php"],
+    lm: ["Legal Metrology (Packaged Commodities) Rules, 2011", "https://leap.unep.org/en/countries/in/national-legislation/legal-metrology-packaged-commodities-rules-2011"],
+    kspcb: ["KSPCB industry categorisation list 2026", "https://www.corpseed.com/law-update/kspcb-industry-categorisation-list-2026"],
+  };
+  // [product, why make it, raw material & where from, typical harvest/arrival season, difficulty, key machines, watch out for, FSSAI max moisture]
+  const IDEAS = [
+    ["Turmeric powder", "An everyday staple in every Indian kitchen; steady year-round demand.", "Dried, polished turmeric fingers (Erode, Nizamabad, Sangli; Alleppey finger from Kerala).", "Harvest Jan–Mar", 1, "Pulveriser, sifter, packing machine", "Adulteration checks (lead chromate, colours); curcumin varies by variety.", "10%"],
+    ["Chilli powder", "A staple with big volumes; Kashmiri-type chilli sells on colour.", "Dry red chillies (Guntur in Andhra Pradesh, Byadgi in Karnataka).", "Arrivals mainly Jan–May", 2, "Destalker, pulveriser with dust control, sifter", "Aflatoxin and illegal dyes (Sudan); fiery dust needs extraction and masks.", "11%"],
+    ["Coriander powder", "Used in almost every curry; simple to make.", "Coriander seed (Rajasthan, Madhya Pradesh, Gujarat).", "Harvest Feb–Apr", 1, "Cleaner, roaster (optional), pulveriser", "Moisture must stay very low; uneven roasting tastes burnt.", "9%"],
+    ["Black pepper (whole & powder)", "Kerala's own spice; you can buy close to the farms.", "Dried pepper from farmers, traders and Kochi market.", "Harvest Dec–Mar", 1, "Thresher, dryer, cleaner-grader, grinder", "Big price swings; light berries and papaya-seed adulteration.", "12% (powder)"],
+    ["Green cardamom (graded)", "High value; Idukki auctions are on your doorstep.", "Cardamom from the Kerala & Tamil Nadu auctions.", "Harvest Aug–Feb", 2, "Grader, colour sorting, moisture-proof packing", "Needs lots of working capital; colour fades in light.", "—"],
+    ["Cumin powder", "Popular in North Indian cooking and snacks.", "Cumin seed (Gujarat, Rajasthan).", "Harvest Feb–Mar", 1, "Cleaner, roaster (optional), pulveriser", "Look-alike seeds and stones; cleaning matters.", "10%"],
+    ["Masalas & blends", "Higher value and easier to build a brand: sambar, garam, chicken, fish, biryani.", "8–20 different spices per recipe, bought in season.", "Buy each spice in its season", 2, "Roaster, pulveriser, ribbon blender, sifter", "Keeping every batch the same; many raw materials to test and store.", "12% (mixed masala)"],
+    ["Hotel & catering packs", "Restaurants and caterers buy 1–5 kg packs regularly.", "Same as your retail powders and masalas.", "Year-round", 1, "Bulk filling and sealing", "Credit periods; price-sensitive buyers.", "As per product"],
+    ["Steam-sterilised spices for export", "Export buyers often need low microbial counts.", "Cleaned whole or ground spices.", "Year-round", 3, "Steam steriliser, lab, export packing", "Higher investment; export registrations and buyer audits.", "As per buyer"],
+    ["Spice oils & oleoresins", "Concentrated flavours for food factories.", "Pepper, turmeric, ginger, chilli.", "Year-round", 3, "Extraction plant (solvent or CO₂), distillation", "Large investment and specialised licences; a later-stage idea.", "—"],
+  ];
+  const DIFF = ["", "Easy start", "Some experience", "Advanced"];
+  // How to make: product-specific steps (my own words, from the sources above and common practice)
+  const HOW = {
+    "Turmeric powder": { moist: "10%", src: "turmeric", steps: [
+      ["Buy or cure the fingers", "Most units buy dried, polished fingers. If you start from fresh turmeric, boil (cure) it within 2–3 days of harvest until a wooden needle pierces it easily."],
+      ["Dry", "Spread boiled fingers thinly in the sun, or use a dryer at no more than 60°C for a brighter colour."],
+      ["Polish & clean", "Polish in a rotating drum to remove the rough skin; sieve out dust, stones and bits; run past a magnet."],
+      ["Grind", "Crush, then grind in a pulveriser. Don't let the grinder run hot."],
+      ["Sieve & check", "Sieve to an even powder. Test moisture (FSSAI limit 10%), colour (curcumin) and purity."],
+      ["Pack", "Moisture-proof, light-proof pouches, labelled and batch-coded."]] },
+    "Chilli powder": { moist: "11%", steps: [
+      ["Sort & destalk", "Remove stalks, mouldy or pale pods and foreign matter. Mouldy pods are the main aflatoxin risk."],
+      ["Dry", "Dry further if the pods aren't crisp. Overheating dulls the colour."],
+      ["Grind with dust control", "Grind in a pulveriser fitted with a cyclone or dust collector. Workers need masks and goggles."],
+      ["Blend for colour & heat", "Mix chilli types to hit a steady colour (ASTA) and heat level batch after batch."],
+      ["Sieve & test", "Moisture (FSSAI limit 11%), colour, aflatoxin and illegal dyes."],
+      ["Pack", "Pack in light-proof pouches; colour fades in light."]] },
+    "Coriander powder": { moist: "9%", steps: [
+      ["Clean", "Destoner, sieve and magnet remove stones, stalks and dust."],
+      ["Dry or lightly roast", "Dry to very low moisture; a light, even roast adds aroma."],
+      ["Cool", "Cool fully before grinding, or the powder sweats and cakes."],
+      ["Grind & sieve", "Grind and sieve to an even powder."],
+      ["Test & pack", "FSSAI moisture limit is 9%, the tightest of the common powders. Pack straight away."]] },
+    "Cumin powder": { moist: "10%", steps: [
+      ["Clean carefully", "Cumin often carries stones, dust and look-alike weed seeds; use a destoner and sieves."],
+      ["Roast (optional)", "Roast lightly for a nuttier flavour, then cool."],
+      ["Grind & sieve", "Grind in short runs; cumin is oily and clogs a hot mill."],
+      ["Test & pack", "FSSAI moisture limit is 10%."]] },
+    "Black pepper (whole & powder)": { moist: "12% (powder)", src: "pepper", steps: [
+      ["Thresh", "Separate berries from the spikes, by hand or with a thresher (a mechanical one handles about 320 kg an hour)."],
+      ["Blanch (optional)", "Dip in boiling water for about a minute for a cleaner, more even black colour."],
+      ["Dry", "Sun-dry for 3–5 days or use a mechanical dryer, down to about 10% moisture."],
+      ["Clean & grade", "Winnow, sieve and grade by size and bulk density; remove light berries."],
+      ["Grind (for powder)", "Use a hammer, pin or plate mill without adding anything else."],
+      ["Pack", "Food-grade lined bags for bulk; sealed pouches for retail. Powder limit: 12% moisture."]] },
+    "Masalas & blends": { moist: "12% (mixed masala)", steps: [
+      ["Prepare each spice", "Clean, dry and test every ingredient separately; buy each one in its season."],
+      ["Roast where the recipe needs it", "Roast spices separately (they roast at different speeds), then cool fully."],
+      ["Grind", "Grind ingredients separately or together, as your recipe works best."],
+      ["Weigh to the recipe", "Use a written batch sheet and a calibrated scale, so every batch tastes the same."],
+      ["Blend & sieve", "Mix in a ribbon blender until even, then sieve."],
+      ["Taste, test & pack", "Taste against your reference sample; test moisture (12% for mixed masala); pack quickly to keep the aroma."]] },
+    "Whole spices": { moist: "Varies", steps: [
+      ["Clean", "Remove dust, stones, stalks and broken pieces."],
+      ["Grade", "Sort by size and colour; better grades sell for more."],
+      ["Check moisture", "Dry further if needed so nothing grows mould in the pack."],
+      ["Pack", "Moisture-proof packs; keep cardamom away from light to stay green."]] },
+  };
+  const MACHINES = [
+    ["Weighing scales", "Essential", "A platform scale for raw material and a precise scale for packs and recipes. Get them stamped under Legal Metrology."],
+    ["Destoner / cleaner", "Essential", "Removes stones, dust and stalks from seeds and whole spices."],
+    ["Magnetic separator", "Essential", "Catches iron bits before they reach the grinder or the pack."],
+    ["Sieves / vibro sifter", "Essential", "Cleans raw spice and gives powders an even texture."],
+    ["Dryer", "Often needed", "Tray, cabinet or solar dryer for spices that arrive damp. Pepper thresher-to-dryer lines suit Kerala."],
+    ["Roaster", "For masalas", "Drum roaster for coriander, cumin and masala ingredients."],
+    ["Pulveriser / hammer mill / pin mill", "Essential", "The main grinder. A water-cooled or low-heat mill keeps more aroma."],
+    ["Cyclone & dust collector", "Essential for chilli", "Keeps spice dust out of the air and the factory."],
+    ["Ribbon blender", "For masalas", "Mixes blends evenly."],
+    ["Pouch packing machine", "As you grow", "Auger filler or form-fill-seal machine for steady, accurate packs."],
+    ["Band sealer & batch coder", "Essential", "Seals pouches and prints batch number and dates."],
+    ["Metal detector", "Recommended", "Checks finished packs; many big buyers ask for it."],
+    ["Basic lab", "Essential", "Moisture analyser or hot-air oven, test sieves and a magnifier for daily checks; send samples to an NABL lab for full tests."],
+    ["Steam steriliser", "For export", "Lowers microbe counts for export buyers."],
+  ];
+  const SETUP = [
+    ["Pick your products & buyers", "Start with 3–5 products you can source well and sell to buyers you know: local shops, hotels, distributors or online."],
+    ["Write a project report", "Machines, building, working capital (money for raw material stock), expected sales and costs. Banks and subsidy schemes ask for it."],
+    ["Arrange money", "Your own funds plus a bank (MUDRA or MSME) loan; check subsidy schemes such as PMFME (see Licences)."],
+    ["Find a building", "Dry, well-ventilated, easy to clean. Plan one-way flow: raw store → cleaning → drying/roasting → grinding → packing → finished goods. Keep toilets and washing away from food areas."],
+    ["Get licences", "Udyam, FSSAI, GST, Legal Metrology, local body and pollution board consent. Exporters also need IEC and CRES."],
+    ["Install machines", "Place dusty jobs (chilli grinding) apart from packing; fit dust collection; keep floors and walls washable and insects out."],
+    ["Trial batches & tests", "Run small batches, test them in a lab, and fix your recipes and settings before selling."],
+    ["Design packs & labels", "FSSAI labels need: product name, ingredients, net quantity, FSSAI logo and licence number, batch number, packing and best-before dates, MRP, veg symbol, manufacturer address and customer care."],
+    ["Start selling", "Retail shops and distributors, hotels and caterers, online marketplaces, and later export."],
+  ];
+  const LICENCES = [
+    ["Business registration & PAN", "Everyone", "Proprietorship, partnership, LLP or company, with a PAN and bank account."],
+    ["Udyam (MSME) registration", "Recommended", "Free online at udyamregistration.gov.in; needed for most MSME loans and schemes."],
+    ["FSSAI registration or licence", "Everyone", "From 1 April 2026: basic registration up to ₹1.5 crore turnover, state licence from ₹1.5 crore to ₹50 crore, central licence above ₹50 crore. Exporters and multi-state businesses may need a central licence whatever their turnover.", "tiers"],
+    ["GST registration", "Usually", "Needed above the turnover limit, and for selling online or across states."],
+    ["Legal Metrology packer registration", "If you sell packed spices", "Manufacturers and packers of pre-packed goods register under the Legal Metrology (Packaged Commodities) Rules, 2011, and follow their label rules (net quantity, MRP, manufacturer details).", "lm"],
+    ["Local body licence", "Everyone", "Panchayat or municipality licence for running the unit, and building permits."],
+    ["Pollution Control Board consent", "Usually", "Kerala's KSPCB puts each activity in a category (white, green, orange or red) that sets which consent you need. Check your exact activity on KSPCB's current list.", "kspcb"],
+    ["Factory licence & fire safety", "Depends on size", "The Factories Act applies once you have 10 or more workers using power. Bigger units may also need a fire NOC."],
+    ["IEC (Importer Exporter Code)", "Exporters", "From DGFT, online."],
+    ["CRES from the Spices Board", "Exporters", "Certificate of Registration as Exporter of Spices: required to export spices. Fee ₹5,000; issued for a three-year block.", "cres"],
+    ["Quality certifications", "Optional", "ISO 22000 or FSSC 22000, HACCP, AGMARK, organic (NPOP). Big buyers and export markets often ask for these."],
+  ];
+  const SCHEMES = [
+    ["PMFME", "35% credit-linked subsidy on project cost, up to ₹10 lakh, for micro food processing units (more for FPOs and SHGs). Extended until September 2026, with a PMFME 2.0 being considered; check the current status with your District Industries Centre.", "pmfme"],
+    ["PMEGP", "Margin-money subsidy for new micro units through KVIC and banks; check current limits with KVIC or your DIC."],
+    ["MUDRA & MSME loans", "Bank loans for small businesses, often without collateral up to set limits."],
+    ["Kerala single window (K-SWIFT)", "Kerala's online single window for many state clearances to start a business."],
+  ];
+
+  const TESTS = [
+    ["Moisture", "Too much moisture lets mould grow. FSSAI sets a maximum for each spice (9–14%)."],
+    ["Volatile oil", "Measures aroma strength, especially for pepper, cardamom, cumin and coriander."],
+    ["Colour value", "Chilli colour is measured in ASTA units; turmeric is checked for curcumin."],
+    ["Purity & adulterants", "Starch, sawdust, brick powder, artificial colours (such as Sudan dyes) and lead chromate in turmeric."],
+    ["Extraneous matter & ash", "Stones, stalks, insect damage, and total ash within FSSAI limits."],
+    ["Microbes", "Total plate count, yeast and mould, E. coli and Salmonella."],
+    ["Aflatoxin & mycotoxins", "Toxins from moulds; chillies, nutmeg and some seeds are prone to them."],
+    ["Pesticide residues", "Tested against FSSAI limits, and stricter importing-country limits for export."],
+  ];
+  const HYGIENE = [
+    ["Zones & one-way flow", "Raw store → cleaning → drying/roasting → grinding → packing → finished goods, so cleaned product never meets raw material again."],
+    ["Keep dry areas dry", "Water in a dry-spice factory means mould. Clean mostly by brushing and vacuuming; if anything is washed, dry it completely."],
+    ["No places for powder to hide", "Smooth, food-grade surfaces; no ledges or dead corners in machines; equipment that opens for cleaning."],
+    ["Pests out", "Screens on windows, sealed gaps, pest control records, nothing stored on the floor."],
+    ["People", "Clean uniforms, hair nets, hand washing, no eating in production; health checks for workers."],
+    ["Records", "Batch sheets, cleaning logs and test results. FSSAI's hygiene schedule and buyers' audits ask for them."],
+  ];
+  const LABEL = ["Name of the product", "Ingredients (for blends, in descending order of weight)", "Net quantity", "FSSAI logo and licence/registration number", "Batch or lot number", "Date of packing/manufacture and best before", "MRP (inclusive of all taxes)", "Green veg symbol", "Name and full address of the manufacturer or packer", "Customer care details", "Storage instructions and allergen notes where needed"];
+  const STORE_TIPS = [
+    ["Airtight", "Airtight, moisture-proof packs; air carries away aroma."],
+    ["Cool & dark", "Store away from heat, sunlight and steam; light fades chilli and cardamom."],
+    ["Off the floor", "Raw spices on pallets, away from walls, first-in first-out."],
+    ["Whole lasts longer", "Whole spices keep flavour much longer than powders; grind in small, frequent batches."],
+  ];
+  const PROBLEMS = [
+    ["Powder caking or forming lumps", "Too much moisture, or packed while warm. Dry further, cool fully before packing, and use better barrier pouches."],
+    ["Chilli powder losing colour", "Overheating in the grinder, light exposure, or old stock. Grind cooler, pack in light-proof pouches, and blend in a high-colour variety."],
+    ["Weak aroma", "Old raw material, too much heat when roasting or grinding, or slow packing. Buy fresher, roast and grind cooler, pack quickly."],
+    ["Insects in stock", "Store dry and cool, keep raw and finished goods apart, rotate stock, and keep pest control records."],
+    ["Failing microbial tests", "Damp raw material, dirty equipment or poor storage. Improve drying, cleaning and hygiene; consider steam sterilisation for sensitive buyers."],
+    ["Batches tasting different", "Raw material varies. Keep reference samples, test each lot, and adjust recipes by written batch sheets."],
+  ];
+  function srcLink(k) { const s = G_SRC[k]; if (!s) return null; const a = el("a", "srclink", "Source: " + s[0]); a.href = s[1]; a.target = "_blank"; a.rel = "noopener"; return a; }
+  function renderGuide() {
+    $("gTitle").textContent = SEGS[gSeg][0]; $("gLead").textContent = SEGS[gSeg][1];
+    const body = $("gBody"); body.replaceChildren();
+    const steps = (list, one) => { const st = el("div", "steps" + (one ? " one" : "")); list.forEach(([t, d], i) => { const x = el("div", "step"); x.append(el("span", "si", String(i + 1))); const tx = el("div"); tx.append(el("b", null, t), el("p", null, d)); x.append(tx); st.append(x); }); return st; };
+    const askBtn = (label, q) => { const r = el("div", "chips"); const b = el("button", "qchip", label); b.type = "button"; b.onclick = () => { if (/: $/.test(q)) { setChat(true); $("q").value = q; $("q").focus(); } else send(q); }; r.append(b); return r; };
+    if (gSeg === "what") {
+      const intro = el("section", "pblk"); intro.append(el("h3", null, "Product ideas"), el("p", "sub", "Good first products are ones you can buy well near you and sell to buyers you already know. Tap \"How to make it\" on any card."));
+      const grid = el("div", "idea-grid");
+      IDEAS.forEach(r => {
+        const c = el("article", "idea");
+        const top = el("div", "itop"); top.append(el("b", null, r[0]), el("span", "lvl l" + r[4], DIFF[r[4]])); c.append(top);
+        c.append(el("p", null, r[1]));
+        const kv = (k, v) => { if (!v || v === "—") return; const p = el("p", "ikv"); p.append(el("span", null, k + ": "), document.createTextNode(v)); c.append(p); };
+        kv("Raw material", r[2]); kv("Season", r[3]); kv("Machines", r[5]); kv("Watch out", r[6]); kv("FSSAI max moisture", r[7]);
+        const key = HOW[r[0]] ? r[0] : /cardamom/i.test(r[0]) ? "Whole spices" : /hotel/i.test(r[0]) ? "Masalas & blends" : null;
+        if (key) { const b = el("button", "btn-lg sm", "How to make it →"); b.type = "button"; b.onclick = () => { gHow = key; store.set("sc.ghow", key); showTab("guide", "how"); }; c.append(b); }
+        grid.append(c);
+      });
+      intro.append(grid);
+      const ch = el("section", "pblk"); ch.append(el("h3", null, "Questions to ask before you choose"));
+      const ul = el("ul", "glist");
+      ["Where will your raw material come from, and can you buy it in season?", "Who will buy: shops, hotels, distributors, online or export?", "How much money can you put in, including raw material stock for several months?", "Do you have a dry building with power for grinders?", "Which products can you make better or fresher than what's on the shelf now?"].forEach(t => ul.append(el("li", null, t)));
+      ch.append(ul, askBtn("Ask the AI what suits me", "I'm choosing my first spice products. Ask me the questions you need, then suggest what to make."));
+      body.append(intro, ch);
+    } else if (gSeg === "how") {
+      const s = el("section", "pblk"); s.append(el("h3", null, "Pick a product"));
+      const pick = el("div", "chips"); Object.keys(HOW).forEach(k => { const b = el("button", "qchip" + (k === gHow ? " on" : ""), k); b.type = "button"; b.onclick = () => { gHow = k; store.set("sc.ghow", k); renderGuide(); }; pick.append(b); });
+      s.append(pick);
+      const H = HOW[gHow] || HOW["Turmeric powder"];
+      s.append(el("p", "sub", "Every spice goes: receive & inspect → clean → dry → (roast) → grind → sieve → test → pack. Here's what's special about " + gHow.toLowerCase() + ". FSSAI maximum moisture: " + H.moist + "."));
+      s.append(steps(H.steps));
+      [H.src, "fssai"].filter(Boolean).forEach(k => { const a = srcLink(k); if (a) s.append(a, document.createTextNode(" ")); });
+      s.append(askBtn(`Ask the AI about making ${gHow.toLowerCase()}`, `How do I manufacture ${gHow.toLowerCase()} in a small unit? What should I watch out for?`));
+      body.append(s);
+    } else if (gSeg === "setup") {
+      const s = el("section", "pblk"); s.append(el("h3", null, "Roadmap: from idea to first sale"));
+      s.append(steps(SETUP, true));
+      const m = el("section", "pblk"); m.append(el("h3", null, "Machines for a small unit"), el("p", "sub", "What a small powder and masala unit typically needs. Get quotes from several makers and ask to see a machine running before you buy."));
+      MACHINES.forEach(([n, need, d]) => { const r = el("div", "mrow"); r.append(el("b", null, n), el("span", "need n-" + slug(need), need), el("p", null, d)); m.append(r); });
+      m.append(srcLink("pepper"), askBtn("Ask the AI to plan my machines", "Plan the machines and layout for a small spice powder unit making about 200 kg a day. What do I need?"));
+      body.append(s, m);
+    } else if (gSeg === "licences") {
+      const s = el("section", "pblk"); s.append(el("h3", null, "Licences & registrations (India, Kerala)"), el("p", "sub", "Rules change, so confirm each one with the department or a consultant before you apply. Last checked: November 2026."));
+      LICENCES.forEach(([n, who, d, src]) => { const r = el("div", "mrow"); r.append(el("b", null, n), el("span", "need", who)); r.append(el("p", null, d)); if (src) r.append(srcLink(src)); s.append(r); });
+      const s2 = el("section", "pblk"); s2.append(el("h3", null, "Schemes that can help"));
+      SCHEMES.forEach(([n, d, src]) => { const r = el("div", "mrow"); r.append(el("b", null, n)); r.append(el("p", null, d)); if (src) r.append(srcLink(src)); s2.append(r); });
+      s2.append(askBtn("Ask the AI which apply to me", "I'm starting a small spice unit in Kerala. Which licences and schemes apply to me?"));
+      body.append(s, s2);
+    } else if (gSeg === "quality") {
+      const t = el("section", "pblk"); t.append(el("h3", null, "Quality tests"), el("p", "sub", "Do quick checks (moisture, look, smell) on every batch in your own lab, and send samples to an NABL-accredited lab for the full tests."));
+      TESTS.forEach(([a, b]) => { const r = el("div", "mrow"); r.append(el("b", null, a), el("p", null, b)); t.append(r); });
+      const lim = el("section", "pblk"); lim.append(el("h3", null, "FSSAI moisture limits for powders"));
+      const tb = el("table"); tb.innerHTML = "<thead><tr><th>Powder</th><th>Max moisture</th></tr></thead>"; const bd = el("tbody");
+      [["Coriander", "9%"], ["Turmeric", "10%"], ["Cumin", "10%"], ["Chilli", "11%"], ["Black pepper", "12%"], ["Mixed masala", "12%"], ["Curry powder", "14%"]].forEach(([a, b]) => { const tr = el("tr"); tr.append(el("td", null, a), el("td", null, b)); bd.append(tr); });
+      tb.append(bd); const tw = el("div", "tw qtable"); tw.append(tb); lim.append(tw, srcLink("fssai"));
+      const h = el("section", "pblk"); h.append(el("h3", null, "A hygienic factory")); h.append(steps(HYGIENE));
+      const l = el("section", "pblk"); l.append(el("h3", null, "What your label needs (FSSAI)")); const ul = el("ul", "glist"); LABEL.forEach(x => ul.append(el("li", null, x))); l.append(ul);
+      const st = el("section", "pblk"); st.append(el("h3", null, "Storage")); st.append(steps(STORE_TIPS));
+      const p = el("section", "pblk"); p.append(el("h3", null, "Common problems & fixes"));
+      PROBLEMS.forEach(([a, b]) => { const r = el("div", "mrow"); r.append(el("b", null, a), el("p", null, b)); p.append(r); });
+      p.append(askBtn("Describe your problem to the AI", "I have a quality problem with my spice powder: "));
+      body.append(t, lim, h, l, st, p);
+    } else {
+      body.append(costCalc(), batchCalc());
+    }
+    body.append(el("p", "note pnote", "General guidance for small spice units in India, not legal or financial advice. Check rules and figures with the authorities, your bank or a consultant before investing."));
+  }
+
+  /* masala batch calculator */
+  function batchCalc() {
+    const s = el("section", "pblk"); s.append(el("h3", null, "Masala batch calculator"), el("p", "sub", "Write your recipe in parts (or grams), pick a batch size, and see how much of each spice to weigh out. The example is a simple home-style garam masala; use your own recipe."));
+    let rows = store.get("sc.recipe", [["Coriander seed", 4], ["Cumin seed", 2], ["Black pepper", 1], ["Cardamom", 1], ["Cinnamon", 1], ["Cloves", 0.5]]);
+    let batch = store.get("sc.batch", 25);
+    const tbl = el("div", "rtable"); const out = el("div", "rout");
+    const draw = () => {
+      tbl.replaceChildren();
+      rows.forEach((r, i) => {
+        const row = el("div", "rrow");
+        const n = el("input"); n.value = r[0]; n.setAttribute("aria-label", "Ingredient"); n.oninput = () => { rows[i][0] = n.value; save(); };
+        const q = el("input"); q.type = "number"; q.min = "0"; q.step = "any"; q.inputMode = "decimal"; q.value = r[1]; q.setAttribute("aria-label", "Parts"); q.oninput = () => { rows[i][1] = parseFloat(q.value) || 0; save(); };
+        const x = el("button", "icon-btn", "✕"); x.type = "button"; x.setAttribute("aria-label", "Remove " + r[0]); x.onclick = () => { rows.splice(i, 1); save(); draw(); };
+        row.append(n, q, x); tbl.append(row);
+      });
+      const add = el("button", "qchip", "+ Add spice"); add.type = "button"; add.onclick = () => { rows.push(["", 1]); save(); draw(); }; tbl.append(add);
+      calc();
+    };
+    const bIn = el("input"); bIn.type = "number"; bIn.min = "0"; bIn.step = "any"; bIn.inputMode = "decimal"; bIn.value = batch; bIn.oninput = () => { batch = parseFloat(bIn.value) || 0; save(); };
+    const bl = el("label", "inl", "Batch size (kg) "); bl.append(bIn);
+    const save = () => { store.set("sc.recipe", rows); store.set("sc.batch", batch); calc(); };
+    const calc = () => {
+      const tot = rows.reduce((a, r) => a + (r[1] || 0), 0); out.replaceChildren();
+      if (!tot || !batch) return;
+      const t = el("table"); t.innerHTML = "<thead><tr><th>Spice</th><th>Share</th><th>For " + esc(fmtN(batch)) + " kg</th></tr></thead>";
+      const tb = el("tbody"); rows.filter(r => r[1] > 0).forEach(r => { const tr = el("tr"); tr.append(el("td", null, r[0] || "—"), el("td", null, (r[1] / tot * 100).toFixed(1) + "%"), el("td", null, fmtN(r[1] / tot * batch, 2) + " kg")); tb.append(tr); });
+      t.append(tb); const w = el("div", "tw"); w.append(t); out.append(w);
+      out.append(el("p", "note", "Weights are before roasting and grinding; roasting and grinding lose a little moisture, so the final batch weighs slightly less."));
+    };
+    s.append(bl, tbl, out); draw();
+    return s;
+  }
+
+  /* cost & price calculator */
+  const COST_DEF = { raw: 180, loss: 8, labour: 12, overhead: 8, transport: 4, packCost: { 50: 2.5, 100: 3.5, 250: 5, 500: 7, 1000: 10 }, margin: 20, trade: 25, gst: 5, product: "Turmeric powder" };
+  let cost = Object.assign({}, COST_DEF, store.get("sc.cost", {}));
+  function costRows() {
+    const effRaw = cost.raw / Math.max(0.01, 1 - cost.loss / 100);
+    const perKg = effRaw + cost.labour + cost.overhead + cost.transport;
+    return Object.keys(cost.packCost).map(Number).sort((a, b) => a - b).map(g => {
+      const c = perKg * g / 1000 + (cost.packCost[g] || 0);
+      const exf = c * (1 + cost.margin / 100);
+      const mrp = exf * (1 + cost.trade / 100) * (1 + cost.gst / 100);
+      return { g, c, exf, mrp, profit: exf - c };
+    }).concat([{ perKg, effRaw }]);
+  }
+  function costCalc() {
+    const s = el("section", "pblk"); s.append(el("h3", null, "Cost & price calculator"), el("p", "sub", "Work out the cost of each pack and a selling price. All numbers are your own; the starting values are only examples, so change them to your real costs."));
+    const form = el("div", "cform");
+    const num = (label, key, unit, hint) => {
+      const l = el("label"); l.append(el("span", null, label)); const w = el("div", "uin"); const i = el("input"); i.type = "number"; i.step = "any"; i.min = "0"; i.inputMode = "decimal"; i.value = cost[key];
+      i.oninput = () => { cost[key] = parseFloat(i.value) || 0; store.set("sc.cost", cost); out(); }; w.append(i, el("small", null, unit)); l.append(w); if (hint) l.append(el("em", null, hint)); form.append(l); return i;
+    };
+    const rawIn = num("Raw material price", "raw", "₹/kg", "What you pay per kg of raw spice.");
+    num("Cleaning & drying loss", "loss", "%", "Weight lost in cleaning, drying and grinding.");
+    num("Labour & power", "labour", "₹/kg", "Wages and electricity per kg made.");
+    num("Rent & other overheads", "overhead", "₹/kg", "Rent, maintenance, tests, admin per kg.");
+    num("Transport", "transport", "₹/kg", "");
+    num("Your margin", "margin", "%", "Your profit on top of cost.");
+    num("Distributor & shop margin", "trade", "%", "What the trade keeps between you and the buyer.");
+    num("GST", "gst", "%", "Check the rate for your product.");
+    // market price helper
+    const P = MKT.prices || {}, mrows = [...(P.india_official || []), ...(P.india_ai || [])];
+    if (mrows.length) {
+      const l = el("label", "wide"); l.append(el("span", null, "Use today's market price"));
+      const sel = el("select"); sel.append(el("option", null, "Pick a Spices Board price…"));
+      mrows.forEach((r, i) => { const o = el("option", null, `${r.spice}${r.grade ? " · " + r.grade : ""} · ${r.market}: ₹${fmtN(r.price)}/kg (${niceDate(r.date)})`); o.value = i; sel.append(o); });
+      sel.onchange = () => { const r = mrows[+sel.value]; if (!r) return; cost.raw = r.price; cost.product = r.spice; rawIn.value = r.price; store.set("sc.cost", cost); out(); };
+      l.append(sel, el("em", null, "Wholesale market prices; your buying price may differ.")); form.append(l);
+    }
+    const packs = el("div", "wide"); packs.append(el("span", "lblx", "Packing material per pack (pouch, label, carton share)"));
+    const pr = el("div", "packcost");
+    Object.keys(cost.packCost).map(Number).sort((a, b) => a - b).forEach(g => { const l = el("label"); l.append(el("small", null, g >= 1000 ? g / 1000 + " kg" : g + " g")); const i = el("input"); i.type = "number"; i.step = "any"; i.min = "0"; i.inputMode = "decimal"; i.value = cost.packCost[g]; i.oninput = () => { cost.packCost[g] = parseFloat(i.value) || 0; store.set("sc.cost", cost); out(); }; l.append(i, el("small", null, "₹")); pr.append(l); });
+    packs.append(pr); form.append(packs);
+    const res = el("div", "cres");
+    const out = () => {
+      const rs = costRows(), meta = rs.pop(); res.replaceChildren();
+      res.append(el("p", "cbig", `Cost of finished powder: ₹${fmtN(meta.perKg, 2)} per kg`), el("p", "note", `Raw material after ${cost.loss}% loss: ₹${fmtN(meta.effRaw, 2)}/kg, plus labour, overheads and transport.`));
+      const t = el("table"); t.innerHTML = "<thead><tr><th>Pack</th><th>Your cost</th><th>Your selling price</th><th>Your profit</th><th>Suggested MRP</th></tr></thead>";
+      const tb = el("tbody"); rs.forEach(r => { const tr = el("tr"); tr.append(el("td", null, r.g >= 1000 ? r.g / 1000 + " kg" : r.g + " g"), el("td", null, "₹" + fmtN(r.c, 2)), el("td", null, "₹" + fmtN(r.exf, 2)), el("td", null, "₹" + fmtN(r.profit, 2)), el("td", null, "₹" + fmtN(Math.ceil(r.mrp), 0))); tb.append(tr); });
+      t.append(tb); const w = el("div", "tw"); w.append(t); res.append(w);
+      res.append(el("p", "note", "Suggested MRP = your selling price + trade margin + GST, rounded up. Check competitors' shelf prices too."));
+    };
+    const reset = el("button", "qchip", "Reset to examples"); reset.type = "button"; reset.onclick = () => { cost = JSON.parse(JSON.stringify(COST_DEF)); store.set("sc.cost", cost); renderGuide(); };
+    const acts = el("div", "chips"); acts.append(reset, dlButton("⬇ Download costing PDF", costPdf));
+    s.append(form, res, acts); out();
+    return s;
+  }
+  function costPdf() {
+    const d = newPdf("Spice costing"); pdfHeader(d, "Spice costing sheet", stamp());
+    const rs = costRows(), meta = rs.pop();
+    d.para("Inputs", { size: 12, bold: true, gap: 4 });
+    d.table([{ label: "Item", w: 220, bold: true }, { label: "Value", w: d.CW - 220 }], [["Raw material price", `Rs ${fmtN(cost.raw, 2)} per kg`], ["Cleaning, drying & grinding loss", cost.loss + "%"], ["Labour & power", `Rs ${fmtN(cost.labour, 2)} per kg`], ["Rent & overheads", `Rs ${fmtN(cost.overhead, 2)} per kg`], ["Transport", `Rs ${fmtN(cost.transport, 2)} per kg`], ["Your margin", cost.margin + "%"], ["Distributor & shop margin", cost.trade + "%"], ["GST", cost.gst + "%"]]);
+    d.para(`Cost of finished powder: Rs ${fmtN(meta.perKg, 2)} per kg`, { size: 12, bold: true, gap: 6 });
+    d.table([{ label: "Pack", w: 70, bold: true }, { label: "Packing", w: 80, align: "r" }, { label: "Your cost", w: 90, align: "r" }, { label: "Selling price", w: 100, align: "r", bold: true }, { label: "Profit", w: 80, align: "r" }, { label: "Suggested MRP", w: d.CW - 420, align: "r", bold: true }],
+      rs.map(r => [r.g >= 1000 ? r.g / 1000 + " kg" : r.g + " g", "Rs " + fmtN(cost.packCost[r.g], 2), "Rs " + fmtN(r.c, 2), "Rs " + fmtN(r.exf, 2), "Rs " + fmtN(r.profit, 2), "Rs " + fmtN(Math.ceil(r.mrp), 0)]));
+    d.para("Suggested MRP = selling price + trade margin + GST, rounded up. Figures come from the numbers entered; check them against real quotes and market prices.", { size: 8.5, color: C.muted });
+    return { bytes: d.bytes(), name: `Spice costing ${fileStamp()}.pdf` };
+  }
+
+  /* guide knowledge for the chat (built-in answers + notes for the AI) */
+  function guideAnswer(t) {
+    t = t.toLowerCase();
+    if (/\b(licen[cs]es?|registrations?|register|fssai|udyam|msme|gst|legal metrology|pollution|kspcb|iec|cres|permits?|noc)\b/.test(t) && /\b(need|require|get|which|what|how|start|apply|licen\w*)\b/.test(t))
+      return { text: "**Licences for a spice unit in India**\n\n" + LICENCES.map(([n, w, d]) => `- **${n}** (${w}): ${d}`).join("\n") + "\n\n*Confirm each with the department; rules change.*", chips: [{ label: "Licences & schemes", go: "guide", seg: "licences" }] };
+    if (/\b(subsid\w*|schemes?|pmfme|pmegp|loans?|mudra|funding|finance)\b/.test(t))
+      return { text: "**Schemes that can help**\n\n" + SCHEMES.map(([n, d]) => `- **${n}**: ${d}`).join("\n"), chips: [{ label: "Licences & schemes", go: "guide", seg: "licences" }] };
+    if (/\b(machines?|machinery|equipment|grinders?|pulveri[sz]ers?|blenders?|packing machines?)\b/.test(t))
+      return { text: "**Machines for a small spice unit**\n\n" + MACHINES.map(([n, need, d]) => `- **${n}** (${need}): ${d}`).join("\n"), chips: [{ label: "Machines & setup", go: "guide", seg: "setup" }] };
+    if (/\b(what (should|can) i (make|manufacture|produce|start)|which (spice|product)s? (to|should)|business idea|best (spice|product) to (make|start))\b/.test(t))
+      return { text: "**Good spice products to start with**\n\n" + IDEAS.map(r => `- **${r[0]}** (${DIFF[r[4]].toLowerCase()}): ${r[1]} Raw material: ${r[2]} ${r[3]}.`).join("\n"), chips: [{ label: "What to make", go: "guide", seg: "what" }] };
+    const m = t.match(/\b(how (do i|to|can i) (make|manufacture|produce|process)|manufactur(e|ing) (of )?|process(ing)? (of )?|steps (to|for) (make|making))\b/);
+    if (m) {
+      const k = Object.keys(HOW).find(k => k.toLowerCase().split(/[ (&]/).filter(w => w.length > 4).some(w => t.includes(w.replace(/s$/, "")))) || (/masala|blend|garam|sambar/.test(t) ? "Masalas & blends" : /cardamom|clove|whole|cinnamon|nutmeg/.test(t) ? "Whole spices" : null);
+      if (k) return { text: `**How to make ${k.toLowerCase()}** (FSSAI max moisture: ${HOW[k].moist})\n\n` + HOW[k].steps.map(([a, b], i) => `${i + 1}. **${a}**: ${b}`).join("\n"), chips: [{ label: "Step-by-step guide", go: "guide", seg: "how", how: k }] };
+      return { text: "**Setting up a spice unit**\n\n" + SETUP.map(([a, b], i) => `${i + 1}. **${a}**: ${b}`).join("\n"), chips: [{ label: "Manufacturing guide", go: "guide", seg: "setup" }] };
+    }
+    const pr = PROBLEMS.find(([a]) => a.toLowerCase().split(/[^a-z]+/).filter(w => w.length > 4 && !/powder|stock|tests|batches/.test(w)).some(w => t.includes(w.slice(0, 5))));
+    if (pr && /\b(problem|issue|wrong|why|fix|help|my|is|are|keeps?)\b/.test(t)) return { text: `**${pr[0]}**\n\n${pr[1]}`, chips: [{ label: "Quality & hygiene", go: "guide", seg: "quality" }] };
+    if (/\b(cost|costing|profit|margin|mrp|selling price|price my|how much to charge)\b/.test(t) && /\b(calculat|work out|my|pack|product|per kg|charge)\b/.test(t))
+      return { text: "Use the **cost calculator**: enter your raw material price, losses, labour, overheads, packing costs and margins, and it works out cost, selling price, profit and a suggested MRP for each pack size.", chips: [{ label: "Open cost calculator", go: "guide", seg: "cost" }] };
+    return null;
+  }
+  function guideContext(text) {
+    const t = text.toLowerCase();
+    if (!/manufactur|make|making|produce|process|start|unit|factory|machine|licen|fssai|udyam|gst|subsid|scheme|cost|margin|mrp|grind|blend|business|export/.test(t)) return "";
+    return ["GUIDE (checked facts for answering manufacturing questions; still advise confirming rules with authorities):",
+      "FSSAI max moisture: chilli powder 11%, turmeric powder 10%, coriander powder 9%, cumin powder 10%, black pepper powder 12%, mixed masala 12%, curry powder 14%.",
+      "FSSAI tiers from 1 April 2026: basic registration up to Rs 1.5 crore turnover; state licence Rs 1.5-50 crore; central above Rs 50 crore (exporters/multi-state may need central).",
+      "Exporters: IEC from DGFT + CRES from Spices Board (Rs 5,000, three-year block).",
+      "PMFME: 35% credit-linked subsidy up to Rs 10 lakh for micro units; extended until September 2026, PMFME 2.0 under consideration - check current status.",
+      "Pepper: thresh (mechanical ~320 kg/h), blanch ~1 min optional, sun-dry 3-5 days to ~10% moisture, clean and grade. Turmeric: cure within 2-3 days of harvest by boiling until soft, dry thin layers or below 60C, polish.",
+      "Machines: " + MACHINES.map(m => m[0]).join(", ") + ".",
+      "Licences: " + LICENCES.map(l => l[0]).join(", ") + "."].join("\n");
   }
 
   /* ---------- Start ---------- */
   labelTheme();
-  applyCompany();
   try { const inApp = /SpiceCoApp/.test(navigator.userAgent); if (!inApp && /\.onrender\.com$/.test(location.hostname)) ["getApp", "footApp"].forEach(id => { $(id).hidden = false; }); } catch {}
   renderNet();
   if (hist.length) { restoring = true; hist.forEach(([r, t]) => { if (r === "u") userSay(t); else botSay(t); }); restoring = false; } else welcome();
-  const startView = location.hash.slice(1) || "home";
-  showTab(startView === "chat" ? "home" : startView);
-  if (startView === "chat" || (store.get("sc.chatOpen", false) && innerWidth > 600)) setChat(true);
-  checkAI(); refreshCompany();
+  const start = location.hash.slice(1) || "home";
+  if (SEGS[start]) showTab("guide", start); else showTab(start === "chat" ? "home" : start);
+  if (start === "chat" || (store.get("sc.chatOpen", false) && innerWidth > 600)) setChat(true);
+  checkAI();
   setTimeout(() => { if (!MKT.got.p) refreshAll(false); }, 1500);
 })();
 

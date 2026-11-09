@@ -1,15 +1,16 @@
 <div class="progress" id="scrollProgress" aria-hidden="true"></div>
-<div class="samplebar" id="sampleBar" hidden>Sample details shown. Parts marked <span class="ph">like this</span> are blanks to be replaced with your company's real name, contact details, pack sizes and certifications.</div>
 <header class="nav gut">
   <div class="nav-in">
-    <button class="nav-brand" type="button" id="brandBtn" aria-label="Home"><span class="mark co" aria-hidden="true"></span><span data-co="short">Your Company</span></button>
+    <button class="nav-brand" type="button" id="brandBtn" aria-label="Home"><span class="mark co" aria-hidden="true"></span><span>Spice Guide</span></button>
     <nav class="nav-links" aria-label="Pages">
       <button type="button" class="nav-item" id="t-home" aria-current="page">Home</button>
-      <button type="button" class="nav-item" id="t-products" aria-current="false">Products</button>
-      <button type="button" class="nav-item" id="t-process" aria-current="false">Process &amp; quality</button>
-      <button type="button" class="nav-item" id="t-prices" aria-current="false">Market prices</button>
-      <button type="button" class="nav-item" id="t-bulk" aria-current="false">Bulk &amp; export</button>
-      <button type="button" class="nav-item" id="t-contact" aria-current="false">Contact</button>
+      <button type="button" class="nav-item" data-seg="what" aria-current="false">What to make</button>
+      <button type="button" class="nav-item" data-seg="how" aria-current="false">How to make</button>
+      <button type="button" class="nav-item" data-seg="setup" aria-current="false">Setup</button>
+      <button type="button" class="nav-item" data-seg="licences" aria-current="false">Licences</button>
+      <button type="button" class="nav-item" data-seg="quality" aria-current="false">Quality</button>
+      <button type="button" class="nav-item" id="t-prices" aria-current="false">Prices</button>
+      <button type="button" class="nav-item" data-seg="cost" aria-current="false">Calculators</button>
     </nav>
     <div class="nav-right">
       <span class="net" id="netStatus">Works offline</span>
@@ -24,37 +25,36 @@
   <div class="view" id="v-home">
     <section class="hero gut">
       <div class="band-in">
-        <span class="eyebrow">Spice manufacturer · <span data-co="place">Your town, Kerala</span></span>
-        <h1 data-co="name">Your Company Name</h1>
-        <p class="lead tagline" data-co="tagline">Your tagline</p>
-        <p class="lead" data-co="about">About your company</p>
+        <span class="eyebrow">Spice manufacturing guide · India &amp; Kerala</span>
+        <h1>Make spices the right way.</h1>
+        <p class="lead">A practical guide for spice companies and anyone starting one: what to make, how to make it, which machines and licences you need, how to keep quality high, what raw spices cost today, and how to price your packs. With an AI advisor for your own questions.</p>
         <div class="cta-row">
-          <button type="button" class="btn-lg primary glow" data-go="products">See our products</button>
-          <button type="button" class="btn-lg" data-go="bulk">Bulk &amp; export enquiry</button>
-          <button type="button" class="btn-lg" id="heroAsk">💬 Ask us anything</button>
+          <button type="button" class="btn-lg primary glow" data-seg-go="what">Start here: what to make</button>
+          <button type="button" class="btn-lg" id="heroAsk">💬 Ask the AI advisor</button>
         </div>
-        <div class="hero-cards" id="catCards"></div>
+        <div class="hero-cards" id="guideCards"></div>
       </div>
     </section>
 
     <section class="band dark gut">
       <div class="band-in">
-        <div class="sec-head"><span class="eyebrow">From farm to pack</span><h2>How our spices are made</h2><p>Every batch goes through cleaning, drying, grinding, testing and packing. Tap a step to read more.</p></div>
-        <div class="steps mini" id="stepsMini"></div>
-        <button type="button" class="btn-lg on-dark" data-go="process">Our process &amp; quality checks</button>
+        <div class="sec-head"><span class="eyebrow">Roadmap</span><h2>From idea to first sale</h2><p>The usual order of things when you set up a spice unit. Tap a step to read more.</p></div>
+        <div class="steps mini" id="roadMini"></div>
+        <button type="button" class="btn-lg on-dark" data-seg-go="setup">Machines &amp; setup in detail</button>
       </div>
     </section>
 
     <section class="band gut">
       <div class="band-in">
-        <div class="sec-head"><span class="eyebrow">Why choose us</span><h2>What makes us different</h2></div>
-        <div class="hl-grid" id="highlights"></div>
+        <div class="sec-head"><span class="eyebrow">The process</span><h2>How every spice is made</h2><p>Whatever the spice, it goes through the same core steps. The details change by product.</p></div>
+        <div class="steps mini" id="stepsMini"></div>
+        <button type="button" class="btn-lg" data-seg-go="how">Step-by-step for each product</button>
       </div>
     </section>
 
     <section class="band soft gut">
       <div class="band-in">
-        <div class="sec-head"><span class="eyebrow">Live · Spices Board of India</span><h2>Spice market today</h2><p>Latest official prices from Kerala and India's spice markets. Updates by itself.</p></div>
+        <div class="sec-head"><span class="eyebrow">Live · Spices Board of India</span><h2>Raw spice prices today</h2><p>What raw spices cost in India's markets right now. Updates by itself.</p></div>
         <div class="ticker" id="homeTicker"><p class="note">Loading today's prices…</p></div>
         <button type="button" class="btn-lg" data-go="prices">All market prices &amp; tracker</button>
       </div>
@@ -62,111 +62,51 @@
 
     <section class="band dark gut">
       <div class="band-in contact-band">
-        <div><span class="eyebrow">Talk to us</span><h2>Retail, wholesale or export?</h2><p>Tell us what you need and we'll get back to you with prices and availability.</p></div>
+        <div><span class="eyebrow">AI advisor</span><h2>Have a question about your unit?</h2><p>Ask about products, machines, licences, quality problems, costing or selling. It knows this guide and today's market prices.</p></div>
         <div class="cta-row">
-          <a class="btn-lg primary" data-co-link="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp us</a>
-          <a class="btn-lg on-dark" data-co-link="phone" href="#">Call</a>
-          <button type="button" class="btn-lg on-dark" data-go="bulk">Send an enquiry</button>
+          <button type="button" class="btn-lg primary" data-q="I want to start a small spice powder unit in Kerala. Where do I begin?">Where do I begin?</button>
+          <button type="button" class="btn-lg on-dark" data-q="Which licences do I need for a spice unit?">Licences I need</button>
+          <button type="button" class="btn-lg on-dark" data-q="My chilli powder is losing colour. What could be wrong?">Fix a quality problem</button>
         </div>
       </div>
     </section>
   </div>
 
-  <!-- PRODUCTS -->
-  <div class="view" id="v-products" hidden>
+  <!-- GUIDE (one page per section) -->
+  <div class="view" id="v-guide" hidden>
     <div class="page gut">
-      <div class="page-head"><h1>Our products</h1><p>Spice powders, blends and masalas, and whole spices. Tap <b>Enquire</b> for prices, pack sizes or bulk orders.</p></div>
-      <div class="pfilters">
-        <div class="seg" id="catSeg" role="tablist" aria-label="Product categories"></div>
-        <input type="search" id="pSearch" placeholder="Search products, e.g. turmeric" aria-label="Search products">
-      </div>
-      <div class="prod-grid" id="prodGrid"></div>
-    </div>
-  </div>
-
-  <!-- PROCESS -->
-  <div class="view" id="v-process" hidden>
-    <div class="page gut">
-      <div class="page-head"><h1>Process &amp; quality</h1><p>How spices are cleaned, dried, ground, tested and packed in a modern spice unit, and the checks that keep them pure and safe.</p></div>
-      <section class="panel blk"><h3>From raw spice to sealed pack</h3><p class="sub" id="procNote"></p><div class="steps" id="steps"></div></section>
-      <div class="two">
-        <section class="panel blk"><h3>Quality checks</h3><p class="sub">What a well-run spice unit tests for, batch by batch.</p><div id="tests"></div></section>
-        <section class="panel blk"><h3>Licences &amp; certifications</h3><div id="certs"></div></section>
-      </div>
-      <section class="panel blk"><h3>Storing spices at home</h3><div class="tips" id="storeTips"></div></section>
+      <div class="page-head"><h1 id="gTitle">Guide</h1><p id="gLead"></p></div>
+      <section class="panel pbody" id="gBody"></section>
     </div>
   </div>
 
   <!-- PRICES -->
   <div class="view" id="v-prices" hidden>
     <div class="page gut">
-      <div class="page-head"><h1>Market prices</h1><p>Live spice prices from the Spices Board of India, world commodity prices, and a tracker for the ones you follow. Everything updates by itself while this page is open.</p></div>
+      <div class="page-head"><h1>Market prices</h1><p>Live raw spice prices from the Spices Board of India, world commodity prices, and a tracker for the ones you buy. Everything updates by itself while this page is open.</p></div>
       <div class="livebar" id="pLive" aria-live="polite"></div>
       <div class="segrow"><div class="seg" id="pSeg" role="tablist" aria-label="Price lists"></div><span id="pDl"></span></div>
       <section class="panel pbody" id="pBody"></section>
-    </div>
-  </div>
-
-  <!-- BULK -->
-  <div class="view" id="v-bulk" hidden>
-    <div class="page gut">
-      <div class="page-head"><h1>Bulk &amp; export</h1><p>For shops, restaurants, distributors and importers. Send an enquiry and we'll reply with prices, samples and availability.</p></div>
-      <div class="two">
-        <section class="panel blk"><h3>What we offer</h3><div class="kvs" id="bulkInfo"></div></section>
-        <section class="panel blk">
-          <h3>Send an enquiry</h3>
-          <form class="enq" id="enqForm" novalidate>
-            <label>Your name<input name="name" autocomplete="name" required></label>
-            <label>Company or shop<input name="org" autocomplete="organization"></label>
-            <label>Phone or WhatsApp<input name="phone" type="tel" autocomplete="tel"></label>
-            <label>Email<input name="email" type="email" autocomplete="email"></label>
-            <label>City and country<input name="place" autocomplete="address-level2"></label>
-            <fieldset><legend>Products</legend><div class="pickgrid" id="enqProducts"></div></fieldset>
-            <div class="row2">
-              <label>Quantity<input name="qty" inputmode="decimal" placeholder="e.g. 500"></label>
-              <label>Unit<select name="unit"><option>kg</option><option>tonnes</option><option>packs</option><option>cartons</option></select></label>
-            </div>
-            <label>Packing<select name="pack"><option value="">No preference</option><option>Retail packs (your brand)</option><option>Private label (my brand)</option><option>Bulk bags (25 kg)</option><option>Bulk cartons</option></select></label>
-            <label>Message<textarea name="msg" rows="3" placeholder="Grade, mesh size, delivery date, samples…"></textarea></label>
-            <p class="formerr" id="enqErr" role="alert"></p>
-            <div class="cta-row">
-              <button type="button" class="btn-lg primary" id="enqWa">Send on WhatsApp</button>
-              <button type="button" class="btn-lg" id="enqMail">Send by email</button>
-              <span id="enqPdf"></span>
-            </div>
-            <p class="note" id="enqNote"></p>
-          </form>
-        </section>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="view" id="v-contact" hidden>
-    <div class="page gut">
-      <div class="page-head"><h1>Contact us</h1><p>Call, WhatsApp, email or visit. We're happy to help with orders and spice questions.</p></div>
-      <div class="ccards" id="contactCards"></div>
-      <section class="panel blk"><h3>Company details</h3><div class="kvs" id="coDetails"></div></section>
     </div>
   </div>
 </main>
 
 <footer class="foot-band gut">
   <div class="foot-grid">
-    <div><div class="foot-brand"><span class="mark co" aria-hidden="true"></span><span data-co="short">Your Company</span></div><p data-co="tagline">Your tagline</p><p class="fnote" data-co="place">Your town, Kerala</p></div>
-    <div><h4>Pages</h4><button class="fl" type="button" data-go="home">Home</button><button class="fl" type="button" data-go="products">Products</button><button class="fl" type="button" data-go="process">Process &amp; quality</button><button class="fl" type="button" data-go="prices">Market prices</button><button class="fl" type="button" data-go="bulk">Bulk &amp; export</button><button class="fl" type="button" data-go="contact">Contact</button></div>
-    <div><h4>Contact</h4><a data-co-link="phone" href="#">Phone</a><a data-co-link="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a><a data-co-link="email" href="#">Email</a><span class="fnote" id="footFssai"></span></div>
+    <div><div class="foot-brand"><span class="mark co" aria-hidden="true"></span>Spice Guide</div><p>A practical guide to manufacturing spices in India, made in Kerala.</p></div>
+    <div><h4>Guide</h4><button class="fl" type="button" data-seg-go="what">What to make</button><button class="fl" type="button" data-seg-go="how">How to make</button><button class="fl" type="button" data-seg-go="setup">Machines &amp; setup</button><button class="fl" type="button" data-seg-go="licences">Licences &amp; schemes</button><button class="fl" type="button" data-seg-go="quality">Quality</button><button class="fl" type="button" data-go="prices">Market prices</button><button class="fl" type="button" data-seg-go="cost">Calculators</button></div>
+    <div><h4>Sources</h4><a href="https://www.fssai.gov.in" target="_blank" rel="noopener">FSSAI</a><a href="https://www.indianspices.com" target="_blank" rel="noopener">Spices Board of India</a><a href="https://niftem.ac.in/newsite/pmfme/" target="_blank" rel="noopener">NIFTEM (PMFME)</a><a href="https://www.celkau.in" target="_blank" rel="noopener">Kerala Agricultural University</a><a href="https://fred.stlouisfed.org" target="_blank" rel="noopener">FRED (IMF prices)</a></div>
     <div><h4>Get the app</h4><a href="SpiceCo.apk" download id="footApp" hidden>Android app</a><span class="fnote">Works offline</span><span class="fnote">Light &amp; dark theme</span></div>
   </div>
-  <div class="watermark" aria-hidden="true" data-co="short">Spices</div>
-  <p class="foot-note">© <span id="year"></span> <span data-co="name">Your Company Name</span>. Market prices are indicative, from the Spices Board of India and the IMF.</p>
+  <div class="watermark" aria-hidden="true">Spice Guide</div>
+  <p class="foot-note">General guidance, not legal or financial advice. Check rules with the authorities before you invest. Market prices are indicative.</p>
 </footer>
 
 <button class="totop" id="toTop" type="button" hidden>↑ Back to top</button>
-<button class="chat-fab" id="chatFab" type="button" aria-expanded="false" aria-controls="v-chat"><span aria-hidden="true">💬</span><span class="fab-text">Ask us</span></button>
-<section class="chat-panel" id="v-chat" role="dialog" aria-label="Chat" hidden>
+<button class="chat-fab" id="chatFab" type="button" aria-expanded="false" aria-controls="v-chat"><span aria-hidden="true">💬</span><span class="fab-text">Ask the advisor</span></button>
+<section class="chat-panel" id="v-chat" role="dialog" aria-label="AI advisor" hidden>
   <div class="chat-top">
-    <div class="who"><span class="av big co" aria-hidden="true"></span><span><b id="chatName">Ask us</b><small>Products, orders &amp; spice questions</small></span></div>
+    <div class="who"><span class="av big co" aria-hidden="true"></span><span><b>AI advisor</b><small>Spice manufacturing questions</small></span></div>
     <div class="chat-acts">
       <button class="icon-btn" type="button" id="newchat" title="Clear chat" aria-label="Clear chat">🗑</button>
       <button class="icon-btn" type="button" id="chatClose" title="Close chat" aria-label="Close chat">✕</button>
@@ -175,10 +115,10 @@
   <div class="msgs" id="msgs" aria-live="polite"></div>
   <form class="ask" id="form">
     <button class="mic" type="button" id="micBtn" title="Speak your question" aria-label="Speak your question" hidden>🎤</button>
-    <textarea id="q" rows="1" placeholder="Ask about our spices, orders, recipes…" aria-label="Your message"></textarea>
+    <textarea id="q" rows="1" placeholder="Ask about making, machines, licences, costs…" aria-label="Your message"></textarea>
     <button class="send" id="send" type="submit" aria-label="Send">Send</button>
   </form>
   <p class="micstatus" id="micStatus" role="status"></p>
-  <p class="foot">AI answers can be wrong. For orders and prices, contact us directly.</p>
+  <p class="foot">AI answers can be wrong. Check rules and figures before you invest.</p>
 </section>
 <div class="tt" id="tt" hidden></div>

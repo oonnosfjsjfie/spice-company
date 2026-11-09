@@ -88,3 +88,53 @@ a.ccard2:hover { border-color: var(--fg); }
   .stepm { padding: 10px; gap: 8px; font-size: .88rem; }
 }
 #catCards { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+/* ---------- Manufacturing guide ---------- */
+.gcard { text-align: left; cursor: pointer; font: inherit; color: inherit; display: flex; flex-direction: column; gap: 4px; }
+.gcard:hover { border-color: var(--fg); }
+.gcard .si { font-size: 1.6rem; }
+#v-guide .pblk + .pblk { border-top: 1px solid var(--line); padding-top: 18px; }
+.idea-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-top: 8px; }
+.idea { border: 1px solid var(--line); border-radius: var(--r); padding: 14px; display: flex; flex-direction: column; gap: 6px; background: var(--surface); }
+.idea p { margin: 0; font-size: .88rem; }
+.idea .ikv span { color: var(--muted); font-weight: 600; }
+.idea .btn-lg { align-self: flex-start; margin-top: auto; }
+.itop { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+.itop b { font-size: 1.05rem; }
+.lvl { font-size: .72rem; border-radius: 999px; padding: 2px 8px; white-space: nowrap; border: 1px solid var(--line); }
+.lvl.l1 { color: #0a7d0a; border-color: currentColor; } .lvl.l2 { color: var(--spice); border-color: currentColor; } .lvl.l3 { color: #c2362f; border-color: currentColor; }
+.glist { margin: 6px 0 0; padding-left: 20px; } .glist li { margin: 4px 0; }
+.qchip.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.step .si { width: 30px; height: 30px; border-radius: 50%; background: var(--spice-soft); color: var(--spice); display: grid; place-items: center; font-size: .9rem; font-weight: 700; }
+.steps.one { grid-template-columns: 1fr; }
+.mrow { border-top: 1px solid var(--line); padding: 10px 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; }
+.mrow p { grid-column: 1 / -1; margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
+.mrow .srclink { grid-column: 1 / -1; margin-top: 2px; }
+.need { font-size: .74rem; border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; align-self: start; white-space: nowrap; }
+.need.n-essential { border-color: var(--spice); color: var(--spice); }
+.rtable { display: grid; gap: 6px; margin: 8px 0; }
+.rrow { display: grid; grid-template-columns: minmax(0, 1fr) 90px 36px; gap: 6px; }
+.rrow input, .inl input, .cform input, .cform select { border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; background: var(--bg); color: var(--fg); font: inherit; width: 100%; min-width: 0; }
+.inl { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; } .inl input { width: 100px; }
+.rout table, .cres table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.rout th, .rout td, .cres th, .cres td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.cform { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; margin: 10px 0 16px; }
+.cform label { display: grid; gap: 4px; font-size: .86rem; font-weight: 600; }
+.cform label em { font-style: normal; font-weight: 400; color: var(--muted); font-size: .78rem; }
+.cform .wide { grid-column: 1 / -1; }
+.uin { display: flex; align-items: center; gap: 6px; } .uin small { color: var(--muted); white-space: nowrap; }
+.lblx { font-size: .86rem; font-weight: 600; display: block; margin-bottom: 6px; }
+.packcost { display: flex; gap: 10px; flex-wrap: wrap; }
+.packcost label { display: flex; align-items: center; gap: 4px; font-weight: 400; } .packcost input { width: 74px; }
+.cbig { font-size: 1.2rem; font-weight: 700; margin: 0 0 4px; }
+@media (max-width: 600px) { .rrow input, .inl input, .cform input, .cform select { font-size: 16px; } .rrow { grid-template-columns: minmax(0, 1fr) 76px 36px; } }
+.nav-brand span:last-child { white-space: nowrap; }
+.cform label { align-content: start; }
+@media (max-width: 1420px) { #netStatus { display: none; } }
+.stepm.light { background: var(--surface); color: var(--fg); border-color: var(--line); cursor: default; }
+.pbody > *, .pblk > * { min-width: 0; }
+#gBody .qchip { white-space: normal; text-align: left; }
+.cform { grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr)); }
+.idea-grid { grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
+.packcost input { width: 64px; }
+.cres .tw, .rout .tw, .qtable { overflow-x: auto; max-width: 100%; }
+@media (max-width: 600px) { .cres th, .cres td, .rout th, .rout td { padding: 6px 5px; font-size: .8rem; } }

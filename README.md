@@ -1,39 +1,30 @@
-# Spice company website
+# Spice Guide
 
-A website for a Kerala spice manufacturer: products (spice powders, blends and masalas, whole spices),
-process and quality, bulk and export enquiries (sent by WhatsApp or email, or saved as a PDF), live
-market prices with a tracker, and an AI assistant (Google Gemini) that also answers offline with
-built-in replies. Works on phones, tablets and computers, offline after the first visit, and as an
-Android app (`web/SpiceCo.apk`).
+A practical guide to spice manufacturing in India (especially Kerala), for spice companies and new
+entrepreneurs. It covers what to make, how to make it, machines and setup, licences and schemes, quality and
+hygiene, live market prices, and cost and batch calculators, with an AI advisor (Google Gemini) that also gives
+built-in answers offline. It works on phones, tablets and computers, offline after the first visit, and as an
+Android app (`web/SpiceCo.apk`, shown as "Spice Guide").
 
-## Fill in your company details
+Live: https://spice-company.onrender.com
 
-Everything about the company lives in **`web/data/company.json`**. Any field left empty (`""`) shows
-on the site as a clearly marked blank, and the AI is told never to make it up.
+## Turn on the AI
 
-- `name`, `short_name`, `tagline`, `about`, `founded`, `city`, `address`
-- `phone`, `whatsapp`, `email`, `hours`, `social`
-- `fssai_licence`, `gstin`, `certifications` (only ones you actually hold)
-- `highlights`: what makes you different
-- `bulk`: minimum order, packing, private label, export markets, lead time
-- `products`: each product's `packs` (e.g. `["100 g", "250 g", "1 kg"]`) and `price` (or leave empty for "Price on request")
+On Render, open the service, then Environment, and add `GEMINI_API_KEY` with your Google AI Studio key. Never
+put the key in this repository.
 
-Edit the file on GitHub and save. Render updates the live site in about a minute, and open pages,
-including the app, pick up the change by themselves.
+## Where the content lives
 
-## Live server (Render)
+- `src/guide.js`: product ideas, step-by-step processes, machines, setup roadmap, licences, schemes, quality
+  tests, hygiene, labels, problems and fixes, the calculators, and the facts given to the AI. Each figure links
+  to its source.
+- `src/company.js`: pages, home, chat and the advisor's built-in answers.
+- `backend/server.py`: serves `web/`, the AI chat (`/api/chat`) and live prices (`/api/prices`, `/api/commodities`).
 
-`render.yaml` sets up one free web service. Add `GEMINI_API_KEY` in the service's Environment.
-The server (`backend/server.py`) uses only Python's standard library.
+Edit `src/`, run `python build.py`, and commit. Render redeploys, and open pages and the app update themselves.
 
-## Run locally
+## Sources
 
-```
-cp backend/.env.example backend/.env   # paste your Gemini key
-python backend/server.py               # http://127.0.0.1:8000
-```
-
-## Market prices
-
-From the Spices Board of India (daily prices and the weekly Spice Market report) and the IMF
-(commodities, via FRED). Indicative only.
+FSSAI (spice standards, licensing thresholds), Spices Board of India (prices, exporter registration),
+NIFTEM/PMFME (processing), Kerala Agricultural University (post-harvest), IMF via FRED (commodities). Rules
+change: confirm with the authorities before acting. General guidance, not legal or financial advice.

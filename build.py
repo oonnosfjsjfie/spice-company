@@ -22,14 +22,12 @@ mk = mk.replace("SpiceBot's AI", "the site's AI").replace("Ask SpiceBot why", "A
 pdf = open(f"{SB}/pdf_front.js").read()
 a = pdf.index("  function ehedgPdf() {"); b = pdf.index("  function pricesPdf() {")
 pdf = pdf[:a] + pdf[b:]
-pdf = pdf.replace('pdfEnc("SpiceBot · " + title)', 'pdfEnc((has(CO.name) ? CO.name : "Spice company") + " · " + title)')
-pdf = pdf.replace('d.text(d.M + 6.5, 49, "S", { size: 17, bold: true, color: C.white });', 'd.text(d.M + 6.5, 49, (has(CO.name) ? CO.name : "S").trim()[0].toUpperCase(), { size: 17, bold: true, color: C.white });')
-pdf = pdf.replace('d.text(d.M + 36, 43, "SpiceBot", {', 'd.text(d.M + 36, 43, has(CO.name) ? CO.name : "Spice company", {')
-pdf = pdf.replace("/Author (SpiceBot) /Producer (SpiceBot)", "/Producer (Spice company website)")
+pdf = pdf.replace('pdfEnc("SpiceBot · " + title)', 'pdfEnc("Spice Guide · " + title)')
+pdf = pdf.replace('d.text(d.M + 36, 43, "SpiceBot", {', 'd.text(d.M + 36, 43, "Spice Guide", {')
+pdf = pdf.replace("/Author (SpiceBot) /Producer (SpiceBot)", "/Producer (Spice Guide)")
 pdf = pdf.replace("SpiceBot's AI", "the site's AI").replace("SpiceBot price report", "Spice price report")
-js = open("src/company.js").read() + "\n" + mk + "\n" + pdf + "\n" + open("src/tail.js").read()
-company = json.load(open("web/data/company.json"))
-js = js.replace("/*COMPANY*/{}", json.dumps(company, ensure_ascii=False)).replace("__LIVE_URL__", LIVE)
+js = open("src/company.js").read() + "\n" + mk + "\n" + pdf + "\n" + open("src/guide.js").read() + "\n" + open("src/tail.js").read()
+js = js.replace("__LIVE_URL__", LIVE)
 left = [w for w in re.findall(r"SpiceBot[^\"'`]{0,30}", js) if "SpiceBotAndroid" not in w]
 if left: print("note: SpiceBot mentions left:", left[:8])
 
@@ -37,7 +35,7 @@ safe = lambda x: re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', lambda m: '\\u%04x'
 libs = "<script>" + safe(open(G + "/marked/lib/marked.umd.js").read()) + "</script>\n<script>" + safe(open("/opt/npm-tools/node_modules/dompurify/dist/purify.min.js").read()) + "</script>"
 body = open("src/body.html").read()
 head = ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
-        '<title>Spice company · Spices, masalas & bulk supply</title><meta name="description" content="Spice powders, blends and masalas, whole spices, and bulk and export supply from Kerala.">'
+        '<title>Spice Guide · How to manufacture spices</title><meta name="description" content="A practical guide to spice manufacturing in India: what to make, how to make it, machines, licences, quality, market prices and costing, with an AI advisor.">'
         '<meta name="theme-color" content="#8a4b0f"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="icon-192.png">'
         '<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">'
         '<style>:root{padding-top:env(safe-area-inset-top,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>'

@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.spiceco.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.spiceco.app"
+        minSdk 24
+        targetSdk 34
+        versionCode((project.findProperty("versionCode") ?: "1") as Integer)
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            // The signing key is kept private, not in this repository. Put spiceco.jks and
+            // keystore.properties (storePassword=..., keyPassword=...) in this folder to build.
+            def kp = new Properties()
+            def kf = file('keystore.properties')
+            if (kf.exists()) kf.withInputStream { kp.load(it) }
+            storeFile file('spiceco.jks')
+            storePassword kp.getProperty('storePassword', '')
+            keyAlias 'spiceco'
+            keyPassword kp.getProperty('keyPassword', '')
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+

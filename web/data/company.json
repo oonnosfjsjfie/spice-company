@@ -1,0 +1,286 @@
+{
+ "_note": "Fill in your real company details. Leave a field empty (\"\") and the website shows a clearly marked blank instead.",
+ "name": "",
+ "short_name": "",
+ "tagline": "",
+ "about": "",
+ "founded": "",
+ "city": "",
+ "state": "Kerala",
+ "country": "India",
+ "address": "",
+ "phone": "",
+ "whatsapp": "",
+ "email": "",
+ "hours": "",
+ "website": "",
+ "social": {
+  "instagram": "",
+  "facebook": "",
+  "youtube": "",
+  "linkedin": ""
+ },
+ "fssai_licence": "",
+ "gstin": "",
+ "certifications": [],
+ "highlights": [],
+ "bulk": {
+  "moq": "",
+  "packaging": [],
+  "export_markets": [],
+  "private_label": "",
+  "lead_time": ""
+ },
+ "products": [
+  {
+   "name": "Turmeric powder",
+   "category": "powder",
+   "about": "Ground from dried, polished turmeric rhizomes. Bright golden yellow with a warm, earthy, slightly bitter taste.",
+   "uses": "Curries, dals, rice, pickles and marinades.",
+   "color": "#d99a00",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Kashmiri chilli powder",
+   "category": "powder",
+   "about": "Ground from mild Kashmiri-type red chillies. Gives a deep red colour with gentle heat.",
+   "uses": "Tandoori marinades, gravies and anything that needs colour without too much heat.",
+   "color": "#b8321f",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Red chilli powder",
+   "category": "powder",
+   "about": "Ground from dried red chillies. Hot and sharp, the everyday heat in Indian cooking.",
+   "uses": "Curries, chutneys, fries and spice rubs.",
+   "color": "#a3261a",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Coriander powder",
+   "category": "powder",
+   "about": "Ground from roasted or sun-dried coriander seeds. Mild, citrusy and slightly sweet; it thickens gravies.",
+   "uses": "Curries, sambar, rasam and vegetable dishes.",
+   "color": "#a8834a",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Cumin powder",
+   "category": "powder",
+   "about": "Ground from cumin (jeera) seeds. Warm, nutty and earthy.",
+   "uses": "Raita, chaat, dals, rice and buttermilk.",
+   "color": "#8a6236",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Black pepper powder",
+   "category": "powder",
+   "about": "Ground from dried black peppercorns. Sharp, woody heat from piperine.",
+   "uses": "Soups, eggs, stir-fries, rasam and pepper chicken.",
+   "color": "#3d3229",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Garam masala",
+   "category": "blend",
+   "about": "A warming blend of whole spices such as cardamom, cinnamon, cloves, pepper and cumin, roasted and ground.",
+   "uses": "Added at the end of cooking for aroma: curries, biryani and kebabs.",
+   "color": "#6b4423",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Sambar powder",
+   "category": "blend",
+   "about": "A South Indian blend built on coriander, red chillies, fenugreek and dals, roasted for depth.",
+   "uses": "Sambar, kootu and vegetable stews.",
+   "color": "#a8541c",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Rasam powder",
+   "category": "blend",
+   "about": "A peppery, cumin-forward blend for thin, tangy South Indian soups.",
+   "uses": "Rasam and pepper soups.",
+   "color": "#8c4a1f",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Chicken masala",
+   "category": "blend",
+   "about": "A rich blend for chicken curries, usually with coriander, chilli, pepper, fennel and warm spices.",
+   "uses": "Chicken curry, roast and fry.",
+   "color": "#953a1c",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Meat masala",
+   "category": "blend",
+   "about": "A robust, spicier blend for red meat curries and roasts.",
+   "uses": "Mutton, beef and other meat curries.",
+   "color": "#7a2d18",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Fish curry masala",
+   "category": "blend",
+   "about": "A blend tuned for coastal fish curries, often with chilli, coriander, turmeric and fenugreek.",
+   "uses": "Kerala-style fish curry, fish fry and moilee.",
+   "color": "#b04a1e",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Biryani masala",
+   "category": "blend",
+   "about": "An aromatic blend with whole-spice notes such as cardamom, cinnamon, cloves, mace and star anise.",
+   "uses": "Biryani, pulao and ghee rice.",
+   "color": "#7d5a2c",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Chaat masala",
+   "category": "blend",
+   "about": "A tangy, salty blend with dry mango (amchur), cumin and black salt.",
+   "uses": "Fruit, salads, snacks and street-food chaat.",
+   "color": "#8f7a3a",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Black pepper",
+   "category": "whole",
+   "about": "Dried berries of the pepper vine, the 'king of spices' grown across Kerala.",
+   "uses": "Grind fresh over food; whole in rice, curries and pickles.",
+   "color": "#2b2520",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Green cardamom",
+   "category": "whole",
+   "about": "Dried pods of small cardamom. Sweet, floral and cooling.",
+   "uses": "Tea, sweets, biryani and garam masala.",
+   "color": "#6f8f3c",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Cloves",
+   "category": "whole",
+   "about": "Dried flower buds of the clove tree. Strong, warm and numbing.",
+   "uses": "Biryani, rice, chai and spice blends.",
+   "color": "#5a3524",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Cinnamon",
+   "category": "whole",
+   "about": "Dried inner bark quills. Sweet and woody.",
+   "uses": "Biryani, desserts, tea and garam masala.",
+   "color": "#9a5b33",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Nutmeg",
+   "category": "whole",
+   "about": "The dried seed of the nutmeg fruit. Warm and sweet; grate fresh.",
+   "uses": "Desserts, white sauces and meat masalas.",
+   "color": "#7a5236",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Mace",
+   "category": "whole",
+   "about": "The red, lacy covering of the nutmeg seed. More delicate than nutmeg.",
+   "uses": "Biryani, kormas and baking.",
+   "color": "#c0552a",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Cumin seeds",
+   "category": "whole",
+   "about": "Whole jeera seeds. Nutty and earthy; release flavour when tempered in oil.",
+   "uses": "Tempering for dals, rice and vegetables.",
+   "color": "#8a6a3e",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Coriander seeds",
+   "category": "whole",
+   "about": "Whole dried coriander fruits. Citrusy and mild.",
+   "uses": "Roast and grind fresh, or use in pickles.",
+   "color": "#b39a5c",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Mustard seeds",
+   "category": "whole",
+   "about": "Small brown or black seeds that pop in hot oil.",
+   "uses": "South Indian tempering, pickles and curries.",
+   "color": "#4d3a26",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Fenugreek seeds",
+   "category": "whole",
+   "about": "Hard, bitter-sweet seeds with a maple-like aroma when roasted.",
+   "uses": "Sambar, pickles, fish curry and dosa batter.",
+   "color": "#b08a3e",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  },
+  {
+   "name": "Dry red chillies",
+   "category": "whole",
+   "about": "Sun-dried whole red chillies.",
+   "uses": "Tempering, chutneys and grinding your own chilli powder.",
+   "color": "#a52a1f",
+   "packs": [],
+   "price": "",
+   "storage": "Keep in an airtight container away from light, heat and moisture."
+  }
+ ]
+}

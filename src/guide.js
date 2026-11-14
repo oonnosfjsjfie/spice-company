@@ -1,5 +1,14 @@
   /* ---------- Manufacturing guide: what to make, how to make it, machines, setting up, licences, costing ---------- */
   const G_SRC = {
+    ehedg: ["EHEDG guideline catalogue", "https://ehedg.org/guidelines"],
+    gl8: ["EHEDG GL 8: Hygienic design principles", "https://www.ehedg.org/guidelines-working-groups/guidelines/guidelines/detail/hygienic-design-principles"],
+    gl22: ["EHEDG GL 22: Dry particulate materials", "https://www.ehedg.org/guidelines-working-groups/guidelines/guidelines/detail/general-hygienic-design-criteria-for-the-safe-processing-of-dry-particulate-materials"],
+    en1672: ["EN 1672-2: Food processing machinery, hygiene requirements", "https://standards.iteh.ai/catalog/standards/sist/834860b2-2200-4955-8a54-a4e19c840f48/sist-en-1672-2-2005"],
+    dust: ["Dust explosion hazard (NFPA 652, ATEX) explained", "https://sgsystemsglobal.com/glossary/dust-explosion-hazard-nfpa-652-atex/"],
+    asta: ["ASTA Clean, Safe Spices Guidance Document", "https://www.astaspice.org/food-safety/clean-safe-spices-guidance-document/"],
+    astagmp: ["ASTA Good Manufacturing Practices guide for spices", "https://astaspice.org/resources/good-manufacturing-practices-gmp-guide-for-spices"],
+    esa: ["CBI: EU buyer requirements for spices (incl. ESA Quality Minima)", "https://www.cbi.eu/market-information/spices-herbs/buyer-requirements"],
+    gma: ["GMA: Control of Salmonella in Low-Moisture Foods", "https://ucfoodsafety.ucdavis.edu/sites/g/files/dgvnsk7366/files/files/page/SalmonellaControlGuidance.pdf"],
     fssai: ["FSSAI standards for spices (Chapter 2.9)", "https://www.fssai.gov.in/upload/uploadfiles/files/Chapter%202_9_Salt_Spices_Condiments%20and%20related%20products.pdf"],
     tiers: ["FSSAI turnover limits revised from 1 April 2026", "https://irismsme.com/blog/msme-alert-fssai-turnover-limits-revised-from-1-april-2026"],
     cres: ["Spices Board FAQ on exporter registration (CRES)", "https://indianspices.com/hin/sites/default/files/faq.pdf"],
@@ -97,6 +106,45 @@
     ["Design packs & labels", "FSSAI labels need: product name, ingredients, net quantity, FSSAI logo and licence number, batch number, packing and best-before dates, MRP, veg symbol, manufacturer address and customer care."],
     ["Start selling", "Retail shops and distributors, hotels and caterers, online marketplaces, and later export."],
   ];
+  // Machine standards: there is no single standard just for spice machines; buyers and machine makers use these together.
+  const STD_GROUPS = [
+    ["EHEDG guidelines for machines & parts", "The European Hygienic Engineering & Design Group writes the best-known guidelines for food equipment that is easy to clean.", [
+      ["GL 8 · Hygienic design principles", "The basics for any machine maker: smooth welds and rounded inside corners, no open screw threads where product touches, and smooth stainless steel (a surface roughness around Ra 0.8 µm or better is the usual target for product-contact parts).", "gl8"],
+      ["GL 22, 33, 36, 38, 40, 41, 53 · Dry powders and granules", "The core set for spice lines: general design for dry materials, discharging, transfer (conveying), rotary valves, valves, diverter valves and bulk pack-off.", "gl22"],
+      ["GL 31 · Spray dryers & fluid beds", "Applies to fluid-bed dryers and coolers, for example after steam sterilising or washing whole spices.", "ehedg"],
+      ["GL 25 · Mechanical seals & GL 48 · Elastomeric seals", "Seals on mills, ribbon blenders and steriliser airlocks face heat, gritty spice particles and spice oils. These guidelines cover seals that stay tight and cleanable.", "ehedg"],
+      ["GL 35 · Hygienic welding of tubing & GL 54 · Testing weld joints", "For pneumatic conveying pipes and cyclone ducts: weld burrs inside pipes trap powder.", "ehedg"],
+      ["GL 58 · Hygienic design risk management", "A method for checking a machine's hygiene risks when you buy it and at factory acceptance testing (FAT).", "ehedg"],
+    ]],
+    ["International machine standards", "Formal standards that machine makers quote, and that BRCGS and FSSC 22000 auditors look for.", [
+      ["ISO 14159 · Hygiene requirements for the design of machinery", "The ISO standard for hygienic risk assessment, cleanability and construction of processing machines.", null],
+      ["EN 1672-2 · Food processing machinery, hygiene requirements", "Splits a machine into a food area, a splash area and a non-food area, with rules for each: rounded inside corners and no dead spaces in hoppers, chutes and housings.", "en1672"],
+    ]],
+    ["Dust-explosion safety", "Fine spice dust burns, and a dust cloud in a grinder, sifter or dust collector can explode. Grinding and dust collection need explosion protection.", [
+      ["NFPA 61 & NFPA 652 (USA)", "US fire codes for food and agricultural dust and for combustible dust in general: hazard analysis, explosion venting, grounding and housekeeping.", "dust"],
+      ["ATEX (EU Directive 2014/34/EU)", "EU law for equipment used where explosive atmospheres can form: certified motors, airlocks that stop flames, venting and spark detection.", "dust"],
+      ["In India", "These are not Indian law, but export buyers and auditors often expect them. Follow the Factories Act and your state's factory rules on dust, and ask your machine maker for earthing (grounding), explosion vents and dust-tight electricals on grinders, sifters and dust collectors.", null],
+    ]],
+    ["Spice industry guidance (free)", "Written by spice and food trade associations; widely used by buyers.", [
+      ["ASTA Clean, Safe Spices Guidance Document", "From the American Spice Trade Association: cleaning machines (destoners, aspirators, sifters, optical sorters), proving that steam or other microbial-reduction steps work, and stopping recontamination after them.", "asta"],
+      ["ESA Quality Minima Document", "From the European Spice Association: what European buyers expect, including foreign-body removal, metal and X-ray detection, and equipment hygiene.", "esa"],
+      ["GMA: Control of Salmonella in Low-Moisture Foods", "Widely used in spices and seasonings: sanitary equipment design checklists, separate tools for dry cleaning, and keeping water out.", "gma"],
+    ]],
+  ];
+  // What to ask for when buying a machine (for your enquiry / requirement specification)
+  const MACHINE_SPEC = [
+    ["Materials", "Product-contact parts in food-grade stainless steel (usually SS 304 or SS 316) with material certificates; food-grade plastics and seals."],
+    ["Surface finish", "Smooth, polished product-contact surfaces (ask for the roughness value, e.g. Ra 0.8 µm or better) and smooth, ground welds."],
+    ["No hiding places", "Rounded inside corners, no ledges, gaps, open threads or dead spaces where powder can build up; self-emptying hoppers and chutes."],
+    ["Easy dry cleaning", "Quick-release covers and screens, tool-free opening, access to every product area for brushing and vacuuming."],
+    ["Seals & bearings", "Food-grade seals suited to heat and spice oils; bearings outside the product zone; food-grade (H1) lubricants where they could touch product."],
+    ["Dust & explosion", "Dust-tight design, dust extraction points, earthing of all metal parts, explosion vents or suppression on mills and dust collectors, and dust-proof electricals."],
+    ["Heat control", "For grinders: cooling (water jacket or cool air) and temperature display, to protect colour and aroma."],
+    ["Foreign bodies", "Magnets before grinding and packing, sieves with checkable screens, and space for a metal detector."],
+    ["Documents", "Drawings, manuals, spare parts list, cleaning instructions, material and calibration certificates, electrical safety and warranty."],
+    ["Testing before you accept", "A factory acceptance test (FAT) with your own spice: capacity, fineness, temperature, dust and how easily it strips down for cleaning."],
+  ];
+
   const LICENCES = [
     ["Business registration & PAN", "Everyone", "Proprietorship, partnership, LLP or company, with a PAN and bank account."],
     ["Udyam (MSME) registration", "Recommended", "Free online at udyamregistration.gov.in; needed for most MSME loans and schemes."],
@@ -190,8 +238,23 @@
       s.append(steps(SETUP, true));
       const m = el("section", "pblk"); m.append(el("h3", null, "Machines for a small unit"), el("p", "sub", "What a small powder and masala unit typically needs. Get quotes from several makers and ask to see a machine running before you buy."));
       MACHINES.forEach(([n, need, d]) => { const r = el("div", "mrow"); r.append(el("b", null, n), el("span", "need n-" + slug(need), need), el("p", null, d)); m.append(r); });
-      m.append(srcLink("pepper"), askBtn("Ask the AI to plan my machines", "Plan the machines and layout for a small spice powder unit making about 200 kg a day. What do I need?"));
+      const toStd = el("button", "btn-lg sm", "Machine standards & buying checklist →"); toStd.type = "button"; toStd.onclick = () => showTab("guide", "standards");
+      m.append(toStd, document.createElement("br"), srcLink("pepper"), askBtn("Ask the AI to plan my machines", "Plan the machines and layout for a small spice powder unit making about 200 kg a day. What do I need?"));
       body.append(s, m);
+    } else if (gSeg === "standards") {
+      const intro = el("section", "pblk"); intro.append(el("h3", null, "No single standard, but a well-known set"), el("p", "sub", "There is no one standard just for spice machines. Machine makers and spice companies use hygienic design guidelines, machine safety and hygiene standards, and spice-industry guidance together. Ask your machine maker which of these their machines meet, and ask for proof."));
+      body.append(intro);
+      STD_GROUPS.forEach(([h, d, items]) => {
+        const s = el("section", "pblk"); s.append(el("h3", null, h), el("p", "sub", d));
+        items.forEach(([n, t, src]) => { const r = el("div", "mrow"); r.append(el("b", null, n), el("p", null, t)); if (src) r.append(srcLink(src)); s.append(r); });
+        body.append(s);
+      });
+      const sp = el("section", "pblk"); sp.append(el("h3", null, "Buying a machine: what to ask for"), el("p", "sub", "Put these in your enquiry to machine makers (your requirement specification), and check them when the machine arrives."));
+      MACHINE_SPEC.forEach(([n, t]) => { const r = el("label", "ckrow"); const c = el("input"); c.type = "checkbox"; const k = "sc.spec." + slug(n); c.checked = !!store.get(k, false); c.onchange = () => store.set(k, c.checked); const tx = el("span"); tx.append(el("b", null, n + ": "), document.createTextNode(t)); r.append(c, tx); sp.append(r); });
+      const acts = el("div", "chips"); acts.append(dlButton("⬇ Download machine spec checklist (PDF)", specPdf));
+      const ask = el("button", "qchip", "Ask the AI to write a spec for my machine"); ask.type = "button"; ask.onclick = () => { setChat(true); $("q").value = "Write a requirement specification for buying a "; $("q").focus(); };
+      acts.append(ask); sp.append(acts);
+      body.append(sp);
     } else if (gSeg === "licences") {
       const s = el("section", "pblk"); s.append(el("h3", null, "Licences & registrations (India, Kerala)"), el("p", "sub", "Rules change, so confirm each one with the department or a consultant before you apply. Last checked: November 2026."));
       LICENCES.forEach(([n, who, d, src]) => { const r = el("div", "mrow"); r.append(el("b", null, n), el("span", "need", who)); r.append(el("p", null, d)); if (src) r.append(srcLink(src)); s.append(r); });
@@ -319,9 +382,26 @@
     return { bytes: d.bytes(), name: `Spice costing ${fileStamp()}.pdf` };
   }
 
+  function specPdf() {
+    const d = newPdf("Machine spec checklist"); pdfHeader(d, "Spice machine spec checklist", stamp());
+    d.para("Machine: ______________________   Maker: ______________________   Quote no.: ____________", { size: 10, gap: 10 });
+    d.h2("What we require");
+    d.table([{ label: "Requirement", w: 110, bold: true }, { label: "Details", w: d.CW - 110 - 70 }, { label: "Met?", w: 70, draw: (v, x, y, w, h) => { d.rect(x + 4, y + 1, 9, 9, { stroke: C.muted }); d.text(x + 16, y + 9, "Yes", { size: 7.5, color: C.muted }); d.rect(x + 34, y + 1, 9, 9, { stroke: C.muted }); d.text(x + 46, y + 9, "No", { size: 7.5, color: C.muted }); } }],
+      MACHINE_SPEC.map(([n, t]) => [n, t, ""]), { size: 8.8 });
+    d.h2("Standards to ask about");
+    STD_GROUPS.forEach(([h, , items]) => { d.para(h, { size: 10, bold: true, gap: 2 }); items.forEach(([n]) => d.para("• " + n, { size: 9, indent: 8, gap: 1 })); d.y += 4; });
+    d.h2("Notes"); for (let i = 0; i < 5; i++) { d.room(22); d.line([[d.M, d.y + 16], [d.M + d.CW, d.y + 16]], { color: C.line, lw: 0.6 }); d.y += 22; }
+    d.para("Made with Spice Guide. General guidance, not a legal specification; agree final requirements with your machine maker and auditor.", { size: 8, color: C.muted });
+    return { bytes: d.bytes(), name: `Spice machine spec checklist ${fileStamp()}.pdf` };
+  }
+
   /* guide knowledge for the chat (built-in answers + notes for the AI) */
   function guideAnswer(t) {
     t = t.toLowerCase();
+    if (/\b(ehedg|iso 14159|en 1672|1672|atex|nfpa|asta|esa|hygienic design|machine standards?|standards? for (spice )?machine\w*|dust explosion|explosion)\b/.test(t))
+      return { text: "**Standards for spice machines**\n\nThere's no single standard just for spice machines; these are used together:\n\n" + STD_GROUPS.map(([h, , items]) => `**${h}**\n` + items.map(([n, d]) => `- **${n}**: ${d}`).join("\n")).join("\n\n"), chips: [{ label: "Machine standards page", go: "guide", seg: "standards" }] };
+    if (/\b(spec|specification|urs|rfq|buying a machine|buy a machine|machine quote|what to ask)\b/.test(t))
+      return { text: "**Buying a machine: what to ask for**\n\n" + MACHINE_SPEC.map(([n, d]) => `- **${n}**: ${d}`).join("\n"), chips: [{ label: "Download the checklist", go: "guide", seg: "standards" }] };
     if (/\b(licen[cs]es?|registrations?|register|fssai|udyam|msme|gst|legal metrology|pollution|kspcb|iec|cres|permits?|noc)\b/.test(t) && /\b(need|require|get|which|what|how|start|apply|licen\w*)\b/.test(t))
       return { text: "**Licences for a spice unit in India**\n\n" + LICENCES.map(([n, w, d]) => `- **${n}** (${w}): ${d}`).join("\n") + "\n\n*Confirm each with the department; rules change.*", chips: [{ label: "Licences & schemes", go: "guide", seg: "licences" }] };
     if (/\b(subsid\w*|schemes?|pmfme|pmegp|loans?|mudra|funding|finance)\b/.test(t))
@@ -344,7 +424,7 @@
   }
   function guideContext(text) {
     const t = text.toLowerCase();
-    if (!/manufactur|make|making|produce|process|start|unit|factory|machine|licen|fssai|udyam|gst|subsid|scheme|cost|margin|mrp|grind|blend|business|export/.test(t)) return "";
+    if (!/manufactur|make|making|produce|process|start|unit|factory|machine|ehedg|standard|iso|atex|nfpa|asta|dust|explosion|hygien|weld|seal|spec|licen|fssai|udyam|gst|subsid|scheme|cost|margin|mrp|grind|blend|business|export/.test(t)) return "";
     return ["GUIDE (checked facts for answering manufacturing questions; still advise confirming rules with authorities):",
       "FSSAI max moisture: chilli powder 11%, turmeric powder 10%, coriander powder 9%, cumin powder 10%, black pepper powder 12%, mixed masala 12%, curry powder 14%.",
       "FSSAI tiers from 1 April 2026: basic registration up to Rs 1.5 crore turnover; state licence Rs 1.5-50 crore; central above Rs 50 crore (exporters/multi-state may need central).",
@@ -352,5 +432,7 @@
       "PMFME: 35% credit-linked subsidy up to Rs 10 lakh for micro units; extended until September 2026, PMFME 2.0 under consideration - check current status.",
       "Pepper: thresh (mechanical ~320 kg/h), blanch ~1 min optional, sun-dry 3-5 days to ~10% moisture, clean and grade. Turmeric: cure within 2-3 days of harvest by boiling until soft, dry thin layers or below 60C, polish.",
       "Machines: " + MACHINES.map(m => m[0]).join(", ") + ".",
+      "Machine standards (no single spice-machine standard; used together): " + STD_GROUPS.map(([h, , items]) => h + ": " + items.map(i => i[0] + " - " + i[1]).join("; ")).join(" | "),
+      "Machine buying checklist: " + MACHINE_SPEC.map(([n, d]) => n + ": " + d).join(" "),
       "Licences: " + LICENCES.map(l => l[0]).join(", ") + "."].join("\n");
   }
